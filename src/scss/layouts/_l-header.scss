@@ -6,6 +6,8 @@
         color: #F5F5F5;
         text-transform: uppercase;
         font-weight: 300;
+        letter-spacing: 0.4px;
+        font-size: 14px;
     }
 
 }
@@ -14,19 +16,19 @@
 }
 
 .menu-line{
-  padding: 46px 32px;
     height: 90px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     align-items: center;
+    padding: 0 55px 0 39px;
 }
 
 .open-menu {
     height: 20px;
     width: 27px;
     cursor: pointer;
-    margin-right: 34px;
+    margin-right: 44px;
     &:hover{
         span{
             background-color: #7D5555;
@@ -78,7 +80,7 @@
   .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+    right: 2px;
     font-size: 36px;
     margin-left: 50px;
   }
@@ -150,7 +152,7 @@
     width: 50px;
     transition: width 0.3s ease;
     position: absolute;
-    right: 0px;;
+    right: -11px;
     width: 30px;
     background-color: transparent;
 }
@@ -174,17 +176,20 @@
 }
 
 .search.active .input {
-    width: 200px;
     border-radius: 2px;
-
+    width: 272px;
+    margin-right: 21px;
     background-color: rgba(255, 255, 255, 0.4);
 }
 
 
 .search{
+  .btn{
+    margin-right: 27px;
+  }
   .search-img{
-    width: 27px;
-    height: 28px;
+    height: 25px;
+    width: 24px;
     background:  url('../img/icons/search.svg') ;
     background-repeat: no-repeat;
     background-position: center center;
@@ -193,12 +198,13 @@
 }
 
 .personal-cabinet{
-  width: 27px;
-  height: 28px;
+  height: 24px;
+  width: 24px;
   background:  url('../img/icons/person.svg') ;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  margin-right: 40px;;
 }
 
 .cart-icon {
@@ -230,38 +236,33 @@
 }
 
 .right-menu-info--icon{
-  margin-right: 40px;
   cursor: pointer;
 }
 
 .menu-line{
-  position: relative;
+  position: relative;  
 }
 
 .sub-menu{
-  background: #fff;
+  background: #F5F5F5;
   position: absolute;
   left: 0px;
   width: 100%;
-  padding: 35px 40px;
-    box-sizing: border-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    border-bottom: 1px solid #e5e5e5;
-    opacity: 0;
-    visibility: hidden;
-    min-height: 0;
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: visibility .5s ease, opacity .5s ease, min-height .5s ease, max-height .5s ease;
-    transition: visibility .5s ease, opacity .5s ease, min-height .5s ease, max-height .5s ease;
+  padding: 100px 40px 60px;
+  top: 57px;
+
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  opacity: 0;
+  visibility: hidden;
+  min-height: 0;
+  max-height: 0;
+  overflow: hidden;  
+  transition: visibility .5s ease, opacity .5s ease, min-height .5s ease, max-height .5s ease;
 }
 
 .main-menu-item.hover{
@@ -273,28 +274,57 @@
   }
 }
 
-
 .submenu-name{
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 28px;
+  width: 157px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #0B0B0B;
-  transform: rotate(-90deg) translateY(-71px) translateX(-68px);
+  transform: rotate(-90deg) translateY(-26px) translateX(-111px);
+  position: absolute;
+  left: 0px;
 }
 
 .sub-menu{
+  &:before{
+    content: "";
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top:30px;
+    left:0px;
+    background-repeat: repeat;
+    background-image: url(../img/icons/dashed.svg);
+  }
   .left{
     display: flex;
     text-align: left;
     margin-right: 93px;
+    padding-left: 92px;
     ul:not(:last-child){
-      margin-right: 15px;
+      margin-right: 84px;
     }
-
+    li{
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 129.99%;
+      /* or 21px */
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.0155em;
+      margin-bottom: 26px;
+      text-transform: none;
+      position: relative;
+      a:hover{
+        text-decoration: underline;
+      }
+    }
   }
   .right {
     display: flex;
@@ -303,14 +333,19 @@
 }
 
 .menu-illustrations{
-  width: 300px;
+  width: 270px;
+  height: 363px;
+  position: absolute;
+  bottom: 0px; 
   margin-right: 80px;
+  left: 47%;
 }
 
 .inform-banner{
   width: 546px;
   height: 260px;
   position: relative;
+  text-align: right;
   img{
     width: 100%;
   }
@@ -318,13 +353,100 @@
     content: "";
     display: block;
     position: absolute;
-    top: 0px;
-    left: 10px;
-    width: 97px;
+    display: block;
     height: 73px;
-    background:  url('../img/illustrations/cat.svg') ;
+    left: 131px;
+    position: absolute;
+    top: -55px;
+    width: 97px;
+    background:  url('../img/illustrations/cat.png') ;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+  }
+}
+
+
+.sidenav .mobile-main-menu a.nemu-name{
+ font-weight: 600;
+ display: flex;
+  justify-content: space-between;
+}
+
+.open-close{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin-right: 20px;;
+  transition: all ease 0.3s;
+}
+
+.open-close:after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 7px;
+  transition: all ease 0.3s;
+}
+.open-close:before{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: center;
+  top: 7px;
+}
+
+.hidden-mobile-submenu{
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.mobile-main-menu.open .hidden-mobile-submenu{
+  height: 100%;
+  visibility: visible;
+  opacity: 1;
+}
+
+.mobile-main-menu.open .open-close:before{
+  transform: rotate(0deg);
+  transform-origin: center;
+}
+
+@media screen and (max-width: 1650px){
+  .inform-banner {
+    height: auto;
+    width: 386px;
+  }
+  .menu-illustrations {
+    left: auto;
+    right: 23%;
+  }
+  .sub-menu .left ul:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .menu-illustrations{
+    display: none;
+  }
+  .inform-banner:before {
+    left: 7px;
+  }
+}
+
+
+@media screen and (max-width: 1200px){
+  .main-menu{
+    display: none;
   }
 }

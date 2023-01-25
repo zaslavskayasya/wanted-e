@@ -33,3 +33,30 @@ btn.addEventListener('click', () => {
 })
 
 
+let mainMenuItem = document.querySelectorAll('.main-menu-item');
+
+mainMenuItem.forEach((it)=>{
+    it.addEventListener('mouseover', (e)=>{
+        console.log(e.currentTarget)
+        e.currentTarget.classList.add('hover');
+    });
+    it.addEventListener('mouseleave', (e)=>{
+        console.log(e.currentTarget)
+        e.currentTarget.classList.remove('hover');
+    });
+});
+
+
+
+let mobileItem = document.querySelectorAll('.mobile-main-menu');
+
+mobileItem.forEach((it)=>{
+    it.addEventListener('click', (e)=>{
+        console.log(e.currentTarget)
+        e.currentTarget.classList.toggle('open');
+    });
+    // it.addEventListener('mouseleave', (e)=>{
+    //     console.log(e.currentTarget)
+    //     e.currentTarget.classList.remove('open');
+    // });
+})
