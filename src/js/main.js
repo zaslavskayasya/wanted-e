@@ -47,7 +47,6 @@ mainMenuItem.forEach((it)=>{
 });
 
 
-
 let mobileItem = document.querySelectorAll('.mobile-main-menu');
 
 mobileItem.forEach((it)=>{
@@ -55,8 +54,5 @@ mobileItem.forEach((it)=>{
         console.log(e.currentTarget)
         e.currentTarget.classList.toggle('open');
     });
-    // it.addEventListener('mouseleave', (e)=>{
-    //     console.log(e.currentTarget)
-    //     e.currentTarget.classList.remove('open');
-    // });
+
 })
