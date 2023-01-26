@@ -51,8 +51,26 @@ let mobileItem = document.querySelectorAll('.mobile-main-menu');
 
 mobileItem.forEach((it)=>{
     it.addEventListener('click', (e)=>{
-        console.log(e.currentTarget)
         e.currentTarget.classList.toggle('open');
     });
 
-})
+});
+
+
+var mySlider = $('.sliders');
+
+mySlider.slick({
+  dots: false,
+  infinite: true,
+  slidesToShow: 1,
+});
+
+mySlider.mousewheel(function(e) {
+  e.preventDefault();
+
+  if (e.deltaY < 0) {
+    $(this).slick('slickNext');
+  } else {
+    $(this).slick('slickPrev');
+  }
+});

@@ -250,6 +250,7 @@
   width: 100%;
   padding: 100px 40px 60px;
   top: 57px;
+      z-index: 9;
 
   box-sizing: border-box;
   display: flex;
@@ -297,6 +298,7 @@
     position: absolute;
     top:30px;
     left:0px;
+
     background-repeat: repeat;
     background-image: url(../img/icons/dashed.svg);
   }
@@ -384,7 +386,7 @@
 .open-close:after{
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: #000;
   position: absolute;
@@ -394,7 +396,7 @@
 .open-close:before{
   content: "";
   display: block;
-  height: 2px;
+  height: 1px;
   width: 100%;
   background-color: #000;
   position: absolute;
@@ -449,4 +451,35 @@
   .main-menu{
     display: none;
   }
+}
+
+
+@media screen and (max-width: 920px){
+  .search .btn {
+    margin-right: 4px;
+  }
+  .personal-cabinet {
+    margin-right: 12px;
+  }
+  .menu-line {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 90px;
+    padding: 0 15px 0 15px;
+
+  }
+  .search {
+    position: absolute;
+    left: 102px;
+  }
+  .search.active .input {
+    background-color: hsla(0,0%,100%,1);
+    border: 1px solid #000;
+  }
+  .search .input {
+    right: auto;
+    left: -11px;
+  }
+
 }
