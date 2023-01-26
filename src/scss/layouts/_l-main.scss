@@ -1,2 +1,41 @@
 .l-main {
+    .sliders-item{
+        min-height: 500px;
+        img{
+            width: 100%;
+        }
+    }
+    .main-image-slider{
+        position: relative;
+        .slick-dots{
+            position: absolute;
+            bottom: 24px;
+            right: 19%;
+        }
+    }
 }
+.slick-dots li button { 
+    font-size: 0; 
+    width: 8px;
+    height: 8px;
+    background: #0B0B0B;
+    border-radius: 100%;
+    position: relative;
+} 
+
+.slick-dots li.slick-active button:before { 
+    background: transparent;
+    border: 2px solid #0b0b0b;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 16px;
+    position: absolute;
+    width: 16px;
+    top: 0;
+    left: 0;
+    transform: translate(-4px, -4px);
+
+ } 
+
+

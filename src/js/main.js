@@ -1,6 +1,5 @@
 console.log(`Loaded main.js`);
 
-
 // header part
 
 let overflowDarken = document.querySelector('.overflow-block');
@@ -57,12 +56,13 @@ mobileItem.forEach((it)=>{
 });
 
 
-var mySlider = $('.sliders');
+var mySlider = $('.main-image-slider');
 
-mySlider.slick({
-  dots: false,
-  infinite: true,
-  slidesToShow: 1,
+$('.main-image-slider').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    arrows: false,
 });
 
 mySlider.mousewheel(function(e) {
