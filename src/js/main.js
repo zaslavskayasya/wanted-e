@@ -74,3 +74,18 @@ mySlider.mousewheel(function(e) {
     $(this).slick('slickPrev');
   }
 });
+
+
+let clothesColor = document.querySelectorAll('.color-item');
+
+clothesColor.forEach((element)=>{
+    let col = element.getAttribute('data-color');
+
+    element.style.backgroundColor = col;
+
+    if (["white", "#fff"].includes(col.toLowerCase())){
+        element.style.borderColor = "#000";
+    }
+
+})
+

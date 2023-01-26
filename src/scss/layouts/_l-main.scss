@@ -38,4 +38,25 @@
 
  } 
 
-
+ .card-colors{
+    display: flex;
+    align-items: center;
+    .color-item{
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        border: 1px solid transparent;
+    }
+    .more-colors{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        /* т.серый */
+        color: #7F7F7F;
+    }
+ }

@@ -1,7 +1,23 @@
 main.l-main
- .main-slider
-   .main-image-slider
-      .slider-item 
-         img(src="../img/illustrations/main-image.jpg", alt="main image")         
-      .slider-item 
-         img(src="../img/illustrations/main-image.jpg", alt="megasale")
+   .main-slider
+      .main-image-slider
+         .slider-item 
+            img(src="../img/illustrations/main-image.jpg", alt="main image")         
+         .slider-item 
+            img(src="../img/illustrations/main-image.jpg", alt="megasale")
+.new-collection-block 
+   .container
+      .new-collection-slider
+         .card
+            .card-top.card-sale.card-new
+               img(src="../img/illustrations/clothes/clothes1.jpg", alt="")
+            .card-info
+               p.card-name Кардиган
+               .card-infoLine
+                  .newPrice 450
+                  .oldPrice 780
+                  .card-colors
+                     span.color-item(data-color="#000")
+                     span.color-item(data-color="#FFF")
+                     span.color-item(data-color="red")
+                     span.more-colors +1
