@@ -41,14 +41,16 @@
  .card-colors{
     display: flex;
     align-items: center;
+    font-family: 'Montserrat';
     .color-item{
         width: 14px;
         height: 14px;
         border-radius: 100%;
         border: 1px solid transparent;
+        margin-right: 6px;
     }
     .more-colors{
-        font-family: 'Montserrat';
+
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -59,4 +61,39 @@
         /* т.серый */
         color: #7F7F7F;
     }
+    .newPrice{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 23px;
+        display: flex;
+        align-items: center;
+        color: #0B0B0B;
+    }
+    .oldPrice{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 129.99%;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.0155em;
+        text-decoration-line: line-through;
+        color: #7F7F7F;
+    }
+    .card-name{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 24px;
+        align-items: center;
+        letter-spacing: 0.0155em;
+        color: #7F7F7F;
+        margin-bottom: 10px;
+    }
+    .card-infoLine{
+        display: flex;
+        justify-content: space-between;
+    }
+
  }
