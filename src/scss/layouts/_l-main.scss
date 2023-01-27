@@ -38,7 +38,82 @@
 
  } 
 
- .card-colors{
+
+ .card{
+    max-width: 268px;
+    display: block;
+    .prices{
+        display: flex;
+        align-items: baseline;
+    }
+ }
+
+ .card-top{
+    position: relative;
+    max-height: 340px;
+    overflow: hidden;
+    margin-bottom: 20px;;
+}
+
+
+.card-flag{
+    position: absolute;
+    width: 50px;
+    height: 22px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-sale{
+    bottom: 10px;
+    left: 10px;
+    background-color: #FF3737;
+}
+
+.card-sale:after{
+    border-left: 20px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 10px solid #FF3737;
+    bottom: -6px;
+    left: 2px;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 20px;
+}
+
+.card-new{
+    top: 10px;
+    right: 10px;
+    background-color: #6FB662;
+}
+.card-new:after{
+    border-left: 20px solid transparent;
+    border-right: 0 solid transparent;
+    border-top: 10px solid #6FB662;
+    bottom: -6px;
+    left: 2px;
+    content: "";
+    height: 0;
+    position: absolute;
+    width: 20px;
+}
+
+
+
+
+
+.card-colors{
     display: flex;
     align-items: center;
     font-family: 'Montserrat';
@@ -49,48 +124,89 @@
         border: 1px solid transparent;
         margin-right: 6px;
     }
-    .more-colors{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
-        display: flex;
-        align-items: center;
-        color: #7F7F7F;
-    }
-    .newPrice{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 19px;
-        line-height: 23px;
-        display: flex;
-        align-items: center;
-        color: #0B0B0B;
-    }
-    .oldPrice{
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 129.99%;
-        display: flex;
-        align-items: center;
-        letter-spacing: 0.0155em;
-        text-decoration-line: line-through;
-        color: #7F7F7F;
-    }
-    .card-name{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 24px;
-        align-items: center;
-        letter-spacing: 0.0155em;
-        color: #7F7F7F;
-        margin-bottom: 10px;
-    }
-    .card-infoLine{
-        display: flex;
-        justify-content: space-between;
-    }
+    
+}
 
+
+
+.more-colors{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #7F7F7F;
+}
+.newPrice{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #0B0B0B;
+    margin-right: 10px;;
+}
+.oldPrice{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 129.99%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0155em;
+    text-decoration-line: line-through;
+    color: #7F7F7F;
+}
+.card-name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    align-items: center;
+    letter-spacing: 0.0155em;
+    color: #7F7F7F;
+    margin-bottom: 10px;
+}
+.card-infoLine{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ .new-collection-block{
+    padding-top: 130px;
+ }
+
+ .new-collection-slider.side-custom-arrows{
+    .slick-next{
+        background-repeat: no-repeat;
+        background-position: 30% center;
+        height: 81%;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        width: 60px;
+        
+        &:hover{
+            background-color:  rgba(250, 250, 250, 0.2);
+            background-image: url(../img/icons/arrow-right.svg);
+        }
+    }
+    .slick-prev{
+        background-repeat: no-repeat;
+        background-position: 30% center;
+        height: 81%;
+        position: absolute;
+        z-index: 20;
+        left: 0;
+        top: 0px;
+        width: 60px;        
+        &:hover{
+            background-color:  rgba(250, 250, 250, 0.2);
+            background-image: url(../img/icons/arrow-left.svg);
+        }
+    }
+    
  }

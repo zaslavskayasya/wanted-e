@@ -76,6 +76,30 @@ mySlider.mousewheel(function(e) {
 });
 
 
+
+
+var collectionSlider = $('.new-collection-slider');
+
+$('.new-collection-slider').slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    arrows: true,
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    prevArrow: '<button type="button" class="slick-prev"></button>'
+});
+
+collectionSlider.mousewheel(function(e) {
+  e.preventDefault();
+
+  if (e.deltaY < 0) {
+    $(this).slick('slickNext');
+  } else {
+    $(this).slick('slickPrev');
+  }
+});
+
+
 let clothesColor = document.querySelectorAll('.color-item');
 
 clothesColor.forEach((element)=>{
