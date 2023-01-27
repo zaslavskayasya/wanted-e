@@ -1,4 +1,5 @@
 .l-main {
+    margin-bottom: 65px;
     .sliders-item{
         min-height: 500px;
         img{
@@ -109,10 +110,6 @@
     width: 20px;
 }
 
-
-
-
-
 .card-colors{
     display: flex;
     align-items: center;
@@ -123,11 +120,8 @@
         border-radius: 100%;
         border: 1px solid transparent;
         margin-right: 6px;
-    }
-    
+    }    
 }
-
-
 
 .more-colors{
     font-style: normal;
@@ -168,18 +162,47 @@
     letter-spacing: 0.0155em;
     color: #7F7F7F;
     margin-bottom: 10px;
+    text-overflow: ellipsis; // обрізання довгих блоків з текстом
+    overflow: hidden; // приховати текст, що виходить за межі блоку
+    width: 100%; // ширина блоку з текстом
+    white-space: nowrap; // заборона на перенесення тексту
 }
 .card-infoLine{
     display: flex;
     justify-content: space-between;
+    text-overflow: ellipsis; // обрізання довгих блоків з текстом
+    overflow: hidden; // приховати текст, що виходить за межі блоку
+    width: 100%; // ширина блоку з текстом
+    white-space: nowrap; // заборона на перенесення тексту
+}
+
+.new-collection-block{
+    padding: 65px 0px;
+}
+
+.sale-block{
+    padding: 65px 0px;
+}
+.last-seen{
+    padding: 65px 0px;    
+ }
+ .last-seen{
+    padding-bottom: 160px;
+ }
+
+
+ .sale-block .slider-name{
+    transform: rotate(-90deg) translateX(-10px) translateY(-41px);
+}
+
+.last-seen .slider-name{
+    width: 200px;
+    transform: rotate(-90deg) translateX(-79px) translateY(-61px);
 }
 
 
- .new-collection-block{
-    padding-top: 130px;
- }
 
- .new-collection-slider.side-custom-arrows{
+ .side-custom-arrows{
     .slick-next{
         background-repeat: no-repeat;
         background-position: 30% center;
@@ -207,6 +230,111 @@
             background-color:  rgba(250, 250, 250, 0.2);
             background-image: url(../img/icons/arrow-left.svg);
         }
+    }    
+}
+
+.slider-name{
+    position: absolute;
+    left: 0px;
+    /* top: 0px; */
+    transform: rotate(-90deg) translateX(-51px) translateY(-41px);
+    color: #7f7f7f;
+    font-style: normal;
+    letter-spacing: .0155em;
+    font-weight: 700;
+    width: 146px;
+}
+
+
+
+@media screen and (max-width: 900px){
+    .new-collection-slider, .sale-slider, .last-seen-slider{
+        max-width: 600px;;
+        margin: 0 auto;
+    } 
+}
+
+
+@media screen and (max-width: 730px){
+    .slider-name , .sale-block .slider-name,  .last-seen .slider-name{          
+        position: relative;      
+        transform: none;
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .new-collection-block{
+        padding: 15px 0px;
     }
     
- }
+    .sale-block{
+        padding: 15px 0px;
+    }
+    .last-seen{
+        padding: 15px 0px;    
+     }
+     .main-image-slider{
+        min-height: 468px;
+     }
+
+     .l-main {
+        margin-bottom: 25px;
+    }
+
+}
+
+
+@media screen and (max-width: 590px){
+    .new-collection-slider, .sale-slider, .last-seen-slider{
+        max-width: 310px;;
+        margin: 0 auto;
+    } 
+    .last-seen-slider{
+        max-width: 100%;
+        margin: 0 auto;
+    } 
+    .card {
+        margin-right: 15px;
+        max-width: 150px;
+        margin-bottom: 40px;
+    }
+    .card-top{
+        height: 230px;
+        width: 150px;
+        margin-bottom: 0px;
+    }
+
+    .card-name{
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .card-infoLine{
+        flex-direction: column;
+    }
+    .slick-slide .card img {
+        display: block;
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card-infoLine .prices{
+        order: 2;        
+    }
+
+    .card-colors{
+        margin-bottom: 5px;;
+    }
+    .newPrice{
+        font-size: 16px;;
+    }
+    .oldPrice{
+        font-size: 16px;;
+    }
+    .main-slider .slick-slide img{
+        min-height: 468px;
+        /* width: 100%; */
+        object-fit: cover;
+
+    }
+
+}

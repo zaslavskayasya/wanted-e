@@ -86,10 +86,119 @@ $('.new-collection-slider').slick({
     slidesToShow: 4,
     arrows: true,
     nextArrow: '<button type="button" class="slick-next"></button>',
-    prevArrow: '<button type="button" class="slick-prev"></button>'
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+            breakpoint: 890,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: false,
+              rows:2,
+            }
+          },
+    ],
+
 });
 
 collectionSlider.mousewheel(function(e) {
+  e.preventDefault();
+
+  if (e.deltaY < 0) {
+    $(this).slick('slickNext');
+  } else {
+    $(this).slick('slickPrev');
+  }
+});
+
+
+var saleSlider = $('.sale-slider');
+
+$('.sale-slider').slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    arrows: true,
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+            breakpoint: 890,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: false,
+              rows:2,
+            }
+          },
+    ],
+
+});
+
+saleSlider.mousewheel(function(e) {
+  e.preventDefault();
+
+  if (e.deltaY < 0) {
+    $(this).slick('slickNext');
+  } else {
+    $(this).slick('slickPrev');
+  }
+});
+
+
+var lastSeenSlider = $('.last-seen-slider');
+
+$('.last-seen-slider').slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    arrows: true,
+    nextArrow: '<button type="button" class="slick-next"></button>',
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+            breakpoint: 890,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: false,
+            }
+          },
+    ],
+
+});
+
+lastSeenSlider.mousewheel(function(e) {
   e.preventDefault();
 
   if (e.deltaY < 0) {
