@@ -220,7 +220,7 @@
         
         &:hover{
             background-color:  rgba(250, 250, 250, 0.2);
-            background-image: url(../img/icons/arrow-right.svg);
+            background-image: url(./img/icons/arrow-right.svg);
         }
     }
     .slick-prev{
@@ -234,7 +234,7 @@
         width: 60px;        
         &:hover{
             background-color:  rgba(250, 250, 250, 0.2);
-            background-image: url(../img/icons/arrow-left.svg);
+            background-image: url(./img/icons/arrow-left.svg);
         }
     }    
 }
