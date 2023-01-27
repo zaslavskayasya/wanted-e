@@ -15,6 +15,12 @@
         }
     }
 }
+
+.main-slider .slick-slide img{
+
+    object-fit: cover;
+
+}
 .slick-dots li button { 
     font-size: 0; 
     width: 8px;
@@ -252,6 +258,12 @@
         max-width: 600px;;
         margin: 0 auto;
     } 
+    .main-slider .slick-slide img{
+        min-height: 468px;
+        /* width: 100%; */
+        object-fit: cover;
+
+    }
 }
 
 
