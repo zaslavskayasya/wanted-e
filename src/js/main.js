@@ -65,17 +65,15 @@ $('.main-image-slider').slick({
     arrows: false,
 });
 
-mySlider.mousewheel(function(e) {
-  e.preventDefault();
+// mySlider.mousewheel(function(e) {
+//   e.preventDefault();
 
-  if (e.deltaY < 0) {
-    $(this).slick('slickNext');
-  } else {
-    $(this).slick('slickPrev');
-  }
-});
-
-
+//   if (e.deltaY < 0) {
+//     $(this).slick('slickNext');
+//   } else {
+//     $(this).slick('slickPrev');
+//   }
+// });
 
 
 var collectionSlider = $('.new-collection-slider');
@@ -111,15 +109,15 @@ $('.new-collection-slider').slick({
 
 });
 
-collectionSlider.mousewheel(function(e) {
-  e.preventDefault();
+// collectionSlider.mousewheel(function(e) {
+//   e.preventDefault();
 
-  if (e.deltaY < 0) {
-    $(this).slick('slickNext');
-  } else {
-    $(this).slick('slickPrev');
-  }
-});
+//   if (e.deltaY < 0) {
+//     $(this).slick('slickNext');
+//   } else {
+//     $(this).slick('slickPrev');
+//   }
+// });
 
 
 var saleSlider = $('.sale-slider');
@@ -155,15 +153,15 @@ $('.sale-slider').slick({
 
 });
 
-saleSlider.mousewheel(function(e) {
-  e.preventDefault();
+// saleSlider.mousewheel(function(e) {
+//   e.preventDefault();
 
-  if (e.deltaY < 0) {
-    $(this).slick('slickNext');
-  } else {
-    $(this).slick('slickPrev');
-  }
-});
+//   if (e.deltaY < 0) {
+//     $(this).slick('slickNext');
+//   } else {
+//     $(this).slick('slickPrev');
+//   }
+// });
 
 
 var lastSeenSlider = $('.last-seen-slider');
@@ -198,15 +196,15 @@ $('.last-seen-slider').slick({
 
 });
 
-lastSeenSlider.mousewheel(function(e) {
-  e.preventDefault();
+// lastSeenSlider.mousewheel(function(e) {
+//   e.preventDefault();
 
-  if (e.deltaY < 0) {
-    $(this).slick('slickNext');
-  } else {
-    $(this).slick('slickPrev');
-  }
-});
+//   if (e.deltaY < 0) {
+//     $(this).slick('slickNext');
+//   } else {
+//     $(this).slick('slickPrev');
+//   }
+// });
 
 
 let clothesColor = document.querySelectorAll('.color-item');

@@ -288,7 +288,18 @@
   transform: rotate(-90deg) translateY(-26px) translateX(-111px);
   position: absolute;
   left: 0px;
+  &.women{
+    transform: rotate(-90deg) translate(-61px, -24px);
+  }
+  &.men{
+    transform: rotate(-90deg) translate(-116px, -24px);
+  }
+  &.childrens{
+    transform: rotate(-90deg) translate(-49px, -24px);
+  }
 }
+
+
 
 .sub-menu{
   &:before{
