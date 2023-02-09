@@ -12,8 +12,7 @@
 
 }
 
-.l-header {
-}
+
 
 .menu-line{
     height: 90px;
@@ -289,17 +288,15 @@
   position: absolute;
   left: 0px;
   &.women{
-    transform: rotate(-90deg) translate(-61px, -24px);
+    transform: rotate(-90deg) translate(-67px, -24px);
   }
   &.men{
-    transform: rotate(-90deg) translate(-116px, -24px);
+    transform: rotate(-90deg) translate(-137px, -24px);
   }
   &.childrens{
     transform: rotate(-90deg) translate(-49px, -24px);
   }
 }
-
-
 
 .sub-menu{
   &:before{
@@ -309,7 +306,6 @@
     position: absolute;
     top:30px;
     left:0px;
-
     background-repeat: repeat;
     background-image: url(../img/icons/dashed.svg);
   }

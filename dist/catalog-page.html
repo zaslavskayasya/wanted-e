@@ -26,11 +26,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="noUiSlider/nouislider.min.css">
     <link href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/slick/slick.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script src="js/wNumb.min.js"></script>
+    <script src="noUiSlider/nouislider.min.js"></script>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
@@ -38,7 +41,7 @@
       <p class="norm">-20% на покупки від 2799 грн. Безкоштовна Доставка </p>
     </div>
     <div class="sidenav" id="mySidenav"><a class="closebtn closeLeftSidebar" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a><a href="#">Наші магазини</a><a href="#">Доставка і оплата</a>
-      <div class="mobile-main-menu"><a class="nemu-name" href="#">Жінкам<span class="open-close"> </span></a>
+      <div class="mobile-main-menu"><a class="nemu-name" href="#">Жінкам<span class="open-close"></span></a>
         <ul class="hidden-mobile-submenu">
           <li><a href="#">Куртки і пальта</a></li>
           <li><a href="#">Светри</a></li>
@@ -248,12 +251,192 @@
     </div>
     <div class="catalog-wrap">
       <div class="content">
-        <h1 class="slider-name">Нова колекція</h1>
+        <h1 class="page-catalog-name">Нова колекція</h1>
         <div class="catalog-content">
           <div class="filter-line">
-            <p>Розмір</p>
+            <div class="filter-item"> <img src="./img/icons/settings.svg" alt=""></div>
+            <div class="filter-item">
+              <p class="filter-item-name">Ціна</p><span class="num">6</span>
+            </div>
+            <div class="filter-item">
+              <p class="filter-item-name">Розмір</p><span class="num">2</span>
+            </div>
+            <div class="filter-item">
+              <p class="filter-item-name">Колір</p><span class="num">2 </span>
+            </div>
+          </div>
+          <div class="cards-place">
+            <!-- card--><a class="card" href="#">
+              <div class="card-top">
+                <div class="card-sale card-flag">Sale</div>
+                <div class="card-new card-flag">New </div><img src="./img/illustrations/clothes/clothes1.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <p class="card-name">Кардиган самий довгий рядок для тесту</p>
+                <div class="card-infoLine">
+                  <div class="prices">
+                    <div class="newPrice"> <span class="price-num">45450 </span><span class="price-currency">&nbsp;грн.</span></div>
+                    <div class="oldPrice"> <span>7806778</span><span class="price-currency">&nbsp;грн.</span></div>
+                  </div>
+                  <div class="card-colors"><span class="color-item" data-color="#000"></span><span class="color-item" data-color="#FFF"></span><span class="color-item" data-color="red"></span><span class="more-colors">+1</span></div>
+                </div>
+              </div>
+            </a>
+            <!-- card--><a class="card" href="#">
+              <div class="card-top">
+                <div class="card-sale card-flag">Sale</div>
+                <div class="card-new card-flag">New </div><img src="./img/illustrations/clothes/clothes2.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <p class="card-name">Спідниця з високою посадкою</p>
+                <div class="card-infoLine">
+                  <div class="prices">
+                    <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+                    <div class="oldPrice"> <span>780</span><span class="price-currency">&nbsp;грн.</span></div>
+                  </div>
+                  <div class="card-colors"><span class="color-item" data-color="#000"></span><span class="color-item" data-color="#FFF"></span><span class="color-item" data-color="red"></span><span class="more-colors">+1</span></div>
+                </div>
+              </div>
+            </a>
+            <!-- card--><a class="card" href="#">
+              <div class="card-top">
+                <div class="card-sale card-flag">Sale</div>
+                <div class="card-new card-flag">New </div><img src="./img/illustrations/clothes/clothes10.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <p class="card-name">Базовий гольфік</p>
+                <div class="card-infoLine">
+                  <div class="prices">
+                    <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+                    <div class="oldPrice"> <span>780</span><span class="price-currency">&nbsp;грн.</span></div>
+                  </div>
+                  <div class="card-colors"><span class="color-item" data-color="#000"></span><span class="color-item" data-color="#FFF"></span><span class="color-item" data-color="red"></span><span class="more-colors">+1</span></div>
+                </div>
+              </div>
+            </a>
+            <!-- card--><a class="card" href="#">
+              <div class="card-top">
+                <div class="card-sale card-flag">Sale</div>
+                <div class="card-new card-flag">New </div><img src="./img/illustrations/clothes/clothes11.jpg" alt="">
+              </div>
+              <div class="card-info"></div>
+              <p class="card-name">Кардиган</p>
+              <div class="card-infoLine">
+                <div class="prices">
+                  <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+                  <div class="oldPrice"> <span>780</span><span class="price-currency">&nbsp;грн.</span></div>
+                </div>
+                <div class="card-colors"><span class="color-item" data-color="#000"></span><span class="color-item" data-color="#FFF"></span><span class="color-item" data-color="red"></span><span class="more-colors">+1</span></div>
+              </div>
+            </a>
+            <!-- card--><a class="card" href="#">
+              <div class="card-top">
+                <div class="card-sale card-flag">Sale</div>
+                <div class="card-new card-flag">New </div><img src="./img/illustrations/clothes/clothes5.jpg" alt="">
+              </div>
+              <div class="card-info"></div>
+              <p class="card-name">Кардиган</p>
+              <div class="card-infoLine">
+                <div class="prices">
+                  <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+                  <div class="oldPrice"> <span>780</span><span class="price-currency">&nbsp;грн.</span></div>
+                </div>
+                <div class="card-colors"><span class="color-item" data-color="#000"></span><span class="color-item" data-color="#FFF"></span><span class="color-item" data-color="red"></span><span class="more-colors">+1</span></div>
+              </div>
+            </a>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="filter-right"><a class="closebtn closeRightSidebar" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
+      <div class="catalog-filter-item">
+        <p class="filter-name">Фільтр</p>
+        <div class="price-range catalog-filter-item">
+          <p class="block-name">Ціна</p>
+          <div id="steps-slider"></div>
+          <div class="slider-inputs">
+            <input id="input-with-keypress-0" type="text">
+            <input id="input-with-keypress-1" type="text">
+          </div>
+        </div>
+      </div>
+      <div class="catalog-filter-item">
+        <div class="mobile-main-menu"><a class="nemu-name block-name" href="#">Колір<span class="open-close"></span></a>
+          <ul class="hidden-mobile-submenu">
+            <li>
+              <label class="wrap-checkbox normal-text">Білий <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">(1)</span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">Чорний <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">6</span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">Фіолетовий <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount"> </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="catalog-filter-item">
+        <div class="mobile-main-menu"><a class="nemu-name block-name" href="#">Стиль<span class="open-close"></span></a>
+          <ul class="hidden-mobile-submenu">
+            <li>
+              <label class="wrap-checkbox normal-text">Кежуал <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">1</span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">Для дому <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">6</span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">Для віечірки <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount"> </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="catalog-filter-item">
+        <div class="mobile-main-menu"><a class="nemu-name block-name" href="#">Розмір<span class="open-close"></span></a>
+          <ul class="hidden-mobile-submenu">
+            <li>
+              <label class="wrap-checkbox normal-text">XSS <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">1</span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">XS <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">6</span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">S <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount"></span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">M <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">1</span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">L <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount">6</span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">XL <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount"> </span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">XXL <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount"></span>
+              </label>
+            </li>
+            <li>
+              <label class="wrap-checkbox normal-text">XXXL <input type="checkbox" value="" name="" data-id=""><span class="checkmark"></span><span class="amount"> </span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="filter-btn">
+        <div class="button button-white">Скасувати</div>
+        <button class="button button-black">Показати</button>
       </div>
     </div>
     <footer class="l-footer">

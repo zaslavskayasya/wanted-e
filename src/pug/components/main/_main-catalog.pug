@@ -1,6 +1,228 @@
 .catalog-wrap
     .content
-        h1.slider-name Нова колекція
+        h1.page-catalog-name Нова колекція
         .catalog-content
             .filter-line 
-                p Розмір
+                .filter-item 
+                    img(src="./img/icons/settings.svg", alt="")
+                .filter-item
+                    p.filter-item-name Ціна
+                    span.num 6
+                .filter-item
+                    p.filter-item-name Розмір
+                    span.num 2
+                .filter-item
+                    p.filter-item-name Колір
+                    span.num 2   
+            .cards-place 
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New               
+                        img(src="./img/illustrations/clothes/clothes1.jpg", alt="")
+                    .card-info
+                        p.card-name Кардиган самий довгий рядок для тесту
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num 45450 
+                                    span.price-currency &nbsp;грн.
+                                    
+                                .oldPrice 
+                                    span 7806778
+                                    span.price-currency &nbsp;грн.
+                            .card-colors
+                                span.color-item(data-color="#000")
+                                span.color-item(data-color="#FFF")
+                                span.color-item(data-color="red")
+                                span.more-colors +1
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New               
+                        img(src="./img/illustrations/clothes/clothes2.jpg", alt="")
+                    .card-info
+                        p.card-name Спідниця з високою посадкою
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num 450 
+                                    span.price-currency &nbsp;грн.
+                                    
+                                .oldPrice 
+                                    span 780
+                                    span.price-currency &nbsp;грн.
+                            .card-colors
+                                span.color-item(data-color="#000")
+                                span.color-item(data-color="#FFF")
+                                span.color-item(data-color="red")
+                                span.more-colors +1
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New               
+                        img(src="./img/illustrations/clothes/clothes10.jpg", alt="")
+                    .card-info
+                        p.card-name Базовий гольфік
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num 450 
+                                    span.price-currency &nbsp;грн.
+                                    
+                                .oldPrice 
+                                    span 780
+                                    span.price-currency &nbsp;грн.
+                            .card-colors
+                                span.color-item(data-color="#000")
+                                span.color-item(data-color="#FFF")
+                                span.color-item(data-color="red")
+                                span.more-colors +1
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New               
+                        img(src="./img/illustrations/clothes/clothes11.jpg", alt="")
+                    .card-info
+                    p.card-name Кардиган
+                    .card-infoLine
+                        .prices
+                            .newPrice 
+                                span.price-num 450 
+                                span.price-currency &nbsp;грн.
+                                
+                            .oldPrice 
+                                span 780
+                                span.price-currency &nbsp;грн.
+                        .card-colors
+                            span.color-item(data-color="#000")
+                            span.color-item(data-color="#FFF")
+                            span.color-item(data-color="red")
+                            span.more-colors +1
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New               
+                        img(src="./img/illustrations/clothes/clothes5.jpg", alt="")
+                    .card-info
+                    p.card-name Кардиган
+                    .card-infoLine
+                        .prices
+                            .newPrice 
+                                span.price-num 450 
+                                span.price-currency &nbsp;грн.
+                                
+                            .oldPrice 
+                                span 780
+                                span.price-currency &nbsp;грн.
+                        .card-colors
+                            span.color-item(data-color="#000")
+                            span.color-item(data-color="#FFF")
+                            span.color-item(data-color="red")
+                            span.more-colors +1
+
+.filter-right
+    a.closebtn.closeRightSidebar(href="javascript:void(0)" ) 
+        img(alt="close" src="./img/icons/close.svg")
+    .catalog-filter-item
+        p.filter-name Фільтр
+        .price-range.catalog-filter-item
+            p.block-name Ціна
+            #steps-slider
+            .slider-inputs
+                input#input-with-keypress-0(type='text')
+                input#input-with-keypress-1(type='text')
+
+    .catalog-filter-item
+        div.mobile-main-menu
+            a(href="#").nemu-name.block-name Колір
+                span.open-close
+            ul.hidden-mobile-submenu
+                li
+                    label.wrap-checkbox.normal-text Білий
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount (1)
+                li
+                    label.wrap-checkbox.normal-text Чорний
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 6
+                li
+                    label.wrap-checkbox.normal-text Фіолетовий
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 
+    .catalog-filter-item
+        div.mobile-main-menu
+            a(href="#").nemu-name.block-name Стиль
+                span.open-close
+            ul.hidden-mobile-submenu
+                li
+                    label.wrap-checkbox.normal-text Кежуал
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 1
+                li
+                    label.wrap-checkbox.normal-text Для дому
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 6
+                li
+                    label.wrap-checkbox.normal-text Для віечірки
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 
+    .catalog-filter-item
+        div.mobile-main-menu
+            a(href="#").nemu-name.block-name Розмір
+                span.open-close
+            ul.hidden-mobile-submenu
+                li
+                    label.wrap-checkbox.normal-text XSS
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 1
+                li
+                    label.wrap-checkbox.normal-text XS
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 6
+                li
+                    label.wrap-checkbox.normal-text S
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount
+                li
+                    label.wrap-checkbox.normal-text M
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 1
+                li
+                    label.wrap-checkbox.normal-text L
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 6
+                li
+                    label.wrap-checkbox.normal-text XL
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 
+                li
+                    label.wrap-checkbox.normal-text XXL
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount
+                li
+                    label.wrap-checkbox.normal-text XXXL
+                        input(type='checkbox' value='' name='' data-id='') 
+                        span.checkmark
+                        span.amount 
+    .filter-btn 
+        .button.button-white Скасувати
+        button.button.button-black Показати

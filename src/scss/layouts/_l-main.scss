@@ -49,6 +49,8 @@
  .card{
     max-width: 268px;
     display: block;
+
+
     .prices{
         display: flex;
         align-items: baseline;
@@ -57,9 +59,15 @@
 
  .card-top{
     position: relative;
-    max-height: 340px;
+    max-height: 336px;
     overflow: hidden;
     margin-bottom: 20px;;
+    img{
+        max-width: auto; 
+        vertical-align: bottom;
+        height: 100%;
+        width: auto;
+    }
 }
 
 

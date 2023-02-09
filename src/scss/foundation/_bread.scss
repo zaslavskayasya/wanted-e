@@ -1,6 +1,7 @@
 .bread{
     width: 100%;
     position: relative;
+    margin-bottom: 60px;;
     &:before{
         content: "";
         height: 1px;
@@ -18,9 +19,9 @@
     font-size: 40px;
     display: flex;
     padding: 0px 20px;
-    background-color: #fff;
+    background-color: #f5f5f5;
     margin: 0 auto;
-    z-index: 99;
+    z-index: 0;
     a{
         font-family: 'Montserrat';
         font-style: normal;
@@ -31,6 +32,7 @@
         position: relative;
         &:last-child{
             color: #000;
+            font-weight: 500;
         }
         &:not(:last-child){
             margin-right: 14px;;
