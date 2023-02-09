@@ -14,6 +14,8 @@ openLeftSidebarMenu.addEventListener('click', ()=>{
     leftSideMenu.style.left = "0px";
     leftSideMenu.style.opacity = "1";
     overflowDarken.style.opacity = "1";
+    
+   
 });
 
 closeLeftSidebarMenu.addEventListener('click', ()=>{
@@ -70,10 +72,23 @@ mainMenuItem.forEach((it)=>{
 
 
 let mobileItem = document.querySelectorAll('.mobile-main-menu');
+let elemForHideSkroll = document.querySelector('.sidenav');
+
+
 
 mobileItem.forEach((it)=>{
     it.addEventListener('click', (e)=>{
         e.currentTarget.classList.toggle('open');
+
+        console.log( e.currentTarget.classList.contains('open'));
+        if(e.currentTarget.classList.contains('open')){
+          elemForHideSkroll.style.overflow = "auto";
+          RightSideMenu.style.overflow = "auto";
+
+        } else{
+          elemForHideSkroll.style.overflow = "hidden";
+          RightSideMenu.style.overflow  = "hidden";
+        }
     });
 
 });

@@ -101,6 +101,7 @@
     overflow-x: hidden;
     padding-top: 60px;
     position: fixed;
+    overflow: hidden;
 
     &.active{
         transform: translateX(0%);
@@ -395,4 +396,11 @@
 
     }
 
+}
+
+@media screen and (max-width: 780px){
+    .filter-right {
+        padding: 60px 17px 35px 12px;
+        width: 100%;
+    }
 }
