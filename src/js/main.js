@@ -26,26 +26,6 @@ closeLeftSidebarMenu.addEventListener('click', ()=>{
 });
 
 
-let closeRightSidebar = document.querySelector('.closeRightSidebar');
-
-let RightSideMenu = document.querySelector('.filter-right');
-
-let rightFilterTrigger = document.querySelectorAll('.filter-item');
-
-rightFilterTrigger.forEach((triggerBtn)=>{
-  triggerBtn.addEventListener('click', ()=>{
-    RightSideMenu.classList.add('active');
-    overflowDarken.style.opacity = "1";
-  })
-})
-
-
-closeRightSidebar.addEventListener('click', ()=>{
-  RightSideMenu.classList.remove('active');
-  overflowDarken.style.opacity = "0";
-
-});
-
 
 
 const search = document.querySelector('.search')
