@@ -17,10 +17,9 @@
 }
 
 .main-slider .slick-slide img{
-
     object-fit: cover;
-
 }
+
 .slick-dots li button { 
     font-size: 0; 
     width: 8px;
@@ -49,6 +48,7 @@
  .card{
     max-width: 268px;
     display: block;
+    // margin-right: 28px;
 
 
     .prices{
@@ -77,7 +77,7 @@
     width: 50px;
     height: 22px;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 13px;
     line-height: 16px;
     display: flex;
@@ -94,18 +94,19 @@
     bottom: 10px;
     left: 10px;
     background-color: #FF3737;
+    
 }
 
 .card-sale:after{
-    border-left: 20px solid transparent;
+    border-left: 12px solid transparent;
     border-right: 0 solid transparent;
-    border-top: 10px solid #FF3737;
-    bottom: -6px;
-    left: 2px;
+    border-top: 9px solid #ff3737;
+    bottom: -5px;
     content: "";
     height: 0;
+    left: 1px;
     position: absolute;
-    width: 20px;
+    width: 6px;
 }
 
 .card-new{
@@ -114,15 +115,15 @@
     background-color: #6FB662;
 }
 .card-new:after{
-    border-left: 20px solid transparent;
+    border-left: 12px solid transparent;
     border-right: 0 solid transparent;
-    border-top: 10px solid #6FB662;
-    bottom: -6px;
-    left: 2px;
+    border-top: 9px solid #6FB662;
+    bottom: -5px;
+    left: 1px;
     content: "";
     height: 0;
     position: absolute;
-    width: 20px;
+    width: 6px;
 }
 
 .card-colors{
@@ -170,7 +171,7 @@
 }
 .card-name{
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     align-items: center;
@@ -192,14 +193,14 @@
 }
 
 .new-collection-block{
-    padding: 65px 0px;
+    padding: 80px 0px;
 }
 
 .sale-block{
-    padding: 65px 0px;
+    padding: 80px 0px;
 }
 .last-seen{
-    padding: 65px 0px;    
+    padding: 80px 0px;    
  }
  .last-seen{
     padding-bottom: 160px;
@@ -215,7 +216,11 @@
     transform: rotate(-90deg) translateX(-79px) translateY(-61px);
 }
 
-
+.new-collection-slider .slick-slide,
+.sale-slider .slick-slide ,
+.last-seen .slick-slide {
+    margin: 0 28px 0px 0px ;
+}
 
  .side-custom-arrows{
     .slick-next{
@@ -223,13 +228,13 @@
         background-position: 30% center;
         height: 81%;
         position: absolute;
-        right: 0;
+        right: 28px;
         top: 0px;
         width: 60px;
         
         &:hover{
             background-color:  rgba(250, 250, 250, 0.2);
-            background-image: url(./img/icons/arrow-right.svg);
+            background-image: url(.././img/icons/arrow-right.svg);
         }
     }
     .slick-prev{
@@ -243,7 +248,7 @@
         width: 60px;        
         &:hover{
             background-color:  rgba(250, 250, 250, 0.2);
-            background-image: url(./img/icons/arrow-left.svg);
+            background-image: url(.././img/icons/arrow-left.svg);
         }
     }    
 }
@@ -252,15 +257,38 @@
     position: absolute;
     left: 0px;
     /* top: 0px; */
-    transform: rotate(-90deg) translateX(-51px) translateY(-41px);
+    transform: rotate(-90deg) translateX(-41px) translateY(-41px);
     color: #7f7f7f;
     font-style: normal;
-    letter-spacing: .0155em;
-    font-weight: 700;
-    width: 146px;
+    letter-spacing: .022em;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 193px;
+    letter-spacing: 0.22em;
+    font-size: 12px;
+    position: absolute;
+    left: -10px;
 }
 
+.new-collection-slider:before,
+.sale-slider:before,
+.last-seen-slider:before{
+    content: attr(data-sliderName);
+    /* top: 0px; */
+    transform: rotate(-90deg) translateX(-87px) translateY(-0px);
+    color: #7f7f7f;
+    font-style: normal;
+    letter-spacing: .022em;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 193px;
+    letter-spacing: 0.22em;
+    font-size: 12px;
+    position: absolute;
+    left: -174px;
+    text-align: right;
 
+}
 
 @media screen and (max-width: 900px){
     .new-collection-slider, .sale-slider, .last-seen-slider{

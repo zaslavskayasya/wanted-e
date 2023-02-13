@@ -1,5 +1,21 @@
 .l-footer {
-    padding: 67px 0px 97px 0px;
+    padding: 0px 0px 97px 0px;
+    .content{
+        padding-top: 67px;
+        // padding: 0px;
+        position: relative;
+        &:before{
+            content: "";
+            display: block;
+            height:1px;
+            position: absolute;
+            
+            border-top: 1px solid #EDEDED;
+            width: 94%;
+            left:15px;
+            top:0px;
+        }
+    }
 
     .footer-content, .footer-left{
         display: flex;

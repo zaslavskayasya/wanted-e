@@ -1,12 +1,13 @@
 
 .catalog-wrap{
     position: relative;
+    margin-bottom: 80px;
 }
 .cards-place{
     display: flex;
     flex-flow: wrap;
-    .card:not(:last-child){
-        margin-right: 14px;
+    .card:not(:nth-child(4)){
+        margin-right: 24px;
         margin-bottom: 65px;
     }
 
@@ -94,9 +95,9 @@
     top:0px;
     transform: translateX(100%);
     background-color: #fff;
-    width: 438px;
+    width: 384px;
     height: 100%;
-    padding: 50px 100px 50px 60px;
+    padding: 60px 47px 50px 42px;
     z-index: 99;
     overflow-x: hidden;
     padding-top: 60px;
@@ -137,8 +138,8 @@
 
 .closeRightSidebar{
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 33px;
+    top: 25px;
 }
 
 .filter-name {
@@ -299,7 +300,7 @@
     left: 5px;
     top: 6px;
     width: 13px;
-    background: no-repeat center center url("/img/icons/check.svg");
+    background: no-repeat center center url(".././img/icons/check.svg");
     background-size: cover;
   }
   
