@@ -189,11 +189,21 @@
     letter-spacing: 0.0155em;
     text-decoration-line: line-through;
     color: #7F7F7F;
-    span{
-        max-width: 55px;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    max-width: 81px;
+    overflow: hidden;
+
+    position: relative;
+    &:after{
+
+        content: "";
+        height: 19px;
+        position: absolute;
+        right: 0px;
+        top: 0;
+        width: 15px;
+        background: linear-gradient(90deg, #D9D9D9 -9.31%, rgba(217, 217, 217, 0) -9.3%, #F5F5F5 100%);
     }
+
 }
 .card-name{
     font-style: normal;
