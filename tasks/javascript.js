@@ -10,8 +10,8 @@ const path = require('./path');
 const jsTask = () => {
   return src(path.src.js, { sourcemaps: true })
     .pipe(plumber({ errorHandler: notify.onError('Error: <%= error.message %>') }))
-    .pipe(concat('main.js'))
-    .pipe(terser())
+    // .pipe(concat('main.js'))
+    // .pipe(terser())
     .pipe(dest(path.dist.js, { sourcemaps: '.' }))
     .pipe(browserSync.stream());
 };

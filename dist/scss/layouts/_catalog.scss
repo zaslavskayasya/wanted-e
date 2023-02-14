@@ -1,0 +1,407 @@
+
+.catalog-wrap{
+    position: relative;
+    margin-bottom: 80px;
+}
+.cards-place{
+    display: flex;
+    flex-flow: wrap;
+    .card:not(:nth-child(4)){
+        margin-right: 24px;
+        margin-bottom: 65px;
+    }
+
+}
+
+.page-catalog-name{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;   
+    text-transform: uppercase;
+    color: #0B0B0B;    
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -114px;
+    top: 139px;    
+}
+
+.filter-line{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.filter-item {
+    background-color: #EBEBEB;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    display: flex;;
+    text-transform: uppercase;
+    margin-right: 10px;
+    height: 44px;;
+    color: #000000;
+    
+    &:first-child{
+        border-radius: 100%;
+        width: 43px;
+        height: 43px;
+        min-width:43px;
+        display: flex;
+        align-items: center;
+        img{
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto;
+        }
+    }
+    &:not(:first-child){
+        padding: 13px 19px 13px 29px;
+        border-radius: 27px;;
+    }
+    .num{
+        width: 19px;
+        height: 19px;
+        background: #D9D9D9;
+        border-radius: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 11px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        text-align: center;
+        justify-content: center;
+        margin-left: 6px;;
+
+        color: #393939;
+
+        margin-top: 2px;
+    }
+}
+
+
+.filter-right{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    transform: translateX(100%);
+    background-color: #fff;
+    width: 384px;
+    height: 100%;
+    padding: 60px 47px 50px 42px;
+    z-index: 99;
+    overflow-x: hidden;
+    padding-top: 60px;
+    position: fixed;
+    overflow: hidden;
+
+    &.active{
+        transform: translateX(0%);
+    }
+    .hidden-mobile-submenu{
+        label{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.0155em;
+
+            /* 2 */
+
+            color: #0B0B0B;
+            justify-content: flex-start;
+
+        }
+    }
+    .mobile-main-menu .open-close{
+            margin-right: 0px;
+    }
+}
+.filter-right .mobile-main-menu a.nemu-name {
+    display: flex;
+    font-weight: 600;
+    justify-content: space-between;
+}
+
+.closeRightSidebar{
+    position: absolute;
+    right: 33px;
+    top: 25px;
+}
+
+.filter-name {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #0B0B0B;
+    margin-bottom: 49px;
+    
+}
+
+.block-name{
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    /* 2 */
+    color: #0B0B0B;
+}
+
+.noUi-connect, .noUi-origin , .noUi-base, .noUi-connects{
+    height: 2px;
+    background: #000;
+}
+
+.noUi-target {
+    background: transparent;
+    border-radius: 0px;
+    border: 1px solid transparent;
+    box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 24px;
+    height: 24px;
+    right: -17px;
+    top: -11px;
+}
+
+.noUi-handle {
+    border: 1px solid #000;
+    border-radius: 3px;
+    background: #FFF;
+    cursor: default;
+    height: 24px;
+    border-radius: 100%;
+    box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ebebeb, 0 3px 6px -3px #bbb;
+}
+
+.noUi-handle:after, .noUi-handle:before{
+    display: none;;
+}
+
+#steps-slider{
+    margin-bottom: 18px;;
+}
+
+.slider-inputs{
+    display: flex;
+    justify-content: space-between;
+    input{
+        height: 36px;
+        border: 1px solid #E0E0E0;
+        max-width: 35%;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        color: #C9C9C9;
+        padding-left: 11px;
+
+    }
+}
+
+.catalog-filter-item.price-range{
+    margin-bottom: 32px;
+}
+
+.filter-right .hidden-mobile-submenu li:last-child{
+    margin-bottom: 32px;
+}
+
+
+/* Customize the label (the container) */
+.wrap-checkbox {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    padding-left: 35px;
+    height: 29px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .wrap-checkbox .amount {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    /* identical to box height, or 24px */
+    text-align: right;
+    color: #636363;
+    padding-left: 10px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .wrap-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border: 2px solid #0B0B0B;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .wrap-checkbox:hover input ~ .checkmark {
+    background-color: rgb(228, 228, 228);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .wrap-checkbox input:checked ~ .checkmark {
+
+    background: no-repeat center center url("./img/icons/check.svg");
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    height: 9px;
+    left: 5px;
+    top: 6px;
+    width: 13px;
+    background: no-repeat center center url(".././img/icons/check.svg");
+    background-size: cover;
+  }
+  
+  /* Show the checkmark when checked */
+  .wrap-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .wrap-checkbox .checkmark:after {
+    height: 9px;
+    left: 5px;
+    top: 6px;
+    width: 13px;
+  }
+  
+
+  .filter-btn {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .button:not(:last-child){
+        margin-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 1290px){
+    .page-catalog-name{
+
+        transform: rotate(0deg);
+        position: absolute;
+        left: 31px;
+        top: -40px;    
+    }
+    .catalog-wrap {
+        padding-top: 23px;
+    }
+  }
+
+
+  @media screen and (max-width: 1290px){ 
+
+      .cards-place {
+
+        justify-content: center;
+    }
+
+  }
+
+  @media screen and (max-width: 780px){ 
+
+    .page-catalog-name{
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+
+        color: #7F7F7F;
+    }
+    .catalog-wrap {
+        padding-top: 0;
+    }
+
+    .filter-item-name{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .filter-item:not(:first-child) {
+
+        padding: 7px 20px 7px 15px;
+        
+    }
+    .filter-line{
+        width: 100%;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+        &::-webkit-scrollbar { 
+            display: none;  /* Safari and Chrome */
+        }
+
+    }
+    .filter-right {       
+        padding: 60px 41px 47px 32px;
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 780px){
+    .filter-right {
+        padding: 60px 17px 35px 12px;
+        width: 100%;
+    }
+}

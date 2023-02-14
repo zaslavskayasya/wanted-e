@@ -1,7 +1,7 @@
 console.log(`Loaded main.js`);
 
 // header part
-
+let body = document.getElementById('body');
 let overflowDarken = document.querySelector('.overflow-block');
 let leftSideMenu = document.querySelector('#mySidenav');
 
@@ -14,7 +14,9 @@ openLeftSidebarMenu.addEventListener('click', ()=>{
     leftSideMenu.style.left = "0px";
     leftSideMenu.style.opacity = "1";
     overflowDarken.style.opacity = "1";
-    
+    overflowDarken.style.pointerEvents  = "auto"; 
+    body.style.overflowY = "hidden";
+       
    
 });
 
@@ -22,6 +24,17 @@ closeLeftSidebarMenu.addEventListener('click', ()=>{
     leftSideMenu.style.left = "-100%";
     leftSideMenu.style.opacity = "0";
     overflowDarken.style.opacity = "0";
+    overflowDarken.style.pointerEvents  = "none";
+    body.style.overflowY = "auto";
+
+});
+
+overflowDarken.addEventListener('click', ()=>{
+  leftSideMenu.style.left = "-100%";
+  leftSideMenu.style.opacity = "0";
+  overflowDarken.style.opacity = "0";
+  overflowDarken.style.pointerEvents  = "none";
+  body.style.overflowY = "auto";
 
 });
 
@@ -60,12 +73,10 @@ let elemForHideSkroll = document.querySelector('.sidenav');
 mobileItem.forEach((it)=>{
     it.addEventListener('click', (e)=>{
         e.currentTarget.classList.toggle('open');
-
         console.log( e.currentTarget.classList.contains('open'));
         if(e.currentTarget.classList.contains('open')){
           elemForHideSkroll.style.overflow = "auto";
           RightSideMenu.style.overflow = "auto";
-
         } else{
           elemForHideSkroll.style.overflow = "hidden";
           RightSideMenu.style.overflow  = "hidden";

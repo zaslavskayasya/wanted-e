@@ -1,4 +1,3 @@
-
 let closeRightSidebar = document.querySelector('.closeRightSidebar');
 
 let RightSideMenu = document.querySelector('.filter-right');
@@ -6,18 +5,60 @@ let RightSideMenu = document.querySelector('.filter-right');
 let rightFilterTrigger = document.querySelectorAll('.filter-item');
 
 rightFilterTrigger.forEach((triggerBtn)=>{
-  triggerBtn.addEventListener('click', ()=>{
-    RightSideMenu.classList.add('active');
-    overflowDarken.style.opacity = "1";
-  })
+  triggerBtn.addEventListener('click', (e)=>{
+      RightSideMenu.classList.add('active');
+      overflowDarken.style.opacity = "1";
+      overflowDarken.style.pointerEvents  = "initial"; 
+      body.style.overflowY = "hidden";
+
+
+    //find data-attr on clicked element
+    let activeFilter = e.currentTarget.dataset.filtername; 
+
+    //choose filter item with data-attributes
+    let filterItem = document.querySelectorAll('[data-CatalogFilterName]');
+
+    // check each of filter for contain clicked menu's attribite
+    //compare them and open 
+    filterItem.forEach((fi)=> {
+        
+        let filterData = fi.dataset.catalogfiltername;
+        // console.log(filterData);       
+        
+        if (filterData === activeFilter){
+            console.log(fi);
+            fi.querySelector('.mobile-main-menu').classList.add('open');
+        } else {
+        }
+    })  
+
+  });
+
 })
 
 
 closeRightSidebar.addEventListener('click', ()=>{
   RightSideMenu.classList.remove('active');
   overflowDarken.style.opacity = "0";
+  overflowDarken.style.pointerEvents  = "none";
+  mobileItem.forEach((mi)=>{
+        mi.classList.remove('open');    
+   }) ;
+   body.style.overflowY = "auto";
 
 });
+
+overflowDarken.addEventListener('click', ()=>{
+    RightSideMenu.classList.remove('active');
+    overflowDarken.style.opacity = "0";
+    overflowDarken.style.pointerEvents  = "none";
+    mobileItem.forEach((mi)=>{
+        mi.classList.remove('open');    
+   }) ;
+   body.style.overflowY = "auto";
+  
+  });
+
 
 
 

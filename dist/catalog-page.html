@@ -36,7 +36,7 @@
     <script src="noUiSlider/nouislider.min.js"></script>
     <script src="./js/main.js" defer></script>
   </head>
-  <body>
+  <body id="body">
     <div class="blackline">
       <p class="norm">-20% на покупки від 2799 грн. Безкоштовна Доставка </p>
     </div>
@@ -255,13 +255,13 @@
         <div class="catalog-content">
           <div class="filter-line">
             <div class="filter-item"> <img src="./img/icons/settings.svg" alt=""></div>
-            <div class="filter-item">
-              <p class="filter-item-name">Ціна</p><span class="num">6</span>
+            <div class="filter-item" data-filterName="price">
+              <p class="filter-item-name">Ціна</p><span class="num">1</span>
             </div>
-            <div class="filter-item">
+            <div class="filter-item" data-filterName="size">
               <p class="filter-item-name">Розмір</p><span class="num">2</span>
             </div>
-            <div class="filter-item">
+            <div class="filter-item" data-filterName="color">
               <p class="filter-item-name">Колір</p><span class="num">2 </span>
             </div>
           </div>
@@ -351,7 +351,7 @@
     <div class="filter-right"><a class="closebtn closeRightSidebar" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
       <div class="catalog-filter-item">
         <p class="filter-name">Фільтр</p>
-        <div class="price-range catalog-filter-item">
+        <div class="price-range catalog-filter-item" data-CatalogFilterName="price">
           <p class="block-name">Ціна</p>
           <div id="steps-slider"></div>
           <div class="slider-inputs">
@@ -360,7 +360,7 @@
           </div>
         </div>
       </div>
-      <div class="catalog-filter-item">
+      <div class="catalog-filter-item" data-CatalogFilterName="color">
         <div class="mobile-main-menu"><a class="nemu-name block-name" href="#">Колір<span class="open-close"></span></a>
           <ul class="hidden-mobile-submenu">
             <li>
@@ -396,7 +396,7 @@
           </ul>
         </div>
       </div>
-      <div class="catalog-filter-item">
+      <div class="catalog-filter-item" data-CatalogFilterName="size">
         <div class="mobile-main-menu"><a class="nemu-name block-name" href="#">Розмір<span class="open-close"></span></a>
           <ul class="hidden-mobile-submenu">
             <li>
@@ -463,16 +463,15 @@
             <div class="footer-logo-place"> <img src="./img/icons/Wanted.svg" alt=""></div>
             <div class="links-place">
               <div class="links-place-group"> <a class="links-place-link" href="#"><img src="./img/icons/insta.svg" alt=""></a><a class="links-place-link" href="#"><img src="./img/icons/telega.svg" alt=""></a><a class="links-place-link" href="#"><img src="./img/icons/viber.svg" alt=""></a><a class="links-place-link phone" telto="#"><img src="./img/icons/phone.svg" alt=""><span>(097) 146-4-821</span></a></div>
-              <p class="copyright">Розробка сайту <a href="#"> — студія Март</a></p>
+              <p class="copyright">Розробка сайту &nbsp — &nbsp<a href="#"> студія Март</a></p>
             </div>
           </div>
         </div>
         <div class="for-mobile-footer"> <a class="links-place-link phone" telto="#"><img src="./img/icons/phone.svg" alt=""><span>(097) 146-4-821</span></a>
-          <p class="copyright">Розробка сайту <a href="#"> — студія Март </a></p>
+          <p class="copyright">Розробка сайту &nbsp — &nbsp<a href="#"> студія Март</a></p>
         </div>
       </div>
     </footer>
     <div class="overflow-block"></div>
-    <script src="/js/right-filter.js" defer></script>
   </body>
 </html>
