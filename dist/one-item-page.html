@@ -26,15 +26,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="noUiSlider/nouislider.min.css">
+    <link href="./js/noUiSlider/nouislider.min.css">
     <link href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
+    <link href="./css/magnific-popup.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/slick/slick.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="js/wNumb.min.js"></script>
-    <script src="noUiSlider/nouislider.min.js"></script>
-    <script src="./js/main.js" defer></script>
+    <script src="js/noUiSlider/nouislider.min.js"></script>
+    <script src="js/lightbox/js/lightbox.min.js"></script>
   </head>
   <body id="body">
     <div class="blackline">
@@ -250,7 +251,80 @@
       <ul class="bread-links"><a href="#">Головна</a><a href="#">Для жінок</a><a href="#">Светри</a></ul>
     </div>
     <div class="one-item-block">
-      <div class="content"></div>
+      <div class="content">
+        <div class="one-item-wrap">
+          <div class="left-part">
+            <div class="container-for-slider">
+              <div class="thumbnails">
+                <div class="row">
+                  <div class="column"> <img class="demo cursor" src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods"></div>
+                  <div class="column"> <img class="demo cursor" src="./img/illustrations/clothes-single/jemper1/jemper2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre"></div>
+                  <div class="column"> <img class="demo cursor" src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods"></div>
+                  <div class="column"> <img class="demo cursor" src="./img/illustrations/clothes-single/jemper1/jemper2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre"></div>
+                  <div class="column"> <img class="demo cursor" src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods"></div>
+                  <div class="column"> <img class="demo cursor" src="./img/illustrations/clothes-single/jemper1/jemper2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre"></div>
+                  <div class="column"> <img class="demo cursor" src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods"></div>
+                  <div class="column"> <img class="demo cursor" src="./img/illustrations/clothes-single/jemper1/jemper2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre"></div>
+                  <div class="column"> <img class="demo cursor" src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods"></div>
+                  <div class="column"> <img class="demo cursor" src="./img/illustrations/clothes-single/jemper1/jemper2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre"></div>
+                </div>
+              </div>
+              <div class="slides-block">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div><a data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg"> <img src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" style="width:100%"></a>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div><a data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg"> <img src="./img/illustrations/clothes-single/jemper1/jemper2.jpg" style="width:100%"></a>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div><a data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg"> <img src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" style="width:100%"></a>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div><a data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg"> <img src="./img/illustrations/clothes-single/jemper1/jemper2.jpg" style="width:100%"></a>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div><a data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg"> <img src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" style="width:100%"></a>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div><a data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg"> <img src="./img/illustrations/clothes-single/jemper1/jemper2.jpg" style="width:100%"></a>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">1 / 6</div><a data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg"> <img src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" style="width:100%"></a>
+                </div>
+                <div class="mySlides">
+                  <div class="numbertext">2 / 6</div><a data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg"> <img src="./img/illustrations/clothes-single/jemper1/jemper2.jpg" style="width:100%"></a>
+                </div>
+                <!-- Next and previous buttons--><a class="prev" onclick="plusSlides(-1)">&#x276E;</a><a class="next" onclick="plusSlides(1)">&#x276F; </a>
+              </div>
+            </div>
+          </div>
+          <div class="right-part">
+            <h4 class="h4">Білий трикотажний джемпер з коміром стійка та гудзиками </h4>
+            <p class="little-gray-text articul">Артикул: 35695548</p>
+            <div class="prices">
+              <div class="newPrice"> <span class="price-num">45450 </span><span class="price-currency">&nbsp;грн.</span></div>
+              <div class="oldPrice"> <span>7806778</span><span class="price-currency">₴</span></div>
+            </div>
+            <div class="chooses-block">
+              <p class="little-gray-text">Оберіть колір </p>
+              <div class="card-colors"><span class="color-item" data-color="#000"></span><span class="color-item" data-color="#D5C2AE"></span><span class="color-item" data-color="#EBB2C9"></span><span class="color-item" data-color="#7CB29E"></span></div>
+            </div>
+            <div class="chooses-block">
+              <p class="little-gray-text">Оберіть розмір</p>
+              <div class="card-colors"><span class="size-item">XS</span><span class="size-item">S</span><span class="size-item">M</span><span class="size-item disable">L</span><span class="size-item">XL</span><span class="size-item">XXXL</span></div>
+            </div>
+            <div class="sizes-line">
+              <p class="size-table-btn" id="myBtn"> <span>Таблиця розмірів</span><img src="./img/icons/sizes.svg" alt=""></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="myModal">
+      <!-- Modal content-->
+      <div class="modal-content"><span class="close-modal">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
     </div>
     <footer class="l-footer">
       <div class="content">
@@ -287,5 +361,6 @@
     </footer>
     <div class="overflow-block"></div>
     <script src="/js/main-script.js"></script>
+    <script src="/js/item.js"></script>
   </body>
 </html>

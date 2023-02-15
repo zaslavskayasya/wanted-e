@@ -2,5 +2,12 @@ script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
 script(src='js/slick/slick.js')
 script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js')
 script(src='js/wNumb.min.js')
-script(src='noUiSlider/nouislider.min.js')
-script(src=jsPath + "main.js" defer)
+script(src='js/noUiSlider/nouislider.min.js')
+script(src="js/main-script.js" )
+
+if IsItCatalog
+    script(src="/js/right-filter.js" )
+
+if IsItItemPage
+    script(src='js/lightbox/js/lightbox.js')
+    script(src="/js/item.js" )

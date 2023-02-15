@@ -28,9 +28,8 @@ rightFilterTrigger.forEach((triggerBtn)=>{
         if (filterData === activeFilter){
             console.log(fi);
             fi.querySelector('.mobile-main-menu').classList.add('open');
-        } else {
         }
-    })  
+    });
 
   });
 
@@ -91,7 +90,7 @@ inputs.forEach(function (input, handle) {
 
   input.addEventListener('keydown', function (e) {
 
-      var values = stepsSlider.noUiSlider.get();
+      let values = stepsSlider.noUiSlider.get();
       var value = Number(values[handle]);
 
       // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
@@ -144,3 +143,4 @@ inputs.forEach(function (input, handle) {
       }
   });
 });
+//# sourceMappingURL=right-filter.js.map

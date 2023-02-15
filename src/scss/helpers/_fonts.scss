@@ -1,2 +1,37 @@
 $font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Arial', 'Yu Gothic',
   'Meiryo', sans-serif;
+
+
+  .h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 168.4%;
+    /* or 40px */
+
+    display: flex;
+    align-items: center;
+
+    /* 2 */
+
+    color: #0B0B0B;
+  }
+
+  .little-gray-text{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0155em;
+
+    /* т.серый */
+
+    color: #7F7F7F;
+    margin-bottom: 10px;;
+  }

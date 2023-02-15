@@ -4,14 +4,14 @@ block value
   - const path = ".";
 
 block header
+  - var IsItCatalog = 'true';
   include components/header/_header
 
 block main
   include components/main/_breadcrumbps.pug
   include components/main/_main-catalog.pug
+  
 
 
 block footer
   include components/footer/_footer
-  //- script(src="/js/main-script.js" )
-  //- script(src="/js/right-filter.js" )

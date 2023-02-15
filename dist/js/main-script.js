@@ -4,7 +4,6 @@ console.log(`Loaded main.js`);
 let body = document.getElementById('body');
 let overflowDarken = document.querySelector('.overflow-block');
 let leftSideMenu = document.querySelector('#mySidenav');
-
 let openLeftSidebarMenu = document.querySelector('.openLeftSideMenu');
 let closeLeftSidebarMenu = document.querySelector('.closeLeftSidebar');
 
@@ -15,8 +14,7 @@ openLeftSidebarMenu.addEventListener('click', ()=>{
     leftSideMenu.style.opacity = "1";
     overflowDarken.style.opacity = "1";
     overflowDarken.style.pointerEvents  = "auto"; 
-    body.style.overflowY = "hidden";
-       
+    body.style.overflowY = "hidden";      
    
 });
 
@@ -39,27 +37,25 @@ overflowDarken.addEventListener('click', ()=>{
 });
 
 
-
-
-const search = document.querySelector('.search')
-const btn = document.querySelector('.btn')
-const input = document.querySelector('.input')
+const search = document.querySelector('.search');
+const btn = document.querySelector('.btn');
+const input = document.querySelector('.input');
 btn.addEventListener('click', () => {
-    search.classList.toggle('active')
-    input.focus()
-})
+    search.classList.toggle('active');
+    input.focus();
+});
 
 
 let mainMenuItem = document.querySelectorAll('.main-menu-item');
 
 mainMenuItem.forEach((it)=>{
-  console.log(it);
+  // console.log(it);
     it.addEventListener('mouseover', (e)=>{
-        console.log(e.currentTarget)
+        // console.log(e.currentTarget);
         e.currentTarget.classList.add('hover');
     });
     it.addEventListener('mouseleave', (e)=>{
-        console.log(e.currentTarget)
+        // console.log(e.currentTarget);
         e.currentTarget.classList.remove('hover');
     });
 });
@@ -86,7 +82,7 @@ mobileItem.forEach((it)=>{
 });
 
 
-var mySlider = $('.main-image-slider');
+let mySlider = $('.main-image-slider');
 
 $('.main-image-slider').slick({
     dots: true,
@@ -106,7 +102,7 @@ $('.main-image-slider').slick({
 // });
 
 
-var collectionSlider = $('.new-collection-slider');
+let collectionSlider = $('.new-collection-slider');
 
 $('.new-collection-slider').slick({
     dots: false,
@@ -150,7 +146,7 @@ $('.new-collection-slider').slick({
 // });
 
 
-var saleSlider = $('.sale-slider');
+let saleSlider = $('.sale-slider');
 
 $('.sale-slider').slick({
     dots: false,
@@ -194,7 +190,7 @@ $('.sale-slider').slick({
 // });
 
 
-var lastSeenSlider = $('.last-seen-slider');
+let lastSeenSlider = $('.last-seen-slider');
 
 $('.last-seen-slider').slick({
     dots: false,
@@ -248,5 +244,5 @@ clothesColor.forEach((element)=>{
         element.style.borderColor = "#000";
     }
 
-})
-
+});
+//# sourceMappingURL=main-script.js.map

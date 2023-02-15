@@ -2,6 +2,7 @@ extends ./helpers/layout/_layout
 
 block value
   - const path = ".";
+  - var IsItItemPage = 'true';
 
 block header
   include components/header/_header
@@ -13,4 +14,3 @@ block main
 
 block footer
   include components/footer/_footer
-  script(src="/js/main-script.js" )

@@ -1,2 +1,102 @@
 .one-item-block 
     .content
+        .one-item-wrap
+            .left-part 
+                .container-for-slider
+                    .thumbnails 
+                        .row
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                    .slides-block                
+                        .mySlides
+                            .numbertext 1 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%')
+                        .mySlides
+                            .numbertext 2 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%')             
+                        .mySlides
+                            .numbertext 1 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%')
+                        .mySlides
+                            .numbertext 2 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%')             
+                        .mySlides
+                            .numbertext 1 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%')
+                        .mySlides
+                            .numbertext 2 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%')
+                        .mySlides
+                            .numbertext 1 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%')
+                        .mySlides
+                            .numbertext 2 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%')             
+                        // Next and previous buttons
+                        a.prev(onclick='plusSlides(-1)') &#x276E;
+                        a.next(onclick='plusSlides(1)') &#x276F;                    
+
+            .right-part 
+                h4.h4 Білий трикотажний джемпер з коміром стійка та гудзиками       
+                p.little-gray-text.articul Артикул: 35695548
+                .prices
+                     .newPrice 
+                        span.price-num 45450 
+                        span.price-currency &nbsp;грн.
+                        
+                     .oldPrice 
+                        span 7806778
+                        span.price-currency ₴
+                .chooses-block
+                    p.little-gray-text Оберіть колір                  
+                    .card-colors
+                        span.color-item(data-color="#000")
+                        span.color-item(data-color="#D5C2AE")
+                        span.color-item(data-color="#EBB2C9")
+                        span.color-item(data-color="#7CB29E")
+                .chooses-block
+                    p.little-gray-text Оберіть розмір
+                    .card-colors
+                        span.size-item XS
+                        span.size-item S
+                        span.size-item M
+                        span.size-item.disable L
+                        span.size-item XL
+                        span.size-item XXXL
+                .sizes-line
+                    p.size-table-btn(id="myBtn") 
+                        span Таблиця розмірів
+                        img(src="./img/icons/sizes.svg", alt="")
+
+
+#myModal.modal
+  // Modal content
+  .modal-content
+    span.close-modal &times;
+    p Some text in the Modal..
