@@ -2,18 +2,30 @@
     .content
         h1.page-catalog-name Нова колекція
         .catalog-content
-            .filter-line 
-                .filter-item 
-                    img(src="./img/icons/settings.svg", alt="")
-                .filter-item(data-filterName="price")
-                    p.filter-item-name Ціна
-                    span.num 1
-                .filter-item(data-filterName="size")
-                    p.filter-item-name Розмір
-                    span.num 2
-                .filter-item(data-filterName="color")
-                    p.filter-item-name Колір
-                    span.num 2   
+            .wrp-filters
+                .filter-line 
+                    .filter-item 
+                        img(src="./img/icons/settings.svg", alt="")
+                    .filter-item(data-filterName="price")
+                        p.filter-item-name Ціна
+                        span.num 1
+                    .filter-item(data-filterName="size")
+                        p.filter-item-name Розмір
+                        span.num 2
+                    .filter-item(data-filterName="color")
+                        p.filter-item-name Колір
+                        span.num 2
+                .sort-block
+                    .sort-catalog
+                        p  Сортувати
+                            img(src="../img/icons/arrow-down.svg", alt="")
+                        select#sort(name='sort')                           
+                            option(value='cheap') Спочатку дешеві
+                            option(value='expensive') Спочатку дорогі
+                            option(value='new') Спочатку нові
+                            option( value='old') Спочтаку старі
+                            option( value='actions') Акційні
+
             .cards-place 
                 // card
                 a(href="#").card
@@ -125,6 +137,14 @@
                             span.color-item(data-color="#FFF")
                             span.color-item(data-color="red")
                             span.more-colors +1
+            .group-catalog-buttons
+                button.button.button-black.form Завантажити ще
+                .group-pages 
+                    button.button.button-white.page-btn 1  
+                    button.button.button-white.page-btn.active 2 
+                    button.button.button-white.disable(disabled) ... 
+                    button.button.button-white.page-btn 8
+                    button.button.button-white.page-btn 9 
 
 .filter-right
     a.closebtn.closeRightSidebar(href="javascript:void(0)" ) 

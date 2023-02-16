@@ -238,7 +238,7 @@
             <div class="personal-cabinet right-menu-info--icon">
               <div class="person-icon"></div>
             </div>
-            <div class="cart right-menu-info--icon">
+            <div class="cart cart-trigger right-menu-info--icon">
               <div class="cart-icon">
                 <div class="cart-amount">12 </div>
               </div>
@@ -314,16 +314,177 @@
               <div class="card-colors"><span class="size-item">XS</span><span class="size-item">S</span><span class="size-item">M</span><span class="size-item disable">L</span><span class="size-item">XL</span><span class="size-item">XXXL</span></div>
             </div>
             <div class="sizes-line">
-              <p class="size-table-btn" id="myBtn"> <span>Таблиця розмірів</span><img src="./img/icons/sizes.svg" alt=""></p>
+              <p class="size-table-btn" id="myBtn"><span>Таблиця розмірів</span><img src="./img/icons/sizes.svg" alt=""></p>
+            </div>
+            <button class="button button-black addToCart">Додати в кошик</button>
+            <div class="descriptions">
+              <p class="description-text info-trigger tablinks" onclick="openDes(event, 'description')">опис та характеристики </p>
+              <p class="description-text info-trigger tablinks" onclick="openDes(event, 'sendAndPay')">доставка та оплата</p>
             </div>
           </div>
         </div>
       </div>
+      <div class="last-seen">
+        <div class="content">
+          <div class="last-seen-slider side-custom-arrows" data-sliderName="Це привернуло вашу увагу">
+            <!-- card--><a class="card" href="#">
+              <div class="card-top">
+                <div class="card-sale card-flag">Sale</div>
+                <div class="card-new card-flag">New</div><img src="./img/illustrations/clothes/clothes3.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <p class="card-name">Кардиган</p>
+                <div class="card-infoLine">
+                  <div class="prices">
+                    <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+                    <div class="oldPrice"> <span>780</span><span class="price-currency">&nbsp;грн.</span></div>
+                  </div>
+                  <div class="card-colors"><span class="color-item" data-color="#000"></span><span class="color-item" data-color="#FFF"></span><span class="color-item" data-color="red"></span><span class="more-colors">+1</span></div>
+                </div>
+              </div>
+            </a>
+            <!-- card--><a class="card" href="#">
+              <div class="card-top">
+                <div class="card-sale card-flag">Sale</div>
+                <div class="card-new card-flag">New </div><img src="./img/illustrations/clothes/clothes6.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <p class="card-name">Кардиган</p>
+                <div class="card-infoLine">
+                  <div class="prices">
+                    <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+                    <div class="oldPrice"> <span>780</span><span class="price-currency">&nbsp;грн.</span></div>
+                  </div>
+                  <div class="card-colors"><span class="color-item" data-color="#000"></span><span class="color-item" data-color="#FFF"></span><span class="color-item" data-color="red"></span><span class="more-colors">+1</span></div>
+                </div>
+              </div>
+            </a>
+            <!-- card--><a class="card" href="#">
+              <div class="card-top"> <img src="./img/illustrations/clothes/clothes3.jpg" alt=""></div>
+              <div class="card-info">
+                <p class="card-name">Кардиган</p>
+                <div class="card-infoLine">
+                  <div class="prices">
+                    <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+                    <div class="oldPrice"> <span>780</span><span class="price-currency">&nbsp;грн.</span></div>
+                  </div>
+                  <div class="card-colors"><span class="color-item" data-color="#000"></span><span class="color-item" data-color="#FFF"></span><span class="color-item" data-color="red"></span><span class="more-colors">+1</span></div>
+                </div>
+              </div>
+            </a>
+            <!-- card--><a class="card card-no-data" href="#">
+              <div class="card-top"> <img src="./img/illustrations/default.jpg" alt=""></div>
+              <div class="card-info">
+                <p class="card-name">Wanted wanted wanted</p>
+                <div class="card-infoLine">
+                  <div class="prices">
+                    <div class="newPrice"> <span class="price-num"> wanted</span><span class="price-currency"> </span></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- card--><a class="card card-no-data" href="#">
+              <div class="card-top"> <img src="./img/illustrations/default.jpg" alt=""></div>
+              <div class="card-info">
+                <p class="card-name">Wanted wanted wanted</p>
+                <div class="card-infoLine">
+                  <div class="prices">
+                    <div class="newPrice"> <span class="price-num"> wanted</span><span class="price-currency"> </span></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info-right"><a class="closebtn closeRightSidebar" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
+      <div class="description-text-info tabcontent" id="description">
+        <div class="descr-name">Опис та характеристики</div>
+        <div class="descr-text"> Стильний і теплий светер щільної в'язки з посадкою оверсайз зігріє у холодну пору року та додасть затишку. Модель незамінна як у домашніх умовах, так і для створення вихідного аутфіту.</div>
+        <ul class="right-info-list">
+          <p class="right-info-list-name">Матеріал</p>
+          <li class="right-info-list-item">якісна європейська 100% бавовна </li>
+        </ul>
+        <ul class="right-info-list">
+          <p class="right-info-list-name">Деталі та крій</p>
+          <li class="right-info-list-item">класичний крій;</li>
+          <li class="right-info-list-item">кишеня-кенгуру спереду;</li>
+          <li class="right-info-list-item">бірка з фірмовим логотипом на рукав.</li>
+        </ul>
+        <ul class="right-info-list">
+          <p class="right-info-list-name">Сезон</p>
+          <li class="right-info-list-item">цілорічний</li>
+        </ul>
+        <ul class="right-info-list">
+          <p class="right-info-list-name">Догляд</p>
+          <li class="right-info-list-item">прання у звичайному режимі при температурі не вище 30°С, без віджиму;</li>
+          <li class="right-info-list-item">відбілювання заборонено;</li>
+          <li class="right-info-list-item">сушити в підвішеному стані, без застосування штучної сушки.</li>
+        </ul>
+        <ul class="right-info-list">
+          <p class="right-info-list-name">На фото</p>
+          <li class="right-info-list-item"> <span>зріст моделі </span>182px</li>
+          <li class="right-info-list-item"><span>вага моделі </span>74 кг</li>
+          <li class="right-info-list-item"><span>розмір речей</span>M</li>
+        </ul>
+      </div>
+      <div class="description-text-info tabcontent" id="sendAndPay">
+        <div class="descr-name">Доставка і оплата</div>
+        <div class="descr-text"> Своєчасна і комфортна доставка</div>
+        <ul class="right-info-list">
+          <p class="right-info-list-name">Служби доставки</p>
+          <li class="right-info-list-item">Нова пошта</li>
+          <li class="right-info-list-item">Укрпошта</li>
+          <li class="right-info-list-item">Justin</li>
+        </ul>
+      </div>
     </div>
     <div class="modal" id="myModal">
       <!-- Modal content-->
-      <div class="modal-content"><span class="close-modal">&times;</span>
-        <p>Some text in the Modal..</p>
+      <div class="modal-content">
+        <div class="close-modal"><img alt="close" src="./img/icons/close.svg"></div><img src="./img/illustrations/sizechart_US_women.jpg" alt="">
+      </div>
+    </div>
+    <div class="cart-right"><a class="closebtn closeCart closeRightSidebar" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
+      <div class="descr-name">Корзина</div>
+      <div class="cards"> <a class="card" href="#">
+          <div class="card-top"><img src="./img/illustrations/clothes/clothes3.jpg" alt=""></div>
+          <div class="card-info">
+            <p class="card-name">Кардиган</p>
+            <div class="card-infoLine">
+              <div class="prices">
+                <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+              </div>
+            </div>
+            <div class="cardInfoinCart">
+              <p class="cardInfoinCart-item">1 шт </p>
+              <p class="cardInfoinCart-item">Розмір: S</p>
+              <p class="cardInfoinCart-item">Колір: Блакитний </p>
+            </div>
+          </div>
+        </a><a class="card" href="#">
+          <div class="card-top"><img src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" alt=""></div>
+          <div class="card-info">
+            <p class="card-name">Кардиган</p>
+            <div class="card-infoLine">
+              <div class="prices">
+                <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+              </div>
+            </div>
+            <div class="cardInfoinCart">
+              <p class="cardInfoinCart-item">1 шт </p>
+              <p class="cardInfoinCart-item">Розмір: S</p>
+              <p class="cardInfoinCart-item">Колір: Блакитний</p>
+            </div>
+          </div>
+        </a></div>
+      <div class="submit-block">
+        <p class="sale"> Знижка <span>190 грн</span></p>
+        <p class="toPay"> Разом до оплати</p>
+        <p class="totalSum"> 3999 грн. </p>
+        <button class="button button-black form">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+        <button class="button button-white one-click-buy">КУПИТИ В 1 КЛІК</button>
       </div>
     </div>
     <footer class="l-footer">

@@ -90,13 +90,156 @@
                         span.size-item XL
                         span.size-item XXXL
                 .sizes-line
-                    p.size-table-btn(id="myBtn") 
+                    p.size-table-btn(id="myBtn")
                         span Таблиця розмірів
                         img(src="./img/icons/sizes.svg", alt="")
+                button.button.button-black.addToCart Додати в кошик
+                .descriptions
+                    p.description-text.info-trigger.tablinks(onclick="openDes(event, 'description')")
+                        | опис та характеристики                            
+                    p.description-text.info-trigger.tablinks(onclick="openDes(event, 'sendAndPay')")
+                        | доставка та оплата
+    .last-seen
+        .content
+            //- h2.slider-name Останні перегляди    
+            .last-seen-slider.side-custom-arrows(data-sliderName="Це привернуло вашу увагу")
+                
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New
+                        img(src="./img/illustrations/clothes/clothes3.jpg", alt="")
+                    .card-info
+                        p.card-name Кардиган
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num 450 
+                                    span.price-currency &nbsp;грн.
+                                    
+                                .oldPrice 
+                                    span 780
+                                    span.price-currency &nbsp;грн.
+                            .card-colors
+                                span.color-item(data-color="#000")
+                                span.color-item(data-color="#FFF")
+                                span.color-item(data-color="red")
+                                span.more-colors +1
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New               
+                        img(src="./img/illustrations/clothes/clothes6.jpg", alt="")
+                    .card-info
+                        p.card-name Кардиган
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num 450 
+                                    span.price-currency &nbsp;грн.
+                                    
+                                .oldPrice 
+                                    span 780
+                                    span.price-currency &nbsp;грн.
+                            .card-colors
+                                span.color-item(data-color="#000")
+                                span.color-item(data-color="#FFF")
+                                span.color-item(data-color="red")
+                                span.more-colors +1
+                // card
+                a(href="#").card
+                    .card-top         
+                        img(src="./img/illustrations/clothes/clothes3.jpg", alt="")
+                    .card-info
+                        p.card-name Кардиган
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num 450 
+                                    span.price-currency &nbsp;грн.
+                                    
+                                .oldPrice 
+                                    span 780
+                                    span.price-currency &nbsp;грн.
+                            .card-colors
+                                span.color-item(data-color="#000")
+                                span.color-item(data-color="#FFF")
+                                span.color-item(data-color="red")
+                                span.more-colors +1
+                // card
+                a(href="#").card.card-no-data
+                    .card-top             
+                        img(src="./img/illustrations/default.jpg", alt="")
+                    .card-info
+                        p.card-name Wanted wanted wanted
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num  wanted
+                                    span.price-currency 
+                // card
+                a(href="#").card.card-no-data
+                    .card-top             
+                        img(src="./img/illustrations/default.jpg", alt="")
+                    .card-info
+                        p.card-name Wanted wanted wanted
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num  wanted
+                                    span.price-currency                                 
+                    
+                     
+.info-right
+    a.closebtn.closeRightSidebar(href="javascript:void(0)" ) 
+        img(alt="close" src="./img/icons/close.svg")
+    .description-text-info.tabcontent#description
+        .descr-name Опис та характеристики
+        .descr-text 
+            | Стильний і теплий светер щільної в'язки з посадкою оверсайз зігріє у холодну пору року та додасть затишку. Модель незамінна як у домашніх умовах, так і для створення вихідного аутфіту.
+        ul.right-info-list 
+            p.right-info-list-name Матеріал
+            li.right-info-list-item якісна європейська 100% бавовна 
+        ul.right-info-list 
+            p.right-info-list-name Деталі та крій
+            li.right-info-list-item класичний крій;
+            li.right-info-list-item кишеня-кенгуру спереду;
+            li.right-info-list-item бірка з фірмовим логотипом на рукав.
+        ul.right-info-list 
+            p.right-info-list-name Сезон
+            li.right-info-list-item цілорічний
+        ul.right-info-list 
+            p.right-info-list-name Догляд
+            li.right-info-list-item прання у звичайному режимі при температурі не вище 30°С, без віджиму;
+            li.right-info-list-item відбілювання заборонено;
+            li.right-info-list-item сушити в підвішеному стані, без застосування штучної сушки.
+        ul.right-info-list 
+            p.right-info-list-name На фото
+            li.right-info-list-item 
+                span зріст моделі 
+                | 182px
+            li.right-info-list-item
+                span вага моделі 
+                | 74 кг
+            li.right-info-list-item
+                span розмір речей
+                | M
+    .description-text-info.tabcontent#sendAndPay
+        .descr-name Доставка і оплата
+        .descr-text 
+            | Своєчасна і комфортна доставка
+        ul.right-info-list 
+            p.right-info-list-name Служби доставки
+            li.right-info-list-item Нова пошта
+            li.right-info-list-item Укрпошта
+            li.right-info-list-item Justin
 
 
 #myModal.modal
   // Modal content
   .modal-content
-    span.close-modal &times;
-    p Some text in the Modal..
+    .close-modal
+        img(alt="close" src="./img/icons/close.svg")
+    img(src="./img/illustrations/sizechart_US_women.jpg", alt="")

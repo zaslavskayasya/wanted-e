@@ -237,7 +237,7 @@
             <div class="personal-cabinet right-menu-info--icon">
               <div class="person-icon"></div>
             </div>
-            <div class="cart right-menu-info--icon">
+            <div class="cart cart-trigger right-menu-info--icon">
               <div class="cart-icon">
                 <div class="cart-amount">12 </div>
               </div>
@@ -253,16 +253,30 @@
       <div class="content">
         <h1 class="page-catalog-name">Нова колекція</h1>
         <div class="catalog-content">
-          <div class="filter-line">
-            <div class="filter-item"> <img src="./img/icons/settings.svg" alt=""></div>
-            <div class="filter-item" data-filterName="price">
-              <p class="filter-item-name">Ціна</p><span class="num">1</span>
+          <div class="wrp-filters">
+            <div class="filter-line">
+              <div class="filter-item"> <img src="./img/icons/settings.svg" alt=""></div>
+              <div class="filter-item" data-filterName="price">
+                <p class="filter-item-name">Ціна</p><span class="num">1</span>
+              </div>
+              <div class="filter-item" data-filterName="size">
+                <p class="filter-item-name">Розмір</p><span class="num">2</span>
+              </div>
+              <div class="filter-item" data-filterName="color">
+                <p class="filter-item-name">Колір</p><span class="num">2</span>
+              </div>
             </div>
-            <div class="filter-item" data-filterName="size">
-              <p class="filter-item-name">Розмір</p><span class="num">2</span>
-            </div>
-            <div class="filter-item" data-filterName="color">
-              <p class="filter-item-name">Колір</p><span class="num">2 </span>
+            <div class="sort-block">
+              <div class="sort-catalog">
+                <p> Сортувати<img src="../img/icons/arrow-down.svg" alt=""></p>
+                <select id="sort" name="sort">
+                  <option value="cheap">Спочатку дешеві</option>
+                  <option value="expensive">Спочатку дорогі</option>
+                  <option value="new">Спочатку нові</option>
+                  <option value="old">Спочтаку старі</option>
+                  <option value="actions">Акційні</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="cards-place">
@@ -344,6 +358,16 @@
                 <div class="card-colors"><span class="color-item" data-color="#000"></span><span class="color-item" data-color="#FFF"></span><span class="color-item" data-color="red"></span><span class="more-colors">+1</span></div>
               </div>
             </a>
+          </div>
+          <div class="group-catalog-buttons">
+            <button class="button button-black form">Завантажити ще</button>
+            <div class="group-pages">
+              <button class="button button-white page-btn">1 </button>
+              <button class="button button-white page-btn active">2 </button>
+              <button class="button button-white disable" disabled>... </button>
+              <button class="button button-white page-btn">8</button>
+              <button class="button button-white page-btn">9 </button>
+            </div>
           </div>
         </div>
       </div>
@@ -437,6 +461,47 @@
       <div class="filter-btn">
         <div class="button button-white">Скасувати</div>
         <button class="button button-black">Показати</button>
+      </div>
+    </div>
+    <div class="cart-right"><a class="closebtn closeCart closeRightSidebar" href="javascript:void(0)"> <img alt="close" src="./img/icons/close.svg"></a>
+      <div class="descr-name">Корзина</div>
+      <div class="cards"> <a class="card" href="#">
+          <div class="card-top"><img src="./img/illustrations/clothes/clothes3.jpg" alt=""></div>
+          <div class="card-info">
+            <p class="card-name">Кардиган</p>
+            <div class="card-infoLine">
+              <div class="prices">
+                <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+              </div>
+            </div>
+            <div class="cardInfoinCart">
+              <p class="cardInfoinCart-item">1 шт </p>
+              <p class="cardInfoinCart-item">Розмір: S</p>
+              <p class="cardInfoinCart-item">Колір: Блакитний </p>
+            </div>
+          </div>
+        </a><a class="card" href="#">
+          <div class="card-top"><img src="./img/illustrations/clothes-single/jemper1/jemper1.jpg" alt=""></div>
+          <div class="card-info">
+            <p class="card-name">Кардиган</p>
+            <div class="card-infoLine">
+              <div class="prices">
+                <div class="newPrice"> <span class="price-num">450 </span><span class="price-currency">&nbsp;грн.</span></div>
+              </div>
+            </div>
+            <div class="cardInfoinCart">
+              <p class="cardInfoinCart-item">1 шт </p>
+              <p class="cardInfoinCart-item">Розмір: S</p>
+              <p class="cardInfoinCart-item">Колір: Блакитний</p>
+            </div>
+          </div>
+        </a></div>
+      <div class="submit-block">
+        <p class="sale"> Знижка <span>190 грн</span></p>
+        <p class="toPay"> Разом до оплати</p>
+        <p class="totalSum"> 3999 грн. </p>
+        <button class="button button-black form">ОФОРМИТИ ЗАМОВЛЕННЯ</button>
+        <button class="button button-white one-click-buy">КУПИТИ В 1 КЛІК</button>
       </div>
     </div>
     <footer class="l-footer">

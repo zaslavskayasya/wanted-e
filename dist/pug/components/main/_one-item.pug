@@ -1,19 +1,202 @@
 .one-item-block 
-    .content     
-        .left-part 
-            .container
-                .popup-gallery
-                    a(href='http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg' title='The Cleaner')
-                        img(src='http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg' width='75' height='75')
-                    a(href='http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg' title='Winter Dance')
-                        img(src='http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg' width='75' height='75')
-                    a(href='http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg' title='The Uninvited Guest')
-                        img(src='http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg' width='75' height='75')
-                    a(href='http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg' title='Oh no, not again!')
-                        img(src='http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg' width='75' height='75')
-                    a(href='http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg' title='Swan Lake')
-                        img(src='http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg' width='75' height='75')
-                    a(href='http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg' title='The Shake')
-                        img(src='http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg' width='75' height='75')
-                    a(href='http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg' title="Who's that, mommy?")
-                        img(src='http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg' width='75' height='75')
+    .content
+        .one-item-wrap
+            .left-part 
+                .container-for-slider
+                    .thumbnails 
+                        .row
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                            .column                        
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                    .slides-block                
+                        .mySlides
+                            .numbertext 1 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%')
+                        .mySlides
+                            .numbertext 2 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%')             
+                        .mySlides
+                            .numbertext 1 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%')
+                        .mySlides
+                            .numbertext 2 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%')             
+                        .mySlides
+                            .numbertext 1 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%')
+                        .mySlides
+                            .numbertext 2 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%')
+                        .mySlides
+                            .numbertext 1 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper1.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%')
+                        .mySlides
+                            .numbertext 2 / 6
+                            a(data-lightbox="roadtrip" href="./img/illustrations/clothes-single/jemper1/jemper2.jpg") 
+                                img(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%')             
+                        // Next and previous buttons
+                        a.prev(onclick='plusSlides(-1)') &#x276E;
+                        a.next(onclick='plusSlides(1)') &#x276F;                    
+
+            .right-part 
+                h4.h4 Білий трикотажний джемпер з коміром стійка та гудзиками       
+                p.little-gray-text.articul Артикул: 35695548
+                .prices
+                     .newPrice 
+                        span.price-num 45450 
+                        span.price-currency &nbsp;грн.
+                        
+                     .oldPrice 
+                        span 7806778
+                        span.price-currency ₴
+                .chooses-block
+                    p.little-gray-text Оберіть колір                  
+                    .card-colors
+                        span.color-item(data-color="#000")
+                        span.color-item(data-color="#D5C2AE")
+                        span.color-item(data-color="#EBB2C9")
+                        span.color-item(data-color="#7CB29E")
+                .chooses-block
+                    p.little-gray-text Оберіть розмір
+                    .card-colors
+                        span.size-item XS
+                        span.size-item S
+                        span.size-item M
+                        span.size-item.disable L
+                        span.size-item XL
+                        span.size-item XXXL
+                .sizes-line
+                    p.size-table-btn(id="myBtn") 
+                        span Таблиця розмірів
+                        img(src="./img/icons/sizes.svg", alt="")
+                button.button.button-black Додати в кошик
+                .descriptions                    
+                    p.description-text 
+                        | опис та характеристики                            
+                    p.description-text 
+                        | доставка та оплата
+    .last-seen
+        .content
+            //- h2.slider-name Останні перегляди    
+            .last-seen-slider.side-custom-arrows(data-sliderName="Це привернуло вашу увагу")
+                
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New
+                        img(src="./img/illustrations/clothes/clothes3.jpg", alt="")
+                    .card-info
+                        p.card-name Кардиган
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num 450 
+                                    span.price-currency &nbsp;грн.
+                                    
+                                .oldPrice 
+                                    span 780
+                                    span.price-currency &nbsp;грн.
+                            .card-colors
+                                span.color-item(data-color="#000")
+                                span.color-item(data-color="#FFF")
+                                span.color-item(data-color="red")
+                                span.more-colors +1
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New               
+                        img(src="./img/illustrations/clothes/clothes6.jpg", alt="")
+                    .card-info
+                        p.card-name Кардиган
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num 450 
+                                    span.price-currency &nbsp;грн.
+                                    
+                                .oldPrice 
+                                    span 780
+                                    span.price-currency &nbsp;грн.
+                            .card-colors
+                                span.color-item(data-color="#000")
+                                span.color-item(data-color="#FFF")
+                                span.color-item(data-color="red")
+                                span.more-colors +1
+                // card
+                a(href="#").card
+                    .card-top         
+                        img(src="./img/illustrations/clothes/clothes3.jpg", alt="")
+                    .card-info
+                        p.card-name Кардиган
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num 450 
+                                    span.price-currency &nbsp;грн.
+                                    
+                                .oldPrice 
+                                    span 780
+                                    span.price-currency &nbsp;грн.
+                            .card-colors
+                                span.color-item(data-color="#000")
+                                span.color-item(data-color="#FFF")
+                                span.color-item(data-color="red")
+                                span.more-colors +1
+                // card
+                a(href="#").card.card-no-data
+                    .card-top             
+                        img(src="./img/illustrations/default.jpg", alt="")
+                    .card-info
+                        p.card-name Wanted wanted wanted
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num  wanted
+                                    span.price-currency 
+                // card
+                a(href="#").card.card-no-data
+                    .card-top             
+                        img(src="./img/illustrations/default.jpg", alt="")
+                    .card-info
+                        p.card-name Wanted wanted wanted
+                        .card-infoLine
+                            .prices
+                                .newPrice 
+                                    span.price-num  wanted
+                                    span.price-currency                                 
+                    
+                     
+
+
+
+#myModal.modal
+  // Modal content
+  .modal-content
+    span.close-modal &times;
+    img(src="./img/illustrations/sizechart_US_women.jpg", alt="")

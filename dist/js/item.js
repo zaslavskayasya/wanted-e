@@ -94,4 +94,100 @@ window.onclick = function(event) {
   }
 }
 
+
+let closeRightSidebar = document.querySelector('.closeRightSidebar');
+
+let RightSideMenuInfo = document.querySelector('.info-right');
+
+let rightFilterTrigger = document.querySelectorAll('.info-trigger');
+
+rightFilterTrigger.forEach((triggerBtn)=>{
+  triggerBtn.addEventListener('click', (e)=>{
+    RightSideMenuInfo.classList.add('active');
+      overflowDarken.style.opacity = "1";
+      overflowDarken.style.pointerEvents  = "initial"; 
+      body.style.overflowY = "hidden"; 
+  });
+
+})
+
+closeRightSidebar.addEventListener('click', ()=>{
+  RightSideMenuInfo.classList.remove('active');
+  overflowDarken.style.opacity = "0";
+  overflowDarken.style.pointerEvents  = "none"; 
+   body.style.overflowY = "auto";
+
+});
+overflowDarken.addEventListener('click', ()=>{
+    RightSideMenuInfo.classList.remove('active');
+    overflowDarken.style.opacity = "0";
+    overflowDarken.style.pointerEvents  = "none";    
+   body.style.overflowY = "auto";
+  
+});
+
+
+
+function openDes(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+let headercartTrigger = document.querySelectorAll('.cart-trigger');
+let closeRightSidebar2 = document.querySelector('.closeCart');
+let RightSideCart = document.querySelector('.cart-right');
+let cartTrigger = document.querySelectorAll('.addToCart');
+
+
+headercartTrigger.forEach((triggerBtn)=>{
+  triggerBtn.addEventListener('click', (e)=>{
+    RightSideCart.classList.add('active');
+      overflowDarken.style.opacity = "1";
+      overflowDarken.style.pointerEvents  = "initial"; 
+      body.style.overflowY = "hidden"; 
+  });
+
+})
+
+cartTrigger.forEach((triggerBtn)=>{
+  triggerBtn.addEventListener('click', (e)=>{
+    RightSideCart.classList.add('active');
+      overflowDarken.style.opacity = "1";
+      overflowDarken.style.pointerEvents  = "initial"; 
+      body.style.overflowY = "hidden"; 
+  });
+
+})
+
+closeRightSidebar2.addEventListener('click', ()=>{
+  RightSideCart.classList.remove('active');
+  overflowDarken.style.opacity = "0";
+  overflowDarken.style.pointerEvents  = "none"; 
+   body.style.overflowY = "auto";
+});
+
+overflowDarken.addEventListener('click', ()=>{
+    RightSideCart.classList.remove('active');
+    overflowDarken.style.opacity = "0";
+    overflowDarken.style.pointerEvents  = "none";    
+   body.style.overflowY = "auto";
+  
+});
 //# sourceMappingURL=item.js.map
