@@ -7,6 +7,10 @@
     .last-seen {
       padding: 80px;
     }
+    .oldPrice{
+      width: auto;
+      max-width: auto;
+    }
 }
 
 .one-item-wrap {
@@ -541,4 +545,73 @@
     position: relative;
     margin-bottom: 20px;
   }
+  .one-item-wrap .right-part {
+    max-width: 100%;
+    padding-left: 0px;
+  }
+  .one-item-block .last-seen {
+    padding: 70px 15px;
+  }
+  .one-item-block {
+    margin-bottom: 20px;
+  }
+  .one-item-block .last-seen-slider:before {  
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 780px){
+  .h4{
+    max-width: 322px;
+    margin-bottom: 20px;;
+  }
+  .articul {
+    display: none;
+    margin-bottom: 15px;
+  }
+  .one-item-wrap .prices {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .one-item-block {
+    .size-item{
+      margin-bottom: 14px;;
+      margin-right: 10px;
+    }
+    .card-colors {
+      margin-bottom: 15px;
+      flex-flow: wrap;
+    }
+    .one-item-wrap .color-item {
+      margin-bottom: 17px;
+    }
+  }
+  .size-table-btn{
+    margin-bottom: 30px;
+  }
+  .one-item-wrap .button {
+    margin-bottom: 40px;
+    min-width: 100%;
+    }
+    .description-text {     
+      font-size: 14px;      
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      line-height: 18px;
+      margin-bottom: 24px;
+      padding-right: 20px;      
+
+  }
+  .one-item-block .last-seen {
+    padding: 20px 5px;
+  }
+  .one-item-block {
+    margin-bottom: 10px;
+}
+.one-item-wrap {
+  padding-bottom: 38px;
+}
+.one-item-block .last-seen-slider:before {  
+  transform: none;
+}
 }

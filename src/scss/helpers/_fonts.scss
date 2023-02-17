@@ -35,3 +35,16 @@ $font-family: 'Montserrat', 'Helvetica Neue', 'Helvetica', 'Hiragino Sans', 'Hir
     color: #7F7F7F;
     margin-bottom: 10px;;
   }
+
+  @media screen and (max-width: 780px){
+    .h4{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.0155em;
+      color: #7F7F7F;
+  }
+  }

@@ -478,7 +478,7 @@
     align-items: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    height: 90px;
+    height: 70px;
     padding: 0 15px 0 15px;
 
   }
@@ -501,5 +501,13 @@
 @media screen and (max-width: 780px){ 
   .sidenav{
     width: 100%;
+  }
+  .menu-line{
+    background-color: #fff;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .cart-amount {
+    border: 3px solid #fff;
   }
 }
