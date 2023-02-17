@@ -1,7 +1,7 @@
 .one-item-block {
     margin-bottom: 80px;;
     .last-seen-slider:before{
-      transform: rotate(-90deg) translateX(-158px) translateY(0);
+      transform: rotate(-90deg) translateX(-158px) translateY(-50px);
       width: 293px;
     }
     .last-seen {
@@ -381,7 +381,7 @@
   background-color: #fff;
   width: 384px;
   height: 100%;
-  padding: 60px 47px 50px 42px;
+  padding: 40px 47px 50px 42px;
   z-index: 99;
   overflow-x: hidden;
   padding-top: 60px;

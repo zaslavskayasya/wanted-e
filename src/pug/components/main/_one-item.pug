@@ -6,15 +6,15 @@
                     .thumbnails 
                         .row
                             .column                        
-                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' draggable="true" alt='The Woods')
                             .column                        
-                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' draggable="true" alt='Cinque Terre')
                             .column                        
-                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' draggable="true" alt='The Woods')
                             .column                        
-                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' draggable="true" alt='Cinque Terre')
                             .column                        
-                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+                                img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper1.jpg' style='width:100%' onclick='currentSlide(1)' draggable="true" alt='The Woods')
                             .column                        
                                 img.demo.cursor(src='./img/illustrations/clothes-single/jemper1/jemper2.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
                             .column                        
@@ -61,7 +61,7 @@
                         // Next and previous buttons
                         a.prev(onclick='plusSlides(-1)') 
                             img(src="./img/icons/arrow-left.svg", alt="")
-                        a.next(onclick='plusSlides(1)')
+                        a.next.nextOneSlider(onclick='plusSlides(1)')
                             img(src="./img/icons/arrow-right.svg", alt="")               
 
             .right-part 

@@ -3,10 +3,20 @@ console.log("test item");
 let slideIndex = 1;
 showSlides(slideIndex);
 
+
+
+
+
 // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
+
+// let nextOneSlider = document.querySelector('.nextOneSlider');
+
+// nextOneSlider.addEventListener('click', function(){
+//     showSlides(slideIndex += n);
+// })
 
 // Thumbnail image controls
 function currentSlide(n) {
@@ -14,8 +24,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
+  let i;
   let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
@@ -30,6 +40,20 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   // captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+let slidesDrag = document.querySelectorAll(".mySlides");
+console.log('test')
+
+slidesDrag.forEach((slid)=>{
+  console.log(slid);
+  slid.addEventListener('dragstart', function(e){
+    console.log('eee');
+    showSlides(slideIndex += 1);
+  })
+} )
+
+
+
 
 
 clothesColor.forEach((el)=>{
