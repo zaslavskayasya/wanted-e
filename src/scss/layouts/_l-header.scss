@@ -494,6 +494,9 @@
     right: auto;
     left: -11px;
   }
+  .l-header.no-margin-bottom {
+    margin-bottom: 0px;;
+  }
 
 }
 
@@ -510,4 +513,5 @@
   .cart-amount {
     border: 3px solid #fff;
   }
+  
 }
