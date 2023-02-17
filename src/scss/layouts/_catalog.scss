@@ -429,14 +429,21 @@
 }
 
 
-  @media screen and (max-width: 1290px){
-    .page-catalog-name{
 
-        transform: rotate(0deg);
-        position: absolute;
-        left: 31px;
-        top: -40px;    
+@media screen and (max-width: 1340px){
+    .page-catalog-name {
+        font-size: 28px;        
+        top: 0;
+        left: 40px;
+        -webkit-transform: rotate(-90deg);
+        transform: none;
     }
+    .catalog-content{
+        padding-top: 75px;
+    }
+  }
+
+  @media screen and (max-width: 1290px){
     .catalog-wrap {
         padding-top: 23px;
     }
@@ -463,24 +470,26 @@
     .catalog-wrap {
         padding-top: 0;
         overflow-x: hidden;
+        .cards-place .card:not(:nth-child(4)) {      
+            margin-right: 24px;
+        }
+        .cards-place .card {      
+            margin-right: 24px;
+        }
     }
-    
 
   }
 
   @media screen and (max-width: 780px){ 
 
     .page-catalog-name{
-        font-style: normal;
-        font-weight: 800;
+        top: 5px;
+        left: 12px;
         font-size: 12px;
+        font-weight: 800;
         line-height: 15px;
-        /* identical to box height */
-
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-
         color: #7F7F7F;
+        letter-spacing: 0.22em;
 
     }
     .catalog-wrap {
@@ -514,6 +523,10 @@
         width: 100%;
 
     }
+    .wrp-filters{
+        margin-bottom: 15px;
+        padding-top: 42px;
+    }
 
 }
 
@@ -540,5 +553,44 @@
     .group-pages .button {
         height: 40px;
         width: 40px;
+    }
+   
+    .catalog-wrap {
+        .card {
+            margin-bottom: 20px;
+            margin-right: 4px;
+        }
+        .content {
+            padding: 0 4px;
+        }
+    }
+    .catalog-wrap .cards-place .card, .catalog-wrap .cards-place .card:not(:nth-child(4)) {
+        margin-right: 5px;
+    }
+    .wrp-filters{
+        padding-top: 0px;
+    }
+    .catalog-content {
+        padding-top: 42px;
+    }
+
+}
+
+@media screen and (max-width: 590px){
+    .cards-place .card:not(:nth-child(4)) {
+        margin-bottom: 20px;
+        margin-right: 2px;
+    }
+    .catalog-wrap {
+        .card {
+            margin-bottom: 20px;
+            margin-right: 4px;
+        }
+        .content {
+            padding: 0 4px;
+        }
+    }
+    .catalog-wrap .cards-place .card, .catalog-wrap .cards-place .card:not(:nth-child(4)) {
+        margin-right: 3px;
     }
 }

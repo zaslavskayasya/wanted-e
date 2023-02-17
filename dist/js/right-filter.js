@@ -11,7 +11,6 @@ rightFilterTrigger.forEach((triggerBtn)=>{
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden";
 
-
     //find data-attr on clicked element
     let activeFilter = e.currentTarget.dataset.filtername; 
 
@@ -26,13 +25,11 @@ rightFilterTrigger.forEach((triggerBtn)=>{
         // console.log(filterData);       
         
         if (filterData === activeFilter){
-            console.log(fi);
+            // console.log(fi);
             fi.querySelector('.mobile-main-menu').classList.add('open');
         }
     });
-
   });
-
 })
 
 

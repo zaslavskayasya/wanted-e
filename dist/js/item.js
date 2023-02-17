@@ -149,45 +149,4 @@ function openDes(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-
-let headercartTrigger = document.querySelectorAll('.cart-trigger');
-let closeRightSidebar2 = document.querySelector('.closeCart');
-let RightSideCart = document.querySelector('.cart-right');
-let cartTrigger = document.querySelectorAll('.addToCart');
-
-
-headercartTrigger.forEach((triggerBtn)=>{
-  triggerBtn.addEventListener('click', (e)=>{
-    RightSideCart.classList.add('active');
-      overflowDarken.style.opacity = "1";
-      overflowDarken.style.pointerEvents  = "initial"; 
-      body.style.overflowY = "hidden"; 
-  });
-
-})
-
-cartTrigger.forEach((triggerBtn)=>{
-  triggerBtn.addEventListener('click', (e)=>{
-    RightSideCart.classList.add('active');
-      overflowDarken.style.opacity = "1";
-      overflowDarken.style.pointerEvents  = "initial"; 
-      body.style.overflowY = "hidden"; 
-  });
-
-})
-
-closeRightSidebar2.addEventListener('click', ()=>{
-  RightSideCart.classList.remove('active');
-  overflowDarken.style.opacity = "0";
-  overflowDarken.style.pointerEvents  = "none"; 
-   body.style.overflowY = "auto";
-});
-
-overflowDarken.addEventListener('click', ()=>{
-    RightSideCart.classList.remove('active');
-    overflowDarken.style.opacity = "0";
-    overflowDarken.style.pointerEvents  = "none";    
-   body.style.overflowY = "auto";
-  
-});
 //# sourceMappingURL=item.js.map
