@@ -108,9 +108,11 @@ counterMinus.forEach((counterMinus)=>{
 
 
 
-let deleteBlockTrigger = document.querySelector('.delete-img');
+let deleteBlockTrigger = document.querySelectorAll('.delete-img');
 
-deleteBlockTrigger.addEventListener('click', (e)=>{
-        e.target.closest(".ware-item").remove();
 
-});
+deleteBlockTrigger.forEach((deleteBlockTrigger)=>{
+    deleteBlockTrigger.addEventListener('click', (e)=>{
+            e.target.closest(".ware-item").remove();
+    });
+})
