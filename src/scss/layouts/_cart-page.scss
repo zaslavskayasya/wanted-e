@@ -76,6 +76,7 @@
     &-item{
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
     &-left {
         display: flex;;
@@ -210,6 +211,19 @@
 
 .delete-img{
     position: absolute;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    svg > .delete-icon{
+        transition: all ease 0.3s;
+
+    }
+    &:hover{
+        svg > .delete-icon{
+            fill :red;
+        }
+    }
+
 }
 
 .hide-info{

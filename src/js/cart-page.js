@@ -95,7 +95,6 @@ counterMinus.forEach((counterMinus)=>{
         let actualQuantity = NumberItem.innerHTML;
         actualQuantity--;
 
-        
         // take data about price
         let NewWarePrice =  OriginPrice * actualQuantity;
 
@@ -105,4 +104,13 @@ counterMinus.forEach((counterMinus)=>{
         // console.log(thisItemCard.querySelector('.price-num'));
 
     });
-})
+});
+
+
+
+let deleteBlockTrigger = document.querySelector('.delete-img');
+
+deleteBlockTrigger.addEventListener('click', (e)=>{
+        e.target.closest(".ware-item").remove();
+
+});
