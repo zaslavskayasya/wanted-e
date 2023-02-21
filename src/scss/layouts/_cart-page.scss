@@ -1,0 +1,235 @@
+.cart-page-block{
+    position: relative;
+    .cart-page-name{
+        position: relative;
+    }
+    .cart-page-name{
+        left: -174px;
+        display: block;
+        height:40px;;
+        position: absolute;
+        left: 0px;
+        text-align: right;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 39px;
+        color: #0B0B0B;
+        writing-mode: tb-rl;
+        transform: rotate(-180deg);
+        padding: 0;
+        margin: 0;
+        height: 600px;
+    }
+
+}
+
+.wrap-ware{
+    display: flex;
+    margin-bottom: 50px;;
+    flex-direction: column;
+    position: relative;
+    
+    .your-order, .register-order {
+        width: 900px;;
+        // height: 400px
+    }
+    .total-sum{
+        position: absolute;
+        right: 0px;
+        top:0px;
+        height:120px;
+    }
+}
+
+.wrap-ware-item{
+    background-color: #fff;
+    padding: 30px 32px;
+}
+
+.personal-line{
+    margin: 0 auto 45px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0B0B0B;
+
+    img {
+        margin-right: 10px;;    
+    }
+}
+
+
+.ware-block-name{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #0B0B0B;
+    margin-bottom: 35px;
+}
+
+
+.ware{
+    &-item{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-left {
+        display: flex;;
+        justify-content: flex-start;
+    }
+    &-img{
+        width: 163px;;
+        max-height: 302px;
+        overflow: hidden;
+        margin-right: 33px;
+        img{
+            width: 100%;
+        }
+    }
+    &-inform-block{
+        max-width: 268px;
+        align-items: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &-name{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 128.9%;        
+        display: flex;
+        align-items: center;        
+        color: #0B0B0B;
+        margin-bottom: 5px;;
+    }
+    &-info{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.0155em;
+        color: #000000;
+    }
+
+}
+
+
+.counter-wrap{
+    width: 158px;
+    height: 59px;
+    border: 1px solid #7F7F7F;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    color: #7F7F7F;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.counter-nav, .counter-number{
+    width: 50px;
+    position: relative;
+    cursor: pointer;
+    box-sizing: border-box;
+    height:100%;
+    line-height: 52px;
+    transition: all ease-in-out 0.3s;
+}
+
+.counter-minus:before{
+    content : "";
+    display: block;
+    width: 20px;
+    height: 1px;
+    border-bottom: 1px solid #7F7F7F;
+    position: absolute;
+    left: 20px;
+    top:25px;    
+}
+.counter-minus:hover:before{
+    border-bottom: 1px solid #000;;
+}
+
+.counter-plus{
+    &:before{
+        content : "";
+        display: block;
+        width: 20px;
+        height: 1px;
+        border-bottom: 1px solid #7F7F7F;
+        position: absolute;
+        right: 20px;
+        top:25px;    
+    }
+    &:hover:before{
+        border-bottom: 1px solid #000;;
+    }
+
+    &:after{
+        content : "";
+        display: block;
+        width: 1px;
+        height: 20px;
+        border-right: 1px solid #7F7F7F;
+        position: absolute;
+        left: 20px;
+        top: 16px;    
+    }
+    &:hover:after{
+        border-right: 1px solid #000;;
+    }
+}
+
+
+.ware-prices{
+    // text-align: right;
+    .newPrice{
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    .oldPrice{
+        max-width: 120px;;
+        display: block;
+    }
+    .oldPrice:after{
+        display: none;;
+    }
+}
+
+.delete-img{
+    position: absolute;
+}
+
+.hide-info{
+    color: transparent;
+    font-size: 0px;;
+}
+
+
+
+@media screen and (max-width: 1350px ){
+    .wrap-smth{
+        position: relative;
+        .test, .test3 {
+            width: 100%;
+ 
+        }
+        .text2{
+            position: relative;
+            right: 0px;
+        }
+    
+    }
+}

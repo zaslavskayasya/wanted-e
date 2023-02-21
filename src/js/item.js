@@ -50,25 +50,17 @@ slidesDrag.forEach((slid)=>{
     console.log('eee');
     showSlides(slideIndex += 1);
   })
-} )
-
-
-
+});
 
 
 clothesColor.forEach((el)=>{
   el.addEventListener("click", (event)=> {
-
     clothesColor.forEach((elem)=>{
       elem.classList.remove('active');
     });  
-
-        if(!event.target.classList.contains('active')){
-          
+        if(!event.target.classList.contains('active')){          
           el.classList.add('active');
-
         } 
-
     });
 })
 
