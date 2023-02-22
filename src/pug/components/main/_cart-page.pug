@@ -24,7 +24,7 @@
                                     span 3359551
                             .counter-wrap 
                                 .counter-nav.counter-minus 
-                                .counter-number 1
+                                .counter-number 2
                                 .counter-nav.counter-plus
                     .ware-prices
                         .newPrice
@@ -32,7 +32,7 @@
                             span.price-num.placeForPrice 2
                             span.price-currency &nbsp;грн.           
                         .oldPrice                            
-                            spa 7806778
+                            span 200
                             span.price-currency ₴
                     .delete-img 
                         svg(width='25' height='25' viewbox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg')
@@ -80,11 +80,11 @@
                                 .counter-nav.counter-plus
                     .ware-prices
                         .newPrice
-                            span.hide-info.originPrice  999
-                            span.price-num.placeForPrice 999
+                            span.hide-info.originPrice  10
+                            span.price-num.placeForPrice 10
                             span.price-currency &nbsp;грн.           
                         .oldPrice                            
-                            spa 7806778
+                            spa 400
                             span.price-currency ₴
                     .delete-img 
                         svg(width='25' height='25' viewbox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg')
@@ -112,6 +112,25 @@
                                 path(d='M24.978 3.122H0v1.04h24.978v-1.04z')
                             path(class="delete-icon" d='M24.978 3.122H0v1.04h24.978v-1.04z' fill='#0B0B0B')
                             path(class="delete-icon" d='M0 3.122v-2h-2v2h2zm24.978 0h2v-2h-2v2zm0 1.04v2h2v-2h-2zM0 4.163h-2v2h2v-2zm0 .96h24.978v-4H0v4zm22.978-2v1.04h4v-1.04h-4zm2-.96H0v4h24.978v-4zM2 4.163v-1.04h-4v1.04h4z' fill='#0B0B0B' mask='url(#path-11-inside-6_150_2507)')
+            .wrap-ware-item.only-mobile-card
+                .total-sum-info
+                    p.numberOfwares
+                        span.ware-number-mob 3 
+                        span.ware-for-sum товара на суму
+                    p.totalSum 
+                        span.ware-calc-sum-mob 3600
+                        span грн 
+                .total-sum-info
+                    p.numberOfwares
+                        span 3нижка
+                    p.totalSale
+                        span.ware-calc-sum-mob 190
+                        span грн
+                .resultInfo
+                    p.to-pay Разом до сплати
+                    p.totaly-sum
+                        span.finalSum-mob 3 999
+                        span грн
             .wrap-ware-item.total-sum-block#sticky  
                 .total-sum-info
                     p.numberOfwares
@@ -139,9 +158,6 @@
                     span Доставка орієнтовно 
                     span.send-pay 190
                     span грн
-
-
-
                 
             .wrap-ware-item.register-order 
                 p.ware-block-name ОФОРМЛЕННЯ ЗАМОВЛЕННЯ  

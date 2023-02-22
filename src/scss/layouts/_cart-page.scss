@@ -539,20 +539,202 @@
     margin-right: 5px;;
 }
 
+.finalSum{
+    margin-right: 5px;;
+}
+
+.only-mobile-card{
+    display: none;
+}
 
 
 
-@media screen and (max-width: 1350px ){
-    .wrap-smth{
+.ware-info span{
+    padding-left: 6px;
+}
+
+@media screen and (max-width: 1290px){
+    .wrap-ware{
         position: relative;
-        .test, .test3 {
-            width: 100%;
- 
+        .your-order, .register-order {
+            width: 100%;   
+            margin-bottom: 25px;;
         }
-        .text2{
+        .total-sum-block{
             position: relative;
             right: 0px;
-        }
-    
+            max-width: 100%;
+            margin-bottom: 25px;
+            order: 3;
+        }    
     }
+    .ware-number-mob , .ware-calc-sum-mob , .finalSum-mob{
+        margin-right: 5px;;
+    } 
+    .only-mobile-card {
+        display: block;
+        margin-bottom: 20px;;
+    }
+    .cart-page-block .cart-page-name {
+        writing-mode: initial;
+        position: initial;
+        height: auto;
+        transform: none;
+        text-align: left;
+        margin-bottom: 15px;;
+    }
+}
+
+
+@media screen and (max-width: 780px ){
+    .cart-page-block .cart-page-name {
+        display: none;
+    }
+    .counter-wrap {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+    }
+    .wrap-ware-item {
+        padding: 25px 12px;
+    }
+    .your-order .ware-block-name{
+        display: none;
+    }
+    .ware-img {
+        width: 140px;
+    }
+    .ware-item {
+        padding-bottom: 48px;
+    }
+    .counter-wrap {
+        width: 140px;
+        height: 40px;
+    }
+    .counter-nav, .counter-number{
+        line-height: 40px;;
+    }
+    .counter-minus:before {
+        top: 19px;
+    }
+    .counter-plus:before {
+        right: 16px;
+        top: 18px;
+    }
+    .counter-plus:after {
+        top: 9px;
+    }
+    .delete-img {
+        right: 9px;
+        bottom: 6px;
+    }
+    .ware-item:not:last-child{
+        margin-bottom: 40px;;
+    }
+    .ware-item:last-child{
+        margin-bottom: 15px;;
+    }
+    .order-wrap {
+        flex-direction: column;
+    }
+    .order-part {
+        width: 100%;
+        margin-bottom: 15px;;
+    }
+    .order-header {
+        margin-bottom: 24px;;
+    }
+    .radio-block{
+        margin-bottom: 20px;;
+    }
+    .check-block .wrap-checkbox {
+        margin-bottom: 32px;
+    }
+    .check-block .wrap-checkbox:before {
+        top: -14px;
+    }
+    .personal-line{
+        display: none;
+    }
+    .ware-block-name{
+        font-size: 16px;;
+        margin-bottom: 35px;
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+    .ware-img {
+        width: 80px;
+        min-width: 80px;;
+        margin-right: 18px;
+    }
+    .ware-item {
+        padding-bottom: 48px;
+    }
+    .counter-wrap {
+        width: 80px;
+        height: 30px;
+    }
+    .counter-nav, .counter-number{
+        width: 27px;
+    }
+    .ware-item {
+        padding-bottom: 38px;
+    }
+    .counter-minus:before {       
+        left: 9px;
+        top: 15px;
+        width: 13px;
+    }
+    .counter-nav, .counter-number {
+        line-height: 30px;
+        font-size: 22px;;
+    }
+    .counter-plus:before {
+        right: 9px;
+        top: 15px;
+        width: 13px;
+    }
+    .counter-plus:after {
+        height: 13px;
+        left: 10px;
+        top: 9px;
+    }
+    .ware-name {
+        font-size: 12px;;
+    }
+    .ware-info {
+        font-size: 11px;;
+        line-height: 15px;
+    }
+    .delete-img {
+        bottom: auto;
+        right: 3px;
+        top: 0px;
+        max-width: 20px;;
+        svg{
+            width: 20px;
+        }
+    }
+    .ware-prices{
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        display: flex;
+        align-items: flex-end;
+        .newPrice {
+            order: 2;
+            padding-left: 5px;;;
+            margin-bottom: 0px;;
+            line-height: 15px;;
+        }
+        .oldPrice{
+            font-size: 12px;;
+        }
+    }
+    .ware-inform-block {
+        max-width: 166px;
+    }
+    
 }
