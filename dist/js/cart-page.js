@@ -18,7 +18,7 @@ let infoAboutHeight;
 window.onscroll = function (e, sticky) {
   // елемент що треба зафіксувати 
   if(window.innerWidth < 1280){
-        return
+        return;
   }
     let pixelsToTopFromWrap = wrapElement.getBoundingClientRect().top;
     // console.log(stickyBlock);

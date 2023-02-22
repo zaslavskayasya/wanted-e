@@ -553,6 +553,36 @@
     padding-left: 6px;
 }
 
+
+.cart-page-block:before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 70px;
+    right: 264px;
+    top: -110px;
+    width: 79px;
+    background-image: url(../img/illustrations/cat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cart-page-block:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 100px; 
+    width: 15px;
+    height: 500px;
+    background-image: url(../img/icons/long-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
 @media screen and (max-width: 1290px){
     .wrap-ware{
         position: relative;
@@ -582,6 +612,12 @@
         transform: none;
         text-align: left;
         margin-bottom: 15px;;
+    }
+    .cart-page-block:before{
+        display: none;
+    }
+    .cart-page-block:after{ 
+        display: none;;
     }
 }
 

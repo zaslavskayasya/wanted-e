@@ -2,6 +2,19 @@
 .catalog-wrap{
     position: relative;
     margin-bottom: 80px;
+    &:after{
+        content: "";
+        display: block;
+        width: 315px;
+        height: 388px;
+        position: absolute;
+        right: 0px;
+        background-image: url('../img/illustrations/surprize.png');
+
+    }
+    .last-seen{
+        padding-bottom: 30px;;
+    }
 }
 .cards-place{
     display: flex;
@@ -375,10 +388,8 @@
     }
     .button:not(:last-child){
         margin-right: 10px; 
-    }
-    
+    }    
   }
-
 
   .wrp-filters{
     display: flex;
@@ -428,7 +439,14 @@
     color: #222321;
 }
 
+@media screen and (max-width: 1440px){ 
 
+    .catalog-wrap{
+        &:after{ 
+            display: none;;
+        }
+    }
+}
 
 @media screen and (max-width: 1340px){
     .page-catalog-name {
@@ -441,6 +459,7 @@
     .catalog-content{
         padding-top: 75px;
     }
+
   }
 
   @media screen and (max-width: 1290px){
