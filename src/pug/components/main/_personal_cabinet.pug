@@ -1,0 +1,44 @@
+.cart-right.login-part
+    a.closebtn.closeCart.closeCabinetSidebar(href="javascript:void(0)" ) 
+        img(alt="close" src="./img/icons/close.svg")
+    .wrap-login.active
+        .descr-name Вхід
+        form.order-wrap.login-form
+            p.order-header Ваші контактні дані
+            .field-wrap
+                .order-input
+                    label(for="mailOrPhone") Ел. пошта чи мобільний телефон
+                    input(type="text" id="Login" name="mailOrPhone")
+                .order-input
+                    label(for="Password") Пароль
+                    input(type="text" id="password" name="Password")
+                .check-block    
+                    label.wrap-checkbox Не дзвоніть мені для уточнення замовлення
+                        input(type="checkbox" name="checkbox") 
+                        span.checkmark
+                button.button.button-black Війти
+                p.register-link.triggerRegister Зареєструватись
+    .wrap-register
+        .descr-name Реєстрація
+        form.order-wrap.login-form
+            .field-wrap
+                .order-input
+                    label(for="regFirstName") Прізвище*
+                    input(type="text" id="regFirstName" name="regFirstName")
+                .order-input
+                    label(for="regLastName") Ім'я*
+                    input(type="text" id="regLastName" name="regLastName")
+                .order-input
+                    label(for="regEMail") Електронна пошта
+                    input(type="e-mail" id="regEMail" name="regEMail")
+                .order-input
+                    label(for="regPass") Придумайте пароль
+                    input(type="password" id="regPass" name="regPass")
+                .check-block    
+                    label.wrap-checkbox Не дзвоніть мені для уточнення замовлення
+                        input(type="checkbox" name="checkbox") 
+                        span.checkmark
+                p.rule-link Реєструючись, ви погоджуєтесь з 
+                    a(href="#") умовами положення про збір та захист персональних даних та користувальницькою угодою        
+                button.button.button-black Зареєструватись
+                p.register-link.triggerLogin Я вже зареєстрований

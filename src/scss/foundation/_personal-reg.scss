@@ -1,0 +1,76 @@
+.closeCabinetSidebar{
+    position: absolute;
+    right: 34px;
+    top: 29px;
+}
+
+.login-part{
+    .order-wrap{
+        flex-direction: column;
+    }
+    .order-header{
+        margin-bottom: 25px;
+    }
+    .check-block .wrap-checkbox:before{
+        display: none;;
+    }
+    .button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .register-link, .rule-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+        color: #000000;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .rule-link {
+        text-align: left;
+        margin-bottom: 10px;;;
+    }
+    .check-block  .wrap-checkbox{
+        margin-bottom: 25px;;
+    }
+}
+
+.wrap-register {
+    opacity: 0px;
+    height: 0px;
+    pointer-events: none;
+    transition: all ease-in-out 0.3s;
+    transform: translateY(-100%);
+}
+
+.wrap-register.active {
+    opacity: 1px;
+    pointer-events:all;
+    height: auto;
+    transform: translateY(0%);
+}
+
+.wrap-login{
+    opacity: 0px;
+    height: 0px;
+    pointer-events: none;
+    transition: all ease-in-out 0.3s;
+    transform: translateX(-100%);
+}
+
+
+.wrap-login.active{
+    opacity: 1px;
+    pointer-events:all;
+    transform: translateX(0%);
+    height: auto;
+}
