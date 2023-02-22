@@ -29,16 +29,18 @@
     margin-bottom: 50px;;
     flex-direction: column;
     position: relative;
+    justify-content: space-between;
     
     .your-order, .register-order {
-        width: 900px;;
+        width: 826px;;
+        margin-right: 24px;;
         // height: 400px
     }
-    .total-sum{
+    .total-sum-block{
         position: absolute;
         right: 0px;
         top:0px;
-        height:120px;
+        max-width: 310px;;
     }
 }
 
@@ -302,7 +304,7 @@
     }
     select, option{
         line-height:39px;;
-        font-size: 14px;;
+        font-size: 11px;;
         width: 100%;
         padding-left: 13px;
         cursor: pointer;
@@ -334,11 +336,14 @@
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    // height: 100%;
 }
 
 
 .radio-block{
+    padding-top:19px;
+    margin-bottom: 112px;
+
         /* Customize the label (the container) */
         .label-radio {
             display: block;
@@ -403,8 +408,8 @@
         .label-radio .checkmark:after {
             top: 4px;
             left: 4px;
-            width: 8px;
-            height: 8px;
+            width: 7px;
+            height: 7px;
             border-radius: 50%;
             background: white;
         }
@@ -424,10 +429,115 @@
 
                 color: #000000;
         }
-
-
 }
 
+.check-block .wrap-checkbox{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    position: relative;
+    margin-bottom: 50px;;
+    &:before {
+        content: "";
+        display: block;
+        height: 1px;
+        left: 0px;
+        position: absolute;
+        top: -25px;
+        width: 100%;
+        background-image: url('../img/icons/dashed.svg');
+    }
+}
+
+.total-sum-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        height: 1px;
+        left: 0px;
+        position: absolute;
+        bottom: -15px;
+        width: 100%;
+        background-image: url('../img/icons/dashed.svg');
+    }
+    p, span , .pay-for-send{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+    .ware-number, .ware-calc-sum {
+        margin-right: 5px;;
+    }
+}
+
+.to-pay{
+    margin-bottom: 10px;;
+}
+.total-sum-block .total-sum-info:last-child{
+    margin-bottom: 45px;
+}       
+
+
+.resultInfo {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    color: #0B0B0B;
+    margin-bottom: 29px;
+    text-align: center;
+    padding-top:30px;
+}
+
+.total-sum-block {
+
+    .button {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+}
+
+.totaly-sum span{
+    font-size: 22px ;
+}
+
+
+.agree {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 131.9%;
+    align-items: center;
+    color: #7F7F7F;
+    max-width: 236px;
+    margin: 0 auto 15px;
+
+    a {
+        text-decoration: underline;
+        transition: all ease 0.3s;
+        &:hover{
+            color: #000 ;
+
+        }
+    }
+}
+
+.send-pay{
+    margin-right: 5px;;
+}
 
 
 

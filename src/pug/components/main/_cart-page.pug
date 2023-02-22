@@ -112,12 +112,36 @@
                                 path(d='M24.978 3.122H0v1.04h24.978v-1.04z')
                             path(class="delete-icon" d='M24.978 3.122H0v1.04h24.978v-1.04z' fill='#0B0B0B')
                             path(class="delete-icon" d='M0 3.122v-2h-2v2h2zm24.978 0h2v-2h-2v2zm0 1.04v2h2v-2h-2zM0 4.163h-2v2h2v-2zm0 .96h24.978v-4H0v4zm22.978-2v1.04h4v-1.04h-4zm2-.96H0v4h24.978v-4zM2 4.163v-1.04h-4v1.04h4z' fill='#0B0B0B' mask='url(#path-11-inside-6_150_2507)')
+            .wrap-ware-item.total-sum-block#sticky  
+                .total-sum-info
+                    p.numberOfwares
+                        span.ware-number 3 
+                        span.ware-for-sum товара на суму
+                    p.totalSum 
+                        span.ware-calc-sum 3600
+                        span грн 
+                .total-sum-info
+                    p.numberOfwares
+                        span 3нижка                        
+                    p.totalSale
+                        span.ware-calc-sum 190
+                        span грн
+                .resultInfo 
+                    p.to-pay Разом до сплати
+                    p.totaly-sum
+                        span.finalSum 3 999
+                        span грн    
+                button.button.button-black Купити 
+                p.agree 
+                   | Підтверджуючи замовлення, Ви приймаєте 
+                   a(href="#") умови користувальницької угоди
+                p.pay-for-send
+                    span Доставка орієнтовно 
+                    span.send-pay 190
+                    span грн
 
-                        
 
 
-            .wrap-ware-item.total-sum#sticky  
-                | 22222 fixed
                 
             .wrap-ware-item.register-order 
                 p.ware-block-name ОФОРМЛЕННЯ ЗАМОВЛЕННЯ  
@@ -180,5 +204,83 @@
                                 label.wrap-checkbox Хочу зареєструватися
                                     input(type="checkbox" name="checkbox") 
                                     span.checkmark    
-        div
-            | f some Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem omnis dolores eveniet. Quasi dolor amet voluptatem iure, natus esse libero! Asperiores omnis neque ducimus voluptatem? Nobis delectus perspiciatis dolore quaerat.Quaerat consequatur iure tempora doloribus 
+.last-seen
+   .content
+      //- h2.slider-name Останні перегляди    
+      .last-seen-slider.side-custom-arrows(data-sliderName="Останні перегляди")
+         
+         // card
+         a(href="#").card
+            .card-top
+               .card-sale.card-flag Sale
+               .card-new.card-flag New
+               img(src="./img/illustrations/clothes/clothes3.jpg", alt="")
+            .card-info
+               p.card-name Кардиган
+               .card-infoLine
+                  .prices
+                     .newPrice 
+                        span.price-num 450 
+                        span.price-currency &nbsp;грн.
+                        
+                     .oldPrice 
+                        span 780
+                        span.price-currency &nbsp;грн.
+                  .card-colors
+                     span.color-item(data-color="#000")
+                     span.color-item(data-color="#FFF")
+                     span.color-item(data-color="red")
+                     span.more-colors +1
+         // card
+         a(href="#").card
+            .card-top
+               .card-sale.card-flag Sale
+               .card-new.card-flag New               
+               img(src="./img/illustrations/clothes/clothes6.jpg", alt="")
+            .card-info
+               p.card-name Кардиган
+               .card-infoLine
+                  .prices
+                     .newPrice 
+                        span.price-num 450 
+                        span.price-currency &nbsp;грн.
+                        
+                     .oldPrice 
+                        span 780
+                        span.price-currency &nbsp;грн.
+                  .card-colors
+                     span.color-item(data-color="#000")
+                     span.color-item(data-color="#FFF")
+                     span.color-item(data-color="red")
+                     span.more-colors +1
+         // card
+         a(href="#").card
+            .card-top         
+               img(src="./img/illustrations/clothes/clothes3.jpg", alt="")
+            .card-info
+               p.card-name Кардиган
+               .card-infoLine
+                  .prices
+                     .newPrice 
+                        span.price-num 450 
+                        span.price-currency &nbsp;грн.
+                        
+                     .oldPrice 
+                        span 780
+                        span.price-currency &nbsp;грн.
+                  .card-colors
+                     span.color-item(data-color="#000")
+                     span.color-item(data-color="#FFF")
+                     span.color-item(data-color="red")
+                     span.more-colors +1
+         // card
+         a(href="#").card.card-no-data
+            .card-top             
+               img(src="./img/illustrations/default.jpg", alt="")
+            .card-info
+               p.card-name Wanted wanted wanted
+               .card-infoLine
+                  .prices
+                     .newPrice 
+                        span.price-num  wanted
+                        span.price-currency
