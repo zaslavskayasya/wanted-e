@@ -8,8 +8,8 @@
       padding: 80px;
     }
     .oldPrice{
-      width: auto;
-      max-width: auto;
+      width: 100%;
+      max-width: 100%;
     }
 }
 
@@ -30,6 +30,7 @@
     .prices{
       display: flex;;
       margin-bottom: 55px;;
+      align-items: baseline;
     }
     .oldPrice:after{
       display: none;;

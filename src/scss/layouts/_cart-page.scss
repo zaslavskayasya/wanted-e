@@ -567,30 +567,6 @@
     background-repeat: no-repeat;
 }
 
-.cart-page-block:after{
-    content: "";
-    display: block;
-    position: absolute;
-    right: 224px;
-    top: 100px; 
-    width: 15px;
-    height: 500px;
-    background-image: url(../img/icons/long-arrow.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 1704px){ 
-    .cart-page-block:after{
-        right: 100px;
-    }
-}
-@media screen and (max-width: 1704px){ 
-    .cart-page-block:after{
-        right: 30px;
-    }
-}
-
 
 @media screen and (max-width: 1290px){
     .wrap-ware{

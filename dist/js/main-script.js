@@ -64,8 +64,6 @@ mainMenuItem.forEach((it)=>{
 let mobileItem = document.querySelectorAll('.mobile-main-menu');
 let elemForHideSkroll = document.querySelector('.sidenav');
 
-
-
 mobileItem.forEach((it)=>{
     it.addEventListener('click', (e)=>{
         e.currentTarget.classList.toggle('open');
@@ -78,9 +76,7 @@ mobileItem.forEach((it)=>{
           RightSideMenu.style.overflow  = "hidden";
         }
     });
-
 });
-
 
 let mySlider = $('.main-image-slider');
 
