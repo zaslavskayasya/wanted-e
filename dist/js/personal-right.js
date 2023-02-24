@@ -24,6 +24,14 @@ closeCabinetSidebar.addEventListener('click', ()=>{
 });
 
 
+overflowDarken.addEventListener('click', ()=>{
+  cabinetSidebar.classList.remove('active');
+  overflowDarken.style.opacity = "0";
+  overflowDarken.style.pointerEvents  = "none";    
+ body.style.overflowY = "auto";
+
+});
+
 
 let triggerRegister = document.querySelector('.triggerRegister');
 let triggerLogin = document.querySelector('.triggerLogin');

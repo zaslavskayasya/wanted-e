@@ -38,6 +38,8 @@ window.onscroll = function (e, sticky) {
   }
 }
 
+
+
 //caLCULATE
 let counterPluses = document.querySelectorAll('.counter-plus');
 let counterMinus = document.querySelectorAll('.counter-minus');
@@ -87,11 +89,6 @@ function calculateTotalSum(){
 
 }
 calculateTotalSum();
-
-
-
-
-
 
 
 counterPluses.forEach((counterPluses)=>{
