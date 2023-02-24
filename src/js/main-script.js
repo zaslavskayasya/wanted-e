@@ -287,3 +287,33 @@ overflowDarken.addEventListener('click', ()=>{
 });
 
 
+let cabinetInfoTrigger = document.querySelector('.person-icon');
+let headerFind = document.querySelector('.logged');
+
+let bigPlace = document.querySelector('.right-menu-info');
+
+
+
+// // let cabinetStayActive = document.querySelector('.personal-cabinet');
+
+cabinetInfoTrigger.addEventListener("mouseover", (e)=>{
+  console.log(e.target.parentNode)
+  headerFind.classList.add('active');
+});
+
+bigPlace.addEventListener("mouseleave", (e)=>{
+  console.log(e.target.parentNode)
+  headerFind.classList.remove('active');
+});
+
+
+
+// cabinetInfo.addEventListener("mouseleave", (e)=>{
+//   console.log(e.target.parentNode)
+//     e.target.parentNode.classList.remove('cab-info-hover');
+// });
+
+
+// cabinetStayActive.addEventListener("mouseleave", (e)=>{
+//   cabinetInfo.parentNode.classList.remove('cab-info-hover');
+// });
