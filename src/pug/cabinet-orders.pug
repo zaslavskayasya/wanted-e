@@ -1,0 +1,18 @@
+extends ./helpers/layout/_layout
+
+block value
+  - const path = ".";
+  - var IsItCabinetOrderPage = 'true';
+
+block header
+  include components/header/_header
+
+block main
+  include components/main/_breadcrumbps.pug
+  include components/main/_order-page.pug
+  
+
+
+block footer
+  include components/main/_cart.pug
+  include components/footer/_footer
