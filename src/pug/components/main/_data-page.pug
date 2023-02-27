@@ -25,24 +25,28 @@
                             .order-input
                                 label.select-label(for="persnal-sendType") Спосіб доставки
                                 select#sendType(name="persnal-sendType")
-                                    option(value="novaPoshta") Нова пошта
+                                    option(value="NoSendType" selected disabled) Оберіть спосіб доставки
+                                    option(value="novaPoshta" ) Нова пошта
                                     option(value="ukrPoshta") Укрпошта 
                                     option(value="ukrPoshta") Укрпошта 
                             .order-input
                                 label.select-label(for="persnal-region") Область
                                 select#region(name="persnal-region") 
+                                    option(value="noRegion" selected disabled) Оберіть регіон
                                     option(value="Odeka") Одеська
                                     option(value="Kyivska") Київська
                                     option(value="Vinnicka") Вінницька
                             .order-input
                                 label.select-label(for="city") Місто
                                 select#city(name="persnal-city") 
+                                    option(value="noCity" selected disabled) Оберіть місто
                                     option(value="Odesa") Одеса
                                     option(value="Kyiv") Київ
                                     option(value="Vinnica") Вінниця 
                             .order-input
                                 label.select-label(for="postOffice") Відділення
                                 select#postOffice(name="persnal-citpostOfficey") 
+                                    option(value="noPostOffice" selected disabled) Оберіть відділення
                                     option(value="") №1 Небесної сотні 9а
                                     option(value="Kyiv") №2 проспект перемоги
                 button(type="submit").button.button-black Зберегти                

@@ -22,6 +22,7 @@
         text-align: center;
         justify-content: center;
         margin-bottom: 10px;
+        
     }
     .register-link, .rule-link {
         font-style: normal;
@@ -161,8 +162,11 @@
     padding: 18px;
   }
 
+
+
+
   .order-table{
-    border: 2px solid #ccc;
+    border: 1px solid #d6d6d6;;
     margin: 20px;
     border-radius: 10px;;
     background-color: #fff;
@@ -180,13 +184,30 @@
         border-top-left-radius: 10px;;
     }
     .column-2.photo{
-        max-width: 130px;
+        max-width: 70px;
         img{
             width: 100% ;
         }
     }
+    
+}
+.personal-data-form{
 
-  }
+    .order-input option, .order-input select {
+        font-size: 16px;
+    }
+    .order-input label {
+
+        color: #A9A9A9;
+    }
+    .order-input input::placeholder{
+        color: #000;
+    }
+    .order-input input , .order-input select{
+        height: 51px;
+        line-height: 51px;
+    }
+}
 
   .table-plate{
     // background-color: #fff;
@@ -203,8 +224,9 @@
 
 .cabinet-page{
     .button{
-        // float: right;
+        float: right;
         text-align: right;
+
     }
 }
 
@@ -216,14 +238,16 @@
 .wrap-form {
     background-color: #fff;
     padding: 50px;
+    padding-bottom: 100px;
 }
 
 .personal-data-form{
     display: flex;;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 20px;;
     .select-label:after{
-        top:34px;
+        top:39px;
     }
     .left-part, .right-part{
             width: 48%;
@@ -260,11 +284,14 @@
 .table-column.column-1{
     width: 94px;;
 }
-.table-column.column-2{
-    width: 150px;;
+.order-table .column-2.photo {
+    max-width: 73px;
+}
+.table-column.column-2 {
+    width: 83px;
 }
 .table-column.column-3{
-    width: 406px;
+    width: 480px;
     text-align: left;
 }
 .table-column.column-4{
@@ -273,8 +300,19 @@
 
 .order-table-inner{
     padding: 20px 20px;
-    &:not(:last-child){
-        border-bottom: 1px solid #ccc;
+    position: relative;
+    // &:not(:last-child){
+    //     border-bottom: 1px solid #ccc;
+    // }
+    &:not(:last-child):after{
+        content: "";
+        display: block;
+        bottom: -2px;
+        height: 1px;
+        left: 35px;
+        position: absolute;
+        width: 94%;
+        background-image: url(../../img/icons/dashed.svg);
     }
 }
 
@@ -383,7 +421,12 @@
 
 @media screen and (max-width: 450px ){
     .wrap-form {
-        padding: 25px 15px;
+        padding: 25px 15px 87px;
+    }
+    .cabinet-page .button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
     .table-column.column-3 {
         width: 55%;
