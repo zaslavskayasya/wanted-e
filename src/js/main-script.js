@@ -51,16 +51,33 @@ btn.addEventListener('click', () => {
 
 let mainMenuItem = document.querySelectorAll('.main-menu-item');
 
-mainMenuItem.forEach((it)=>{
-  // console.log(it);
-    it.addEventListener('mouseover', (e)=>{
-        // console.log(e.currentTarget);
-        e.currentTarget.classList.add('hover');
-    });
-    it.addEventListener('mouseleave', (e)=>{
-        // console.log(e.currentTarget);
-        e.currentTarget.classList.remove('hover');
-    });
+let is_view = false;
+mainMenuItem.forEach((it)=>{  
+      it.addEventListener('mouseover', () => {
+          if (is_view) it.classList.add('hover');
+          else setTimeout(() => {
+            mainMenuItem.forEach(_ => { _.classList.remove('hover')});
+              it.classList.add('hover');
+              it.parentNode.classList.add('hovers');
+              is_view = true;
+            }, 800);
+      });
+
+      it.addEventListener('mouseleave', (e)=>{
+          e.currentTarget.classList.remove('hover');
+          e.currentTarget.parentNode.classList.remove('hovers');
+      });
+
+  });
+
+
+document.querySelector('.main-menu').addEventListener('mouseenter', (e) => {
+  // e.currentTarget.classList.add('wow');
+});
+
+document.querySelector('.main-menu').addEventListener('mouseleave', (e) => {
+  is_view = false;
+  // e.currentTarget.classList.remove('wow');
 });
 
 
