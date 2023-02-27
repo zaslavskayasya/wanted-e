@@ -621,5 +621,12 @@
   .cart-amount {
     border: 3px solid #fff;
   }
+  .l-header{
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    /* border-bottom: 1px solid #ccc; */
+    box-shadow: -3px 4px 15px #cccccc42;
+  }
   
 }
