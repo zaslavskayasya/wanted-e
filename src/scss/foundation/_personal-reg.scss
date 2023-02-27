@@ -337,11 +337,37 @@
     .order-table-inner{
         flex-flow: wrap;
     }
+    .table-column.column-1{
+        order: 3;
+    }
+
+    .table-column.column-1, .table-column.column-4, .table-column.column-5{
+        width: 26%;
+    }
+    .order-table .table-column {
+        padding: 16px 2px;
+        text-align: left;
+    }    
+
+    .table-column.column-2 {
+        width: 86px;
+    }
+    .table-column.column-3 {
+        width: 73%;
+    }
+    .order-table-inner {
+        padding: 12px;
+    }
+
+
 }
 
 
 @media screen and (max-width: 450px ){
     .wrap-form {
         padding: 25px 15px;
+    }
+    .table-column.column-3 {
+        width: 55%;
     }
 }
