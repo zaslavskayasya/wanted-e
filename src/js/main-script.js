@@ -60,7 +60,7 @@ mainMenuItem.forEach((it)=>{
               it.classList.add('hover');
               it.parentNode.classList.add('hovers');
               is_view = true;
-            }, 300);
+            }, 200);
       });
 
       it.addEventListener('mouseleave', (e)=>{
