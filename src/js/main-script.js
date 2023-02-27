@@ -60,12 +60,17 @@ mainMenuItem.forEach((it)=>{
               it.classList.add('hover');
               it.parentNode.classList.add('hovers');
               is_view = true;
-            }, 800);
+            }, 300);
       });
 
       it.addEventListener('mouseleave', (e)=>{
-          e.currentTarget.classList.remove('hover');
-          e.currentTarget.parentNode.classList.remove('hovers');
+          // if (is_view) it.classList.remove('hover');
+          setTimeout(() => {           
+              it.classList.remove('hover');
+            }, 300);
+
+          // e.currentTarget.classList.remove('hover');
+          // e.currentTarget.parentNode.classList.remove('hovers');
       });
 
   });
