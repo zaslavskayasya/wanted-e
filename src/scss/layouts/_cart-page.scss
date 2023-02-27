@@ -118,7 +118,13 @@
         display: flex;
         align-items: center;        
         color: #0B0B0B;
-        margin-bottom: 5px;;
+        margin-bottom: 5px;
+        a{
+            transition: 0.3s ease all;
+        }
+        a:hover{
+                text-decoration: underline;
+        }
     }
     &-info{
         font-style: normal;

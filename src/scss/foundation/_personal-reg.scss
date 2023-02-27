@@ -286,6 +286,9 @@
     }
 }
 
+
+
+
 @media screen and (max-width: 900px ){
     .personal-data-form{
         flex-direction: column;
@@ -358,8 +361,23 @@
     .order-table-inner {
         padding: 12px;
     }
-
-
+    .cabinet-page{
+        padding-bottom: 20px;;
+    }
+    .table-header.accordion {
+        position: relative;
+        &:after{
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: #ccc;
+            position: absolute;
+            width: 89%;
+            left: 14px;
+            top:52%;
+        }
+    }
 }
 
 

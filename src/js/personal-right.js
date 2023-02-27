@@ -10,6 +10,7 @@ personalCabinetTrigger.forEach((triggerBtn)=>{
   triggerBtn.addEventListener('click', (e)=>{
     cabinetSidebar.classList.add('active');
       overflowDarken.style.opacity = "1";
+      overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden"; 
   });
@@ -19,6 +20,7 @@ personalCabinetTrigger.forEach((triggerBtn)=>{
 closeCabinetSidebar.addEventListener('click', ()=>{
     cabinetSidebar.classList.remove('active');
     overflowDarken.style.opacity = "0";
+    overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none"; 
      body.style.overflowY = "auto";
 });
@@ -27,6 +29,7 @@ closeCabinetSidebar.addEventListener('click', ()=>{
 overflowDarken.addEventListener('click', ()=>{
   cabinetSidebar.classList.remove('active');
   overflowDarken.style.opacity = "0";
+  overflowDarken.style.height = "0";
   overflowDarken.style.pointerEvents  = "none";    
  body.style.overflowY = "auto";
 

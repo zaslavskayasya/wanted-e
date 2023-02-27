@@ -8,6 +8,7 @@ rightFilterTrigger.forEach((triggerBtn)=>{
   triggerBtn.addEventListener('click', (e)=>{
       RightSideMenu.classList.add('active');
       overflowDarken.style.opacity = "1";
+      overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden";
 
@@ -36,6 +37,7 @@ rightFilterTrigger.forEach((triggerBtn)=>{
 closeRightSidebar.addEventListener('click', ()=>{
   RightSideMenu.classList.remove('active');
   overflowDarken.style.opacity = "0";
+  overflowDarken.style.height = "0";
   overflowDarken.style.pointerEvents  = "none";
   mobileItem.forEach((mi)=>{
         mi.classList.remove('open');    
@@ -47,6 +49,7 @@ closeRightSidebar.addEventListener('click', ()=>{
 overflowDarken.addEventListener('click', ()=>{
     RightSideMenu.classList.remove('active');
     overflowDarken.style.opacity = "0";
+    overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";
     mobileItem.forEach((mi)=>{
         mi.classList.remove('open');    

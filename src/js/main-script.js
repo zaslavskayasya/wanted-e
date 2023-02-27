@@ -13,6 +13,7 @@ openLeftSidebarMenu.addEventListener('click', ()=>{
     leftSideMenu.style.left = "0px";
     leftSideMenu.style.opacity = "1";
     overflowDarken.style.opacity = "1";
+    overflowDarken.style.height = "100rem";
     overflowDarken.style.pointerEvents  = "auto"; 
     body.style.overflowY = "hidden";      
    
@@ -22,6 +23,7 @@ closeLeftSidebarMenu.addEventListener('click', ()=>{
     leftSideMenu.style.left = "-100%";
     leftSideMenu.style.opacity = "0";
     overflowDarken.style.opacity = "0";
+    overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";
     body.style.overflowY = "auto";
 
@@ -30,6 +32,7 @@ closeLeftSidebarMenu.addEventListener('click', ()=>{
 overflowDarken.addEventListener('click', ()=>{
   leftSideMenu.style.left = "-100%";
   leftSideMenu.style.opacity = "0";
+  overflowDarken.style.height = "0";
   overflowDarken.style.opacity = "0";
   overflowDarken.style.pointerEvents  = "none";
   body.style.overflowY = "auto";
@@ -255,6 +258,7 @@ headercartTrigger.forEach((triggerBtn)=>{
   triggerBtn.addEventListener('click', (e)=>{
     RightSideCart.classList.add('active');
       overflowDarken.style.opacity = "1";
+      overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden"; 
   });
@@ -265,6 +269,7 @@ cartTrigger.forEach((triggerBtn)=>{
   triggerBtn.addEventListener('click', (e)=>{
     RightSideCart.classList.add('active');
       overflowDarken.style.opacity = "1";
+      overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden"; 
   });
@@ -274,6 +279,7 @@ cartTrigger.forEach((triggerBtn)=>{
 closeRightSidebar2.addEventListener('click', ()=>{
   RightSideCart.classList.remove('active');
   overflowDarken.style.opacity = "0";
+  overflowDarken.style.height = "0";
   overflowDarken.style.pointerEvents  = "none"; 
    body.style.overflowY = "auto";
 });
@@ -281,6 +287,7 @@ closeRightSidebar2.addEventListener('click', ()=>{
 overflowDarken.addEventListener('click', ()=>{
     RightSideCart.classList.remove('active');
     overflowDarken.style.opacity = "0";
+    overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";    
    body.style.overflowY = "auto";
   
