@@ -123,6 +123,10 @@
     background-color: white;
     display: none;
     overflow: hidden;
+    padding-bottom: 35px;;
+     .button {
+        margin-top: 24px;
+    }
   }
 
   .table-row{
@@ -159,7 +163,7 @@
     display: flex; 
     justify-content: space-between;
     text-align: center;
-    padding: 18px;
+    padding: 4px 18px;
   }
 
 
@@ -304,7 +308,7 @@
     // &:not(:last-child){
     //     border-bottom: 1px solid #ccc;
     // }
-    &:not(:last-child):after{
+    &.dashed:after{
         content: "";
         display: block;
         bottom: -2px;
