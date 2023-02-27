@@ -5,43 +5,44 @@
             | Повернутись до головної
         h2.cabinet-page-name.h2 Особисті дані
         .wrap-form 
-            form.personal-data-form
-                .left-part.field-wrap
-                    .order-input
-                        label(for="lastName") Прізвище*
-                        input(type="text" name="lastName")
-                    .order-input
-                        label(for="firstName") Ім'я*
-                        input(type="text" name="firstName")
-                    .order-input
-                        label(for="phoneNumber") Мобільний телефон*
-                        input(type="tel" name="phoneNumber")
-                    .order-input
-                        label(for="e-mail") Електронна пошта
-                        input(type="e" name="e-mail")
-                .right-part
-                    .field-wrap
+            form
+                .personal-data-form
+                    .left-part.field-wrap
                         .order-input
-                            label.select-label(for="sendType") Спосіб доставки
-                            select#sendType(name="sendType")
-                                option(value="novaPoshta") Нова пошта
-                                option(value="ukrPoshta") Укрпошта 
-                                option(value="ukrPoshta") Укрпошта 
+                            label(for="lastName") Прізвище*
+                            input(type="text" name="persnal-lastName" autocomplete="on" required placeholder="Ваше прізвище")
                         .order-input
-                            label.select-label(for="region") Область
-                            select#region(name="region") 
-                                option(value="Odeka") Одеська
-                                option(value="Kyivska") Київська
-                                option(value="Vinnicka") Вінницька
+                            label(for="firstName") Ім'я*
+                            input(type="text" name="persnal-firstName"  required placeholder="Ваше  ім'я")
                         .order-input
-                            label.select-label(for="city") Місто
-                            select#city(name="city") 
-                                option(value="Odesa") Одеса
-                                option(value="Kyiv") Київ
-                                option(value="Vinnica") Вінниця 
+                            label(for="phoneNumber") Мобільний телефон*
+                            input(type="tel" name="persnal-phoneNumber" minlength="8" pattern="[0-9]"  required placeholder="380 97 000 00 00")
                         .order-input
-                            label.select-label(for="postOffice") Відділення
-                            select#postOffice(name="citpostOfficey") 
-                                option(value="") №1 Небесної сотні 9а
-                                option(value="Kyiv") №2 проспект перемоги
-            button(type="submit").button.button-black Зберегти                
+                            label(for="e-mail") Електронна пошта
+                            input(type="email" name="order-e-mail" required placeholder="your@gmail.com")
+                    .right-part
+                        .field-wrap
+                            .order-input
+                                label.select-label(for="persnal-sendType") Спосіб доставки
+                                select#sendType(name="persnal-sendType")
+                                    option(value="novaPoshta") Нова пошта
+                                    option(value="ukrPoshta") Укрпошта 
+                                    option(value="ukrPoshta") Укрпошта 
+                            .order-input
+                                label.select-label(for="persnal-region") Область
+                                select#region(name="persnal-region") 
+                                    option(value="Odeka") Одеська
+                                    option(value="Kyivska") Київська
+                                    option(value="Vinnicka") Вінницька
+                            .order-input
+                                label.select-label(for="city") Місто
+                                select#city(name="persnal-city") 
+                                    option(value="Odesa") Одеса
+                                    option(value="Kyiv") Київ
+                                    option(value="Vinnica") Вінниця 
+                            .order-input
+                                label.select-label(for="postOffice") Відділення
+                                select#postOffice(name="persnal-citpostOfficey") 
+                                    option(value="") №1 Небесної сотні 9а
+                                    option(value="Kyiv") №2 проспект перемоги
+                button(type="submit").button.button-black Зберегти                

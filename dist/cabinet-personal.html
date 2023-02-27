@@ -258,62 +258,64 @@
       <div class="content"><a class="back-link" href="#"> <img src="./img/icons/arrow-left2.svg" alt="">Повернутись до головної</a>
         <h2 class="cabinet-page-name h2">Особисті дані</h2>
         <div class="wrap-form">
-          <form class="personal-data-form">
-            <div class="left-part field-wrap">
-              <div class="order-input">
-                <label for="lastName">Прізвище*</label>
-                <input type="text" name="lastName">
+          <form>
+            <div class="personal-data-form">
+              <div class="left-part field-wrap">
+                <div class="order-input">
+                  <label for="lastName">Прізвище*</label>
+                  <input type="text" name="persnal-lastName" autocomplete="on" required placeholder="Ваше прізвище">
+                </div>
+                <div class="order-input">
+                  <label for="firstName">Ім'я*</label>
+                  <input type="text" name="persnal-firstName" required placeholder="Ваше  ім'я">
+                </div>
+                <div class="order-input">
+                  <label for="phoneNumber">Мобільний телефон*</label>
+                  <input type="tel" name="persnal-phoneNumber" minlength="8" pattern="[0-9]" required placeholder="380 97 000 00 00">
+                </div>
+                <div class="order-input">
+                  <label for="e-mail">Електронна пошта</label>
+                  <input type="email" name="order-e-mail" required placeholder="your@gmail.com">
+                </div>
               </div>
-              <div class="order-input">
-                <label for="firstName">Ім'я*</label>
-                <input type="text" name="firstName">
-              </div>
-              <div class="order-input">
-                <label for="phoneNumber">Мобільний телефон*</label>
-                <input type="tel" name="phoneNumber">
-              </div>
-              <div class="order-input">
-                <label for="e-mail">Електронна пошта</label>
-                <input type="e" name="e-mail">
+              <div class="right-part">
+                <div class="field-wrap">
+                  <div class="order-input">
+                    <label class="select-label" for="persnal-sendType">Спосіб доставки</label>
+                    <select id="sendType" name="persnal-sendType">
+                      <option value="novaPoshta">Нова пошта</option>
+                      <option value="ukrPoshta">Укрпошта </option>
+                      <option value="ukrPoshta">Укрпошта </option>
+                    </select>
+                  </div>
+                  <div class="order-input">
+                    <label class="select-label" for="persnal-region">Область</label>
+                    <select id="region" name="persnal-region">
+                      <option value="Odeka">Одеська</option>
+                      <option value="Kyivska">Київська</option>
+                      <option value="Vinnicka">Вінницька</option>
+                    </select>
+                  </div>
+                  <div class="order-input">
+                    <label class="select-label" for="city">Місто</label>
+                    <select id="city" name="persnal-city">
+                      <option value="Odesa">Одеса</option>
+                      <option value="Kyiv">Київ</option>
+                      <option value="Vinnica">Вінниця </option>
+                    </select>
+                  </div>
+                  <div class="order-input">
+                    <label class="select-label" for="postOffice">Відділення</label>
+                    <select id="postOffice" name="persnal-citpostOfficey">
+                      <option value="">№1 Небесної сотні 9а</option>
+                      <option value="Kyiv">№2 проспект перемоги</option>
+                    </select>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="right-part">
-              <div class="field-wrap">
-                <div class="order-input">
-                  <label class="select-label" for="sendType">Спосіб доставки</label>
-                  <select id="sendType" name="sendType">
-                    <option value="novaPoshta">Нова пошта</option>
-                    <option value="ukrPoshta">Укрпошта </option>
-                    <option value="ukrPoshta">Укрпошта </option>
-                  </select>
-                </div>
-                <div class="order-input">
-                  <label class="select-label" for="region">Область</label>
-                  <select id="region" name="region">
-                    <option value="Odeka">Одеська</option>
-                    <option value="Kyivska">Київська</option>
-                    <option value="Vinnicka">Вінницька</option>
-                  </select>
-                </div>
-                <div class="order-input">
-                  <label class="select-label" for="city">Місто</label>
-                  <select id="city" name="city">
-                    <option value="Odesa">Одеса</option>
-                    <option value="Kyiv">Київ</option>
-                    <option value="Vinnica">Вінниця </option>
-                  </select>
-                </div>
-                <div class="order-input">
-                  <label class="select-label" for="postOffice">Відділення</label>
-                  <select id="postOffice" name="citpostOfficey">
-                    <option value="">№1 Небесної сотні 9а</option>
-                    <option value="Kyiv">№2 проспект перемоги</option>
-                  </select>
-                </div>
-              </div>
-            </div>
+            <button class="button button-black" type="submit">Зберегти </button>
           </form>
-          <button class="button button-black" type="submit">Зберегти </button>
         </div>
       </div>
     </div>
