@@ -32,7 +32,7 @@ window.onscroll = function (e, sticky) {
   } else if (pixelsToTopFromWrap < 0 ) {      
         //   console.log('under top ' + pixelsToTopFromWrap);
         if(infoAboutHeight > 0){
-            stickyBlock.style.top = pixelsToTopFromWrap*-1  + "px";
+            stickyBlock.style.top = pixelsToTopFromWrap*-1 + "px";
 
         }   
   }

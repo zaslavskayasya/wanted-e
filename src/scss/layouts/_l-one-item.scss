@@ -375,6 +375,7 @@
 
 
 .info-right, .cart-right{
+  transition: all ease 0.3s;
   position: absolute;
   right: 0px;
   top:0px;
@@ -455,7 +456,7 @@
   &-item{
     font-style: normal;
     font-weight: 500;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 24px;
     display: flex;
     align-items: center;
@@ -465,11 +466,12 @@
 }
 
 .cart-right{
+  transition: all ease 0.3s;
   .card{
     margin: 0px auto 48px;
   }
   .card-top{
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     img{
       width: 100%;
     }

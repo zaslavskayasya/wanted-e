@@ -40,49 +40,49 @@ overflowDarken.addEventListener('click', ()=>{
 });
 
 
-const search = document.querySelector('.search');
-const btn = document.querySelector('.btn');
-const input = document.querySelector('.input');
-btn.addEventListener('click', () => {
-    search.classList.toggle('active');
-    input.focus();
+const searchForm = document.querySelector('.search');
+const btn = document.querySelector('.search-btn');
+const input = document.querySelector('.search-input');
+
+
+btn.addEventListener('click', (e) => {
+  e.preventDefault();
+  input.focus();
+
+  if (!searchForm.classList.contains('active')){
+    searchForm.classList.add('active');
+  }
 });
 
+window.addEventListener('click', e => {
+  let target = e.target;
+  if (!searchForm.contains(target))
+    searchForm.classList.remove('active');
+});
 
-let mainMenuItem = document.querySelectorAll('.main-menu-item');
-
-let is_view = false;
-mainMenuItem.forEach((it)=>{  
-      it.addEventListener('mouseover', () => {
-          if (is_view) it.classList.add('hover');
-          else setTimeout(() => {
-            mainMenuItem.forEach(_ => { _.classList.remove('hover')});
-              it.classList.add('hover');
-              it.parentNode.classList.add('hovers');
-              is_view = true;
-            }, 200);
-      });
-
-      it.addEventListener('mouseleave', (e)=>{
-          // if (is_view) it.classList.remove('hover');
-          setTimeout(() => {           
-              it.classList.remove('hover');
-            }, 300);
-
-          // e.currentTarget.classList.remove('hover');
-          // e.currentTarget.parentNode.classList.remove('hovers');
-      });
-
-  });
+// searchForm.onblur  = function(){
+//   // console.log('left focus');
+//   searchForm.classList.remove('active');
+// }
 
 
-document.querySelector('.main-menu').addEventListener('mouseenter', (e) => {
-  // e.currentTarget.classList.add('wow');
+let mainMenuItem = document.querySelectorAll('.main-menu-item'),
+    arr_to_id = [];
+
+mainMenuItem.forEach(el => {
+    el.addEventListener('mouseover', () => {
+      arr_to_id.push(setTimeout(() => {
+        mainMenuItem.forEach(_ => _.classList.remove('hover'));
+        el.classList.add('hover');
+      }, 500));
+    });
 });
 
 document.querySelector('.main-menu').addEventListener('mouseleave', (e) => {
-  is_view = false;
-  // e.currentTarget.classList.remove('wow');
+  arr_to_id.forEach(to_id => clearTimeout(to_id));
+  setTimeout(() => {
+    mainMenuItem.forEach(_ => _.classList.remove('hover'));
+  }, 400);
 });
 
 
@@ -326,12 +326,12 @@ let bigPlace = document.querySelector('.right-menu-info');
 // // let cabinetStayActive = document.querySelector('.personal-cabinet');
 
 cabinetInfoTrigger.addEventListener("mouseover", (e)=>{
-  console.log(e.target.parentNode)
+  // console.log(e.target.parentNode)
   headerFind.classList.add('active');
 });
 
 bigPlace.addEventListener("mouseleave", (e)=>{
-  console.log(e.target.parentNode)
+  // console.log(e.target.parentNode)
   headerFind.classList.remove('active');
 });
 
