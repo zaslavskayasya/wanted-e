@@ -8,7 +8,6 @@ let openLeftSidebarMenu = document.querySelector('.openLeftSideMenu');
 let closeLeftSidebarMenu = document.querySelector('.closeLeftSidebar');
 
 
-
 openLeftSidebarMenu.addEventListener('click', ()=>{
     leftSideMenu.style.left = "0px";
     leftSideMenu.style.opacity = "1";
@@ -322,19 +321,19 @@ let headerFind = document.querySelector('.logged');
 let bigPlace = document.querySelector('.right-menu-info');
 
 
-
 // // let cabinetStayActive = document.querySelector('.personal-cabinet');
 
-cabinetInfoTrigger.addEventListener("mouseover", (e)=>{
-  // console.log(e.target.parentNode)
-  headerFind.classList.add('active');
-});
+if(headerFind){
 
-bigPlace.addEventListener("mouseleave", (e)=>{
-  // console.log(e.target.parentNode)
-  headerFind.classList.remove('active');
-});
-
+  cabinetInfoTrigger.addEventListener("mouseover", (e)=>{
+    // console.log(e.target.parentNode)
+    headerFind.classList.add('active');
+  });
+  bigPlace.addEventListener("mouseleave", (e)=>{
+    // console.log(e.target.parentNode)
+    headerFind.classList.remove('active');
+  });
+};
 
 
 // cabinetInfo.addEventListener("mouseleave", (e)=>{

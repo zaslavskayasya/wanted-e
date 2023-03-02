@@ -391,6 +391,8 @@ input:-webkit-autofill:focus {
   width: 10px;
   width: 23px;
   z-index: 9;
+  display: flex;
+  justify-content: center;
 }
 
 .right-menu-info--icon{

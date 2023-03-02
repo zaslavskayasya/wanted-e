@@ -93,6 +93,7 @@
     bottom: 10px;
     left: 10px;
     background-color: #FF3737;
+    z-index: 8;
     
 }
 
@@ -112,6 +113,7 @@
     top: 10px;
     right: 10px;
     background-color: #6FB662;
+    z-index: 8;
 }
 .card-new:after{
     border-left: 12px solid transparent;
@@ -329,6 +331,45 @@
 
 }
 
+.new-collection-block .content {
+    position: relative;
+}
+
+.sale-block .content {
+    position: relative;
+}
+
+.last-seen .content {
+    position: relative;
+}
+
+.sliders-header-writing-mode{
+   
+    display: block;
+
+    color: #7f7f7f;
+    font-size: 12px;
+
+    font-style: normal;
+    font-weight: 800;
+    line-height: 39px;
+    height: 40px;
+    height: 300px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+
+    position: absolute;
+    left: -77px;
+    
+    margin: 0;
+    padding: 0;
+    text-align: right;
+
+    transform: rotate(-180deg);
+    writing-mode: tb-rl;
+}
+
+
 @media screen and (max-width: 900px){
     .new-collection-slider, .sale-slider, .last-seen-slider{
         max-width: 600px;;
@@ -348,6 +389,13 @@
         left: 0;
         top: -39px;
         text-align: left;
+    }
+    .sliders-header-writing-mode {
+        font-size: 12px;
+        top: -59px;
+        writing-mode: initial;
+        transform: none;
+        left: 15px;
     }
 
 }
