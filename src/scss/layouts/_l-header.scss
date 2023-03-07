@@ -429,22 +429,34 @@ input:-webkit-autofill:focus {
   // transition: visibility .5s ease, opacity .5s ease, min-height .5s ease, max-height .5s ease;
 }
 
+.sub-menu{
+  transition: all ease-in-out 0.3s;
+}
 
 .hovers{
   .sub-menu{
-    transition: all ease-in-out 0.3s;
+    transition: none;
   }
 }
 
 
+
+
 .main-menu-item{
-  transition: all ease-in-out 0.6s;
+  transition: all ease-in-out 0.2s;
+}
+
+.main-menu-item:hover{
+  color: #cba25e;
 }
 
 .main-menu-item.hover{
+  // text-decoration: underline;
+  color: #cba25e;
   .sub-menu{
     opacity: 1;
     // display: flex;
+    color: #000;
     pointer-events: all;
     visibility: visible;
     // max-height: initial;

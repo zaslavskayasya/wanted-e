@@ -13,6 +13,7 @@ personalCabinetTrigger.forEach((triggerBtn)=>{
       overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden"; 
+      body.classList.add("active-right")  ;  
   });
 })
 
@@ -23,6 +24,7 @@ closeCabinetSidebar.addEventListener('click', ()=>{
     overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none"; 
      body.style.overflowY = "auto";
+     body.classList.remove("active-right")  ;  
 });
 
 
@@ -32,6 +34,7 @@ overflowDarken.addEventListener('click', ()=>{
   overflowDarken.style.height = "0";
   overflowDarken.style.pointerEvents  = "none";    
  body.style.overflowY = "auto";
+ body.classList.remove("active-right")  ;  
 
 });
 

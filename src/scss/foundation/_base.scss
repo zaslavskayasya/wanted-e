@@ -12,8 +12,23 @@ body {
   background-color: #F5F5F5;
 }
 
+body.active-left{
+  .l-header, .l-main, .new-collection-block, .blackline{
+    padding-left: 70px;
+    transition: all ease 0.2s;
 
-/* width */
+  }
+}
+
+body.active-right{
+  .l-header, .l-main, .new-collection-block, .blackline .norm{
+    padding-right: 70px;
+    transition: all ease 0.2s;
+
+  }
+}
+
+/* width  body.classList.add("active-left")  ;   */
 ::-webkit-scrollbar {
   width: 6px;
 }

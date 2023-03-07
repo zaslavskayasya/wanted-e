@@ -11,6 +11,7 @@ rightFilterTrigger.forEach((triggerBtn)=>{
       overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden";
+      body.classList.add("active-right")  ;  
 
     //find data-attr on clicked element
     let activeFilter = e.currentTarget.dataset.filtername; 
@@ -43,6 +44,7 @@ closeRightSidebar.addEventListener('click', ()=>{
         mi.classList.remove('open');    
    }) ;
    body.style.overflowY = "auto";
+   body.classList.remove("active-right")  ;  
 
 });
 
@@ -55,6 +57,7 @@ overflowDarken.addEventListener('click', ()=>{
         mi.classList.remove('open');    
    }) ;
    body.style.overflowY = "auto";
+   body.classList.remove("active-right")  ;  
   
   });
 

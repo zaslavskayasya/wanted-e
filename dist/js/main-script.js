@@ -14,7 +14,8 @@ openLeftSidebarMenu.addEventListener('click', ()=>{
     overflowDarken.style.opacity = "1";
     overflowDarken.style.height = "100rem";
     overflowDarken.style.pointerEvents  = "auto"; 
-    body.style.overflowY = "hidden";      
+    body.style.overflowY = "hidden";     
+    body.classList.add("active-left")  ;   
    
 });
 
@@ -25,6 +26,7 @@ closeLeftSidebarMenu.addEventListener('click', ()=>{
     overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";
     body.style.overflowY = "auto";
+    body.classList.remove("active-left")  ;  
 
 });
 
@@ -35,6 +37,7 @@ overflowDarken.addEventListener('click', ()=>{
   overflowDarken.style.opacity = "0";
   overflowDarken.style.pointerEvents  = "none";
   body.style.overflowY = "auto";
+  body.classList.remove("active-left")  ;  
 
 });
 
@@ -53,10 +56,18 @@ btn.addEventListener('click', (e) => {
   }
 });
 
+let mainMenuItem = document.querySelectorAll('.main-menu-item'),
+    arr_to_id = [];
+
+
 window.addEventListener('click', e => {
   let target = e.target;
-  if (!searchForm.contains(target))
+  if (!searchForm.contains(target)){
     searchForm.classList.remove('active');
+
+  };
+
+
 });
 
 // searchForm.onblur  = function(){
@@ -65,28 +76,51 @@ window.addEventListener('click', e => {
 // }
 
 
-let mainMenuItem = document.querySelectorAll('.main-menu-item'),
-    arr_to_id = [];
 
-mainMenuItem.forEach(el => {
-    el.addEventListener('mouseover', () => {
-      arr_to_id.push(setTimeout(() => {
-        mainMenuItem.forEach(_ => _.classList.remove('hover'));
-        el.classList.add('hover');
-      }, 500));
-    });
-});
+// mainMenuItem.forEach(el => {
+//     el.addEventListener('mouseover', () => {
+//       arr_to_id.push(setTimeout(() => {
+//         mainMenuItem.forEach(_ => _.classList.remove('hover'));
+//         el.classList.add('hover');
+//       }, 500));
+//     });
+// });
 
-document.querySelector('.main-menu').addEventListener('mouseleave', (e) => {
-  arr_to_id.forEach(to_id => clearTimeout(to_id));
-  setTimeout(() => {
+let menuH = document.querySelector('.left-menu');
+
+mainMenuItem.forEach((el) => {
+  el.classList.remove('hover');
+  el.addEventListener('click', () => {
     mainMenuItem.forEach(_ => _.classList.remove('hover'));
-  }, 400);
+    el.classList.toggle('hover');
+    setTimeout(() => {
+        menuH.classList.add('hovers');    
+    }, 400);
+
+  });
 });
+
+document.addEventListener('click', e => {
+  if(e.target.closest('.left-menu') === null){
+    mainMenuItem.forEach(_ => _.classList.remove('hover'));
+
+    menuH.classList.remove('hovers');    
+
+  };   
+});
+
+// document.querySelector('.main-menu').addEventListener('mouseleave', (e) => {
+//   arr_to_id.forEach(to_id => clearTimeout(to_id));
+//   setTimeout(() => {
+//     mainMenuItem.forEach(_ => _.classList.remove('hover'));
+//   }, 400);
+// });
 
 
 let mobileItem = document.querySelectorAll('.mobile-main-menu');
 let elemForHideSkroll = document.querySelector('.sidenav');
+let bodyTag = document.querySelector("#body");
+
 
 mobileItem.forEach((it)=>{
     it.addEventListener('click', (e)=>{
@@ -95,6 +129,7 @@ mobileItem.forEach((it)=>{
         if(e.currentTarget.classList.contains('open')){
           elemForHideSkroll.style.overflow = "auto";
           RightSideMenu.style.overflow = "auto";
+          // bodyTag.style.paddingRight = "70px"
         } else{
           elemForHideSkroll.style.overflow = "hidden";
           RightSideMenu.style.overflow  = "hidden";
@@ -282,6 +317,7 @@ headercartTrigger.forEach((triggerBtn)=>{
       overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden"; 
+      body.classList.add('active-right');
   });
 
 })
@@ -293,6 +329,7 @@ cartTrigger.forEach((triggerBtn)=>{
       overflowDarken.style.height = "100rem";
       overflowDarken.style.pointerEvents  = "initial"; 
       body.style.overflowY = "hidden"; 
+      body.classList.add('active-right');
   });
 
 })
@@ -303,6 +340,7 @@ closeRightSidebar2.addEventListener('click', ()=>{
   overflowDarken.style.height = "0";
   overflowDarken.style.pointerEvents  = "none"; 
    body.style.overflowY = "auto";
+   body.classList.remove('active-right');
 });
 
 overflowDarken.addEventListener('click', ()=>{
@@ -311,6 +349,7 @@ overflowDarken.addEventListener('click', ()=>{
     overflowDarken.style.height = "0";
     overflowDarken.style.pointerEvents  = "none";    
    body.style.overflowY = "auto";
+   body.classList.remove('active-right');
   
 });
 
