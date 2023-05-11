@@ -174,7 +174,16 @@
   }
   .mySlides.active {
     display: block;
-    opacity:1
+    opacity:1;
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+    img{
+          width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+    
   }
   /* Add a pointer when hovering over the thumbnail images */
   .cursor {
@@ -185,6 +194,11 @@
     overflow-y: scroll;
   }
 
+.slides-block{
+  max-height: 762px;;
+}
+
+  
 /* хром, сафари */
 .thumbnails::-webkit-scrollbar { width: 0; }
 
@@ -546,7 +560,7 @@
   }
   .slides-block{
     position: relative;
-    margin-bottom: 20px;
+    margin: 20px auto;;
   }
   .one-item-wrap .right-part {
     max-width: 100%;
