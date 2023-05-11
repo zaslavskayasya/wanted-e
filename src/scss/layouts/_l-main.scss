@@ -58,15 +58,13 @@
  .card-top{
     position: relative;
     max-height: 336px;
-    // height: 336px;
+    height: 336px;
     overflow: hidden;
     margin-bottom: 20px;;
     img{
-
-        vertical-align: bottom;
         height: 100%;
-        width: auto;
-        max-width: fit-content;
+        width: 100%;
+        object-fit: contain;
     }
 }
 
