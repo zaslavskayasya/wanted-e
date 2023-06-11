@@ -411,22 +411,17 @@ input:-webkit-autofill:focus {
   font-weight: 500;
   font-size: 32px;
   line-height: 28px;
-  width: 157px;
+  // width: 157px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: #0B0B0B;
   transform: rotate(-90deg) translateY(-26px) translateX(-111px);
   position: absolute;
-  left: 0px;
-  &.women{
-    transform: rotate(-90deg) translate(-67px, -24px);
-  }
-  &.men{
-    transform: rotate(-90deg) translate(-137px, -24px);
-  }
-  &.childrens{
-    transform: rotate(-90deg) translate(-49px, -24px);
-  }
+  left: 40px;
+  transform: rotate(-180deg);
+  writing-mode: vertical-rl;
+
+
 }
 
 .sub-menu{
@@ -444,7 +439,7 @@ input:-webkit-autofill:focus {
     display: flex;
     text-align: left;
     margin-right: 93px;
-    padding-left: 92px;
+    padding-left: 70px;
     ul:not(:last-child){
       margin-right: 84px;
     }
