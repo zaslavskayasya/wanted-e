@@ -30,6 +30,10 @@
         line-height: 13px;
         letter-spacing: 0.05em;
         position: relative;
+        &:hover{
+            color: #000;
+            text-shadow: 0px 0px 1px black;
+        }
         &:last-child{
             color: #000;
             font-weight: 500;
@@ -62,5 +66,22 @@
     height: 1px;
     background-color: red;
     width: auto;
+}
 
+
+
+@media screen and (max-width: 780px){
+    .bread{
+        margin-bottom: 15px;;
+        &:before{
+            display: none;
+        }
+    }
+    .bread-links {
+        margin: 0;
+        padding: 0 14px;
+    }
+    .bread-links a:not(:last-child):after {
+        display: none;
+    }
 }

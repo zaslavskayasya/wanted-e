@@ -11151,4 +11151,3 @@ return jQuery;
 
   return new Lightbox();
 }));
-//# sourceMappingURL=lightbox-plus-jquery.js.map

@@ -168,4 +168,3 @@ function openDes(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-//# sourceMappingURL=item.js.map

@@ -178,4 +178,3 @@ deleteBlockTrigger.forEach((deleteBlockTrigger)=>{
 
     });
 })
-//# sourceMappingURL=cart-page.js.map

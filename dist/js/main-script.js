@@ -384,4 +384,3 @@ if(headerFind){
 // cabinetStayActive.addEventListener("mouseleave", (e)=>{
 //   cabinetInfo.parentNode.classList.remove('cab-info-hover');
 // });
-//# sourceMappingURL=main-script.js.map

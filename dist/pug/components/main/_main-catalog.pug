@@ -1,19 +1,31 @@
 .catalog-wrap
     .content
-        h1.page-catalog-name Нова колекція
+        h1.page-catalog-name.page-name-mode Куртки і пальта
         .catalog-content
-            .filter-line 
-                .filter-item 
-                    img(src="./img/icons/settings.svg", alt="")
-                .filter-item(data-filterName="price")
-                    p.filter-item-name Ціна
-                    span.num 1
-                .filter-item(data-filterName="size")
-                    p.filter-item-name Розмір
-                    span.num 2
-                .filter-item(data-filterName="color")
-                    p.filter-item-name Колір
-                    span.num 2   
+            .wrp-filters
+                .filter-line 
+                    .filter-item 
+                        img(src="./img/icons/settings.svg", alt="")
+                    .filter-item(data-filterName="price")
+                        p.filter-item-name Ціна
+                        span.num 1
+                    .filter-item(data-filterName="size")
+                        p.filter-item-name Розмір
+                        span.num 2
+                    .filter-item(data-filterName="color")
+                        p.filter-item-name Колір
+                        span.num 2
+                .sort-block
+                    .sort-catalog
+                        p  Сортувати
+                            img(src="../img/icons/arrow-down.svg", alt="")
+                        select#sort(name='sort')                           
+                            option(value='cheap') Спочатку дешеві
+                            option(value='expensive') Спочатку дорогі
+                            option(value='new') Спочатку нові
+                            option( value='old') Спочтаку старі
+                            option( value='actions') Акційні
+
             .cards-place 
                 // card
                 a(href="#").card
@@ -125,6 +137,97 @@
                             span.color-item(data-color="#FFF")
                             span.color-item(data-color="red")
                             span.more-colors +1
+            .group-catalog-buttons
+                button.button.button-black.form Завантажити ще
+                .group-pages 
+                    button.button.button-white.page-btn 1  
+                    button.button.button-white.page-btn.active 2 
+                    button.button.button-white.disable(disabled) ... 
+                    button.button.button-white.page-btn 8
+                    button.button.button-white.page-btn 9 
+    .last-seen
+        .content
+            p.sliders-header-writing-mode Останні перегляди 
+            //- h2.slider-name Останні перегляди    
+            .last-seen-slider.side-custom-arrows                
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New
+                        img(src="./img/illustrations/clothes/clothes3.jpg", alt="")
+                    .card-info
+                        p.card-name Кардиган
+                    .card-infoLine
+                        .prices
+                            .newPrice 
+                                span.price-num 450 
+                                span.price-currency &nbsp;грн.
+                                
+                            .oldPrice 
+                                span 780
+                                span.price-currency &nbsp;грн.
+                        .card-colors
+                            span.color-item(data-color="#000")
+                            span.color-item(data-color="#FFF")
+                            span.color-item(data-color="red")
+                            span.more-colors +1
+                // card
+                a(href="#").card
+                    .card-top
+                        .card-sale.card-flag Sale
+                        .card-new.card-flag New               
+                        img(src="./img/illustrations/clothes/clothes6.jpg", alt="")
+                    .card-info
+                        p.card-name Кардиган
+                    .card-infoLine
+                        .prices
+                            .newPrice 
+                                span.price-num 450 
+                                span.price-currency &nbsp;грн.
+                                
+                            .oldPrice 
+                                span 780
+                                span.price-currency &nbsp;грн.
+                        .card-colors
+                            span.color-item(data-color="#000")
+                            span.color-item(data-color="#FFF")
+                            span.color-item(data-color="red")
+                            span.more-colors +1
+                // card
+                a(href="#").card
+                    .card-top         
+                        img(src="./img/illustrations/clothes/clothes3.jpg", alt="")
+                    .card-info
+                        p.card-name Кардиган
+                    .card-infoLine
+                        .prices
+                            .newPrice 
+                                span.price-num 450 
+                                span.price-currency &nbsp;грн.
+                                
+                            .oldPrice 
+                                span 780
+                                span.price-currency &nbsp;грн.
+                        .card-colors
+                            span.color-item(data-color="#000")
+                            span.color-item(data-color="#FFF")
+                            span.color-item(data-color="red")
+                            span.more-colors +1
+                // card
+                a(href="#").card.card-no-data
+                    .card-top             
+                        img(src="./img/illustrations/default.jpg", alt="")
+                    .card-info
+                        p.card-name Wanted wanted wanted
+                    .card-infoLine
+                        .prices
+                            .newPrice 
+                                span.price-num  wanted
+                                span.price-currency
+
+
+
 
 .filter-right
     a.closebtn.closeRightSidebar(href="javascript:void(0)" ) 
@@ -132,7 +235,7 @@
     .catalog-filter-item
         p.filter-name Фільтр
         .price-range.catalog-filter-item(data-CatalogFilterName="price")
-            p.block-name Ціна
+            p.block-name.mobile-main-menu Ціна
             #steps-slider
             .slider-inputs
                 input#input-with-keypress-0(type='text')

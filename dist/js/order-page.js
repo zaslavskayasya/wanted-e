@@ -18,4 +18,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-//# sourceMappingURL=order-page.js.map

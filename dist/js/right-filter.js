@@ -62,8 +62,6 @@ overflowDarken.addEventListener('click', ()=>{
   });
 
 
-
-
 var stepsSlider = document.getElementById('steps-slider');
 var input0 = document.getElementById('input-with-keypress-0');
 var input1 = document.getElementById('input-with-keypress-1');
@@ -188,4 +186,3 @@ function dropdown() {
       }
     }
   }
-//# sourceMappingURL=right-filter.js.map

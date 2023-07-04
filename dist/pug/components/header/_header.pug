@@ -128,7 +128,8 @@
 
     a(href="#") Відгуки 
     a(href="#") Співробітництво
-header.l-header
+
+header.l-header.logged
     .full-width-content
         .menu-line
             .left-menu
@@ -141,7 +142,7 @@ header.l-header
                         p  Жінкам
                         .sub-menu
                             .div
-                                .submenu-name.women Жінкам
+                                .submenu-name Жінкам
                                 .left
                                     ul
                                         li
@@ -190,115 +191,127 @@ header.l-header
                         p  Чоловікам
                         .sub-menu
                             .div
-                                .submenu-name.men Чоловікам
+                                .submenu-name Чоловікам
                                 .left
                                     ul
                                         li
                                             a(href="#") 
-                                                span Куртки і пальта
+                                                span Куртки 
                                         li
                                             a(href="#") 
-                                                span Светри
+                                                span Футболки
+                                        li
+                                            a(href="#") Костюми
                                         li
                                             a(href="#") Джинси
                                         li
-                                            a(href="#") Спортивні костюми
+                                            a(href="#") Шорти
                                         li
-                                            a(href="#") Штани і легінси
-                                        li
-                                            a(href="#") Футболки
+                                            a(href="#") Пальта
                                     ul
                                         li
-                                            a(href="#") Сукні
+                                            a(href="#") Толстовки
+                                        li
+                                            a(href="#") Світшоти
                                         li
                                             a(href="#") Піджаки
                                         li
-                                            a(href="#") Толстовки і світшоти
+                                            a(href="#") Кофти
                                         li
-                                            a(href="#") Сорочки
-                                        li
-                                            a(href="#") Трикотажні костюми
-                                        li
-                                            a(href="#") Кардигани
+                                            a(href="#") Ремені
                                     ul
                                         li
-                                            a(href="#") Кофти та джемпера
+                                            a(href="#") Джемпера
+                                        li
+                                            a(href="#") Нижня білизна
                                         li
                                             a(href="#") Гольфи та водолазки
                                         li
-                                            a(href="#") Топи
+                                            a(href="#") Шкарпетки
                                         li
-                                            a(href="#") Спідниці
+                                            a(href="#") Спортивне взуття
                                         li
-                                            a(href="#") Шапки
-                                        li
-                                            a(href="#") Шорти
+                                            a(href="#") Робичі костюми
                             .right                                
-                                img.menu-illustrations(src="./img/illustrations/women.png", alt="women clothes")
+                                img.menu-illustrations(src="./img/illustrations/men.png", alt="men clothes")
                                 .inform-banner 
                                     img(src="./img/illustrations/sale.png", alt="sale")
                     li.main-menu-item
                         p  Дітям
                         .sub-menu
                             .div
-                                .submenu-name.childrens Дітям
+                                .submenu-name Дітям
                                 .left
+                                    ul
+                                        li
+                                            a(href="#") Піджаки
+                                        li
+                                            a(href="#") Сукні
+                                        li
+                                            a(href="#") Кардигани
+                                        li
+                                            a(href="#") Спортивний одяг
+                                        li
+                                            a(href="#") Шкільна форма 
+                                        li
+                                            a(href="#") Толстовки і світшоти
                                     ul
                                         li
                                             a(href="#") 
                                                 span Куртки і пальта
                                         li
                                             a(href="#") 
-                                                span Светри
+                                                span Джинси
                                         li
-                                            a(href="#") Джинси
+                                            a(href="#") Светри
                                         li
-                                            a(href="#") Спортивні костюми
+                                            a(href="#") Прикраси
                                         li
                                             a(href="#") Штани і легінси
                                         li
                                             a(href="#") Футболки
                                     ul
                                         li
-                                            a(href="#") Сукні
+                                            a(href="#") Майки та футболки
                                         li
-                                            a(href="#") Піджаки
-                                        li
-                                            a(href="#") Толстовки і світшоти
-                                        li
-                                            a(href="#") Сорочки
-                                        li
-                                            a(href="#") Трикотажні костюми
-                                        li
-                                            a(href="#") Кардигани
-                                    ul
+                                            a(href="#") Шорти
                                         li
                                             a(href="#") Кофти та джемпера
                                         li
-                                            a(href="#") Гольфи та водолазки
-                                        li
-                                            a(href="#") Топи
-                                        li
                                             a(href="#") Спідниці
                                         li
-                                            a(href="#") Шапки
-                                        li
-                                            a(href="#") Шорти
+                                            a(href="#") Взуття
+
                             .right                                
-                                img.menu-illustrations(src="./img/illustrations/women.png", alt="women clothes")
+                                img.menu-illustrations(src="./img/illustrations/girl.png", alt="child clothes")
                                 .inform-banner 
                                     img(src="./img/illustrations/sale.png", alt="sale")
             a(href="#")
                 img(src="./img/icons/Wanted.svg", alt="")
             .right-menu-info
 
-                .search.right-menu-info--icon
-                    input.input(type='text' placeholder='Знайти...')
-                    button.btn
-                        .search-img
-                .personal-cabinet.right-menu-info--icon
+                form.search.search-form
+                    input.input.search-input(type='search' results="5" name="5" placeholder='Знайти...')
+                    button.search-btn
+                        
+                .personal-cabinet.right-menu-info--icon.cabinet-trigger
                     .person-icon
-                .cart.right-menu-info--icon
+                .cbinet-info-popup
+                    p.client-name Vlad Djqyfhtyrj 
+                    p.client-mail vlad@gmail.com 
+                    .settings-block 
+                        a(href="#").client-order 
+                            img(src="./img/icons/note.svg", alt="")
+                            span Замовлення 
+                        a(href="#").client-order 
+                            img(src="./img/icons/securityuser.svg", alt="")
+                            span Особисті данні
+                    a(href="#").exit-link
+                        span Вийти         
+                        img(src="./img/icons/logincurve.svg", alt="")
+
+
+                .cart.cart-trigger.right-menu-info--icon
                     .cart-icon 
-                        .cart-amount 12      
+                        .cart-amount 7     
 

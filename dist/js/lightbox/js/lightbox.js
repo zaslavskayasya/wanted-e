@@ -552,4 +552,3 @@
 
   return new Lightbox();
 }));
-//# sourceMappingURL=lightbox.js.map

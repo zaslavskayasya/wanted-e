@@ -56,4 +56,3 @@ triggerLogin.addEventListener('click', ()=>{
     registerblock.classList.remove('active');
     loginBlock.classList.add('active');
 });
-//# sourceMappingURL=personal-right.js.map

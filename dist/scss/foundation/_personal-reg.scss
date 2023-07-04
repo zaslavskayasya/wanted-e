@@ -1,0 +1,436 @@
+.closeCabinetSidebar{
+    position: absolute;
+    right: 34px;
+    top: 29px;
+}
+
+.login-part{
+    .order-wrap{
+        flex-direction: column;
+    }
+    .order-header{
+        margin-bottom: 25px;
+        
+    }
+    .check-block .wrap-checkbox:before{
+        display: none;;
+    }
+    .button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        
+    }
+    .register-link, .rule-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        align-items: center;
+        color: #000000;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .rule-link {
+        text-align: left;
+        margin-bottom: 10px;;;
+    }
+    .check-block  .wrap-checkbox{
+        margin-bottom: 25px;;
+    }
+}
+
+.wrap-register {
+    opacity: 0px;
+    height: 0px;
+    pointer-events: none;
+    transition: all ease-in-out 0.3s;
+    transform: translateY(-100%);
+}
+
+.wrap-register.active {
+    opacity: 1px;
+    pointer-events:all;
+    height: auto;
+    transform: translateY(0%);
+}
+
+.wrap-login{
+    opacity: 0px;
+    height: 0px;
+    pointer-events: none;
+    transition: all ease-in-out 0.3s;
+    transform: translateX(-100%);
+}
+
+
+.wrap-login.active{
+    opacity: 1;
+    pointer-events:all;
+    transform: translateX(0%);
+    height: auto;
+}
+
+.cabinet-page{
+    padding-bottom: 60px;;
+    .h2{
+        margin-bottom: 50px;;
+    }
+}
+
+
+.back-link{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    transition: all ease 0.3s;
+    &:hover{
+        text-decoration: underline;
+    }
+    img {
+        margin-right: 10px;
+    }
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+//   .active, .accordion:hover {
+//     background-color: #ccc;
+//   }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    // padding: 10px 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    padding-bottom: 35px;;
+     .button {
+        margin-top: 24px;
+    }
+  }
+
+  .table-row{
+    display: flex; 
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    .t-item{
+        width: 20%;
+        text-align: left;;
+    }
+  }  
+
+  .panel-status {
+    position: absolute;
+    right: 15px;
+    top:22px;
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icons/list-open.svg);
+    width: 21px;
+    background-repeat: no-repeat;
+  }
+
+  .accordion.active {
+    .panel-status {
+        top: 18px;
+        transform: rotate(180deg);
+    }
+  }
+
+
+  .order-table-header, .order-table-inner{
+    display: flex; 
+    justify-content: space-between;
+    text-align: center;
+    padding: 4px 18px;
+  }
+
+
+  .order-table{
+    border: 1px solid #d6d6d6;;
+    margin: 20px;
+    border-radius: 10px;;
+    background-color: #fff;
+
+    .table-column{
+        padding: 16px 10px; 
+    }
+    
+    .column-1{
+        width: 10%;
+    }
+    .order-table-header{
+        background-color: #F6F6F6;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;;
+    }
+    .column-2.photo{
+        max-width: 70px;
+        img{
+            width: 100% ;
+        }
+    }
+    
+}
+.personal-data-form{
+
+    .order-input option, .order-input select {
+        font-size: 16px;
+    }
+    .order-input label {
+
+        color: #A9A9A9;
+    }
+    .order-input input::placeholder{
+        color: #000;
+    }
+    .order-input input , .order-input select{
+        height: 51px;
+        line-height: 51px;
+    }
+}
+
+  .table-plate{
+    // background-color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;;
+  }
+
+//   .order-header{
+//     background-color: #F6F6F6;
+//   }
+
+
+  //personal data 
+
+.cabinet-page{
+    .button{
+        float: right;
+        text-align: right;
+
+    }
+}
+
+  .personal-data-form input, .personal-data-form select {
+    border: 1px solid #000;
+    line-height: 41px;
+}
+
+.wrap-form {
+    background-color: #fff;
+    padding: 50px;
+    padding-bottom: 100px;
+}
+
+.personal-data-form{
+    display: flex;;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;;
+    .select-label:after{
+        top:39px;
+    }
+    .left-part, .right-part{
+            width: 48%;
+    }
+}
+
+.names-of-all .t-item{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    color: #6F7682;
+    margin-bottom: 20px;
+    padding-left: 15px;;
+}
+
+.status-road {
+    color: #035BDF
+}
+
+.status-rejected{
+    color: #DF1C03;
+}
+
+.status-done{
+    color: #1A984F;
+}
+
+.status-complect{
+    color: #035BDF;
+}
+
+.table-column.column-1{
+    width: 94px;;
+}
+.order-table .column-2.photo {
+    max-width: 73px;
+}
+.table-column.column-2 {
+    width: 83px;
+}
+.table-column.column-3{
+    width: 480px;
+    text-align: left;
+}
+.table-column.column-4{
+    width: 100px;;
+}
+
+.order-table-inner{
+    padding: 20px 20px;
+    position: relative;
+    // &:not(:last-child){
+    //     border-bottom: 1px solid #ccc;
+    // }
+    &.dashed:after{
+        content: "";
+        display: block;
+        bottom: -2px;
+        height: 1px;
+        left: 35px;
+        position: absolute;
+        width: 94%;
+        background-image: url(../img/icons/dashed.svg);
+    }
+}
+
+.table-column.column-3.name a{
+    transition: all 0.3s ease;;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+
+
+@media screen and (max-width: 900px ){
+    .personal-data-form{
+        flex-direction: column;
+        .left-part, .right-part{
+            width: 100%;
+        }
+    }  
+    .cabinet-page .h2 {
+        margin-bottom: 25px;
+    }
+    .back-link {
+        margin-bottom: 15px;
+    }
+}
+
+.only-mob-info {
+    display: none;;
+}
+
+@media screen and (max-width:780px){
+    .table-row.names-of-all{
+        display: none;        
+    }
+    .only-mob-info {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #BEBEBE;
+        margin-bottom: 9px;;
+    }
+    .table-row{
+        flex-flow: wrap;
+    }
+    .table-row .t-item {
+        text-align: left;
+        width: 35%;
+        text-combine-upright: 20px;
+        margin-bottom: 15px;
+    }
+    .accordion {
+        padding-bottom: 0px;;
+    }
+    .order-table-header{
+        display: none;;
+    }
+    .order-table-inner{
+        flex-flow: wrap;
+    }
+    .table-column.column-1{
+        order: 3;
+    }
+
+    .table-column.column-1, .table-column.column-4, .table-column.column-5{
+        width: 26%;
+    }
+    .order-table .table-column {
+        padding: 16px 2px;
+        text-align: left;
+    }    
+
+    .table-column.column-2 {
+        width: 86px;
+    }
+    .table-column.column-3 {
+        width: 73%;
+    }
+    .order-table-inner {
+        padding: 12px;
+    }
+    .cabinet-page{
+        padding-bottom: 20px;;
+    }
+    .table-header.accordion {
+        position: relative;
+        &:after{
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: #fafafa;
+            position: absolute;
+            width: 89%;
+            left: 14px;
+            top:52%;
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px ){
+    .wrap-form {
+        padding: 25px 15px 87px;
+    }
+    .cabinet-page .button {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .table-column.column-3 {
+        width: 55%;
+    }
+}

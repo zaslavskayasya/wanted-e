@@ -1858,4 +1858,3 @@ $.magnificPopup.registerModule(RETINA_NS, {
 
 /*>>retina*/
  _checkInstance(); }));
-//# sourceMappingURL=jquery.magnific-popup.js.map
