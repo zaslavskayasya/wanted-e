@@ -34,8 +34,7 @@
 
 }
 
-.page-name-mode{
-    
+.page-name-mode{    
     color: #0b0b0b;
     display: block;
     font-size: 35px;
@@ -51,9 +50,7 @@
     text-align: right;
     transform: rotate(-180deg);
     writing-mode: tb-rl;
-
-
-
+    pointer-events: none;
 }
 
 .filter-line{
@@ -140,6 +137,7 @@
 
     &.active{
         transform: translateX(0%);
+        z-index: 99999;
     }
     .hidden-mobile-submenu{
         label{
@@ -172,8 +170,8 @@
 
 .closeRightSidebar{
     position: absolute;
-    right: 33px;
-    top: 25px;
+    right: 19px;
+    top: 29px;
 }
 
 .filter-name {
