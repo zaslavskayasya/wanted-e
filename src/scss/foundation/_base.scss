@@ -47,7 +47,7 @@ body.active-right{
 
 .content{
   max-width: 1190px;
-  margin: 0 auto;
+  margin: 0 auto 50px;
   padding: 0px 15px;
 }
 
@@ -63,3 +63,8 @@ body.active-right{
   transition: all ease-in-out 0.1s;
   z-index: 10;
 }
+
+p, h2, h3, h4 {
+  word-wrap: break-word;
+}
+

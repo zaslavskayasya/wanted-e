@@ -1,5 +1,11 @@
 .l-footer {
     padding: 0px 0px 97px 0px;
+    p {
+        margin-bottom: 0px;
+    }
+    ul, ol{
+        list-style: none;
+    }
     .content{
         padding-top: 67px;
         // padding: 0px;

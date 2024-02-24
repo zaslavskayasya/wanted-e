@@ -30,6 +30,8 @@
         .card-top img {
             transform: scale(1.1)
         }
+        text-decoration: none;
+
     }
 
 }
@@ -149,6 +151,9 @@
         color: #393939;
 
         margin-top: 2px;
+    }
+    p{
+        margin-bottom: 0px;
     }
 }
 
@@ -668,6 +673,7 @@
         .card {
             margin-bottom: 20px;
             margin-right: 4px;
+
         }
         .content {
             padding: 0 4px;
