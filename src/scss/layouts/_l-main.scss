@@ -1,3 +1,5 @@
+@use '../helpers' as h;
+
 .l-main {
     margin-bottom: 65px;
     .sliders-item{
@@ -15,6 +17,8 @@
         }
     }
 }
+
+
 
 .main-slider .slick-slide img{
     object-fit: cover;
@@ -504,3 +508,74 @@
 }
 
 
+.center{
+    text-align: center;
+}
+
+
+.row-oferta{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    padding-left: 100px;
+    margin: 35px 0px;
+
+}
+
+.left-oferta {
+     width: 170px;
+     padding-right: 20px;
+     
+    p{
+        font-family: h.$font-family;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+
+
+.right-oferta {
+    width: 70%; 
+    h6{
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 6px;;
+    }
+    p{
+        font-family: h.$font-family;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 22px;
+        span {
+            font-weight: 600;
+        }
+
+    }
+    ul {
+        margin-bottom: 22px;;
+        padding-left: 20px; // Відступ для розміщення списку всередині абзаца
+        list-style: none; // Забираємо стандартні стилі маркерів списку
+        li {
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 6px;
+            position: relative; // Додаємо позицію для коректного використання псевдоелемента
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                background-color: black; // Чорна цятка
+                border-radius: 50%; // Робимо її круглою
+                margin-right: 10px; // Відступ між цяткою і текстом
+                position: absolute;
+                left: -15px; // Розташування цятки
+                top: 50%; // Вирівнюємо по вертикалі
+                transform: translateY(-50%); // Центруємо відносно тексту
+            }
+        }
+    }
+
+}
