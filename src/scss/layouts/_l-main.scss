@@ -561,21 +561,131 @@
             font-size: 14px;
             font-weight: 400;
             margin-bottom: 6px;
-            position: relative; // Додаємо позицію для коректного використання псевдоелемента
+            position: relative;
             &::before {
                 content: '';
                 display: inline-block;
                 width: 5px;
                 height: 5px;
-                background-color: black; // Чорна цятка
-                border-radius: 50%; // Робимо її круглою
-                margin-right: 10px; // Відступ між цяткою і текстом
+                background-color: black; 
+                border-radius: 50%; 
+                margin-right: 10px; 
                 position: absolute;
-                left: -15px; // Розташування цятки
-                top: 50%; // Вирівнюємо по вертикалі
-                transform: translateY(-50%); // Центруємо відносно тексту
+                left: -15px; 
+                top: 50%; 
+                transform: translateY(-50%); 
             }
         }
     }
 
+}
+.map-place {
+    width: 100%;
+    min-height: 400px;
+    height: 400px;;
+    filter:grayscale(1);
+    iframe {
+        width: 100%;
+        height: 100%;;
+    }
+}
+
+.adress-line {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding-left: 100px;
+    margin: 35px 0px;
+    .city{
+        width: 20%;
+        p{
+            font-family: h.$font-family;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.1px;
+        }
+    }
+    .adress {
+        width: 50%;
+        padding-right: 50px;;
+    }
+    .link {
+        width: 20%
+    }
+    .text{
+        p{
+            font-size: 14px;
+        
+        }
+    }
+    .link a , a, p{
+        font-family: h.$font-family;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 22px;
+        span {
+            font-weight: 600;
+        }
+
+    }
+    a {
+        text-decoration: underline;
+    }
+}
+
+.wrap-info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;    
+    .wrp-img {
+        width: 30px;
+        margin-right: 15px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        width: 30px;
+        min-width: 26px;
+        img{
+            // width: 30px;
+        }
+        &.time{
+            img{
+
+                width: 20px;
+            }
+        }
+    }
+    .text {
+        margin-top: 0px;;
+    }
+}
+
+@media  (max-width: 780px ) {
+    .row-oferta{
+        padding-left: 0px;;
+    }
+    .adress-line{
+        padding-left: 0px;;
+    }
+    .adress-line .city {
+        width: 16%;
+    }
+    .wrap-info .wrp-img {
+
+        width: 30px;
+        min-width: 26px;
+    }
+}
+
+@media  (max-width: 600px ) {
+    .row-oferta{
+        flex-direction: column;
+    }
+    .adress-line{
+        flex-direction: column;
+        .city, .adress, .link{
+            width: 100%;
+        }
+    }
 }
